@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModWatches - Relojes Personalizados de Lujo</title>
+    <!-- Agregando favicon placeholder para que el usuario pueda especificar la ruta -->
+    <link rel="icon" type="image/x-icon" href="./img/faviconmodwatchs.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Removiendo fuente Inter ya que ahora usamos Trirong Serif -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <span class="promo-text">$15 de descuento si te llevas 3 relojes →</span>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <!-- Eliminando botón de búsqueda -->
+                    
+                    <div class="logo">
+                        <h1>MOD<span class="crown-icon">⌚</span>WATCHES</h1>
+                    </div>
+                    
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="./index.html" class="nav-link active">Inicio</a>
+                    <div class="dropdown">
+                        <a href="#catalogo" class="nav-link">Catálogo <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="./catalogos/catalog-daytona.html">Daytona</a>
+                            <a href="./catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+                            <a href="./catalogos/catalog-submariner.html">Submariner</a>
+                            <a href="./catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+                            <a href="./catalogos/catalog-land-dweller.html">Land-Dweller</a>
+                            <a href="./catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+                            <a href="./catalogos/catalog-royal-oak.html">Royal Oak</a>
+                            <a href="./catalogos/catalog-yacht-master.html">Yacht Master</a>
+                            <a href="./catalogos/catalog-santos.html">Santos</a>
+                            <a href="./catalogos/catalog-speedmaster.html">SpeedMaster</a>
+                            <a href="./catalogos/catalog-prx.html">PRX</a>
+                            <a href="./catalogos/catalog-accesorios.html">Accesorios</a>
+                            <a href="./catalogos/catalog-all.html">Ver todo</a>
+                        </div>
+                    </div>
+                    <a href="./personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a>
+                    <a href="./informacion-contacto.html" class="nav-link">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <!-- Actualizando imagen de fondo según código proporcionado -->
+            <img src="./img/fondorelojes.png" alt="Colección de relojes de lujo">
+        </div>
+        <div class="hero-content">
+            <h2 class="hero-title">CONSTRUIMOS EL RELOJ DE TUS SUEÑOS</h2>
+            <p class="hero-subtitle">RELOJES AUTOMÁTICOS PERSONALIZADOS DE LA MEJOR CALIDAD</p>
+            <div class="hero-buttons">
+                <!-- Cambiar "CONSULTAR AHORA" por "COMPRAR AHORA" y redireccionar a todas las colecciones -->
+                <button class="btn btn-primary" onclick="window.location.href='./catalogos/catalog-all.html'">COMPRAR AHORA</button>
+                <!-- Agregar redirección al botón "DISEÑA TU RELOJ" -->
+                <button class="btn btn-secondary" onclick="window.location.href='./personalizar-reloj.html'">DISEÑA TU RELOJ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="categories-grid">
+                <!-- Adding onclick redirects to each category card -->
+                <div class="category-card" onclick="window.location.href='./catalogos/catalog-datejust-daydate.html'">
+                    <img src="./img/datejustydaydate.png"  alt="Datejust Collection">
+                    <h3>Datejust y Day-Date →</h3>
+                </div>
+                <div class="category-card" onclick="window.location.href='./catalogos/catalog-submariner.html'">
+                    <img src="./img/submariner.png" alt="Submariner Collection">
+                    <h3>Submariner →</h3>
+                </div>
+                <div class="category-card" onclick="window.location.href='./catalogos/catalog-royal-oak.html'">
+                    <img src="./img/royaloak.png" alt="Royal Oak Collection">
+                    <h3>Royal Oak →</h3>
+                </div>
+                <div class="category-card" onclick="window.location.href='./catalogos/catalog-gmt-master-2.html'">
+                    <img src="./img/gmtmaster2.png" alt="GMT Master Collection">
+                    <h3>GMT Master II →</h3>
+                </div>
+                <div class="category-card" onclick="window.location.href='./catalogos/catalog-daytona.html'">
+                    <img src="./img/daytona.png" alt="Daytona Collection">
+                    <h3>Daytona →</h3>
+                </div>
+                <div class="category-card" onclick="window.location.href='./catalogos/catalog-nautilus-aquanaut.html'">
+                    <img src="./img/nautilusyaquanaut.png" alt="Nautilus Collection">
+                    <h3>Nautilus y Aquanaut →</h3>
+                </div>
+            </div>
+            <!-- Converting "Ver todo" to button with same style as "Diseña tu reloj" -->
+            <div class="view-all">
+                <button class="btn btn-secondary" onclick="window.location.href='./catalogos/catalog-all.html'">Ver todo</button>
+            </div>
+        </div>
+    </section>
+
+  <!-- Testimonials Section (ESTÁTICO - sin inyección desde JS) -->
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title">Los clientes hablan por nosotros</h2>
+    <div class="stars">★★★★★</div>
+    <p class="reviews-link">Reseñas de clientes ✓</p>
+
+    <div class="testimonials-slider">
+      <button class="slider-btn prev" aria-label="Anterior">‹</button>
+
+      <div class="testimonials-viewport">
+        <div class="testimonials-container">
+          <!-- 1 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Un pedazo de máquina</h4>
+            <p class="testimonial-text">Un pedazo de máquina, de 10, volveré a comprar</p>
+            <p class="testimonial-author">Jose Antonio Fernandez</p>
+            <div class="testimonial-watch"><img src="./img/seikomodpanda.png" alt="Reloj Jose Antonio"></div>
+          </article>
+
+          <!-- 2 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Precioso</h4>
+            <p class="testimonial-text">El reloj es una pasada. Es muy bonito y elegante y queda de lujo</p>
+            <p class="testimonial-author">Víctor</p>
+            <div class="testimonial-watch"><img src="./img/seikomodpepsi.png" alt="Reloj Víctor"></div>
+          </article>
+
+          <!-- 3 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Royal oak</h4>
+            <p class="testimonial-text">Espectacular! Es el segundo que compro y sin duda compraré más!</p>
+            <p class="testimonial-author">David</p>
+            <div class="testimonial-watch"><img src="./img/seikomodroyaloak.png" alt="Reloj David"></div>
+          </article>
+
+          <!-- 4 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Maravilloso</h4>
+            <p class="testimonial-text">Me ha llegado el reloj Royal Oak Panda Cronógrafo. Muy contento con el reloj. Se ve de calidad.</p>
+            <p class="testimonial-author">Chanar</p>
+            <div class="testimonial-watch"><img src="./img/seikomodsubmariner.png" alt="Reloj Chanar"></div>
+          </article>
+
+          <!-- 5 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Relojes oak color turquesa y hulk</h4>
+            <p class="testimonial-text">He comprado dos relojes a esta casa. Desde todo correcto y servicio excelente.</p>
+            <p class="testimonial-author">Borja Guadiaro</p>
+            <div class="testimonial-watch"><img src="./img/seikomodnautilus.png" alt="Reloj Borja"></div>
+          </article>
+
+          <!-- 6 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Un 10</h4>
+            <p class="testimonial-text">Super contento con mi reloj. Los recomiendo 100%</p>
+            <p class="testimonial-author">Daniel</p>
+            <div class="testimonial-watch"><img src="./img/seikomodpanda.png" alt="Reloj Daniel"></div>
+          </article>
+
+          <!-- 7 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Seiko GMT Pepsi</h4>
+            <p class="testimonial-text">La calidad es excelente y la atención al cliente también. Muy contento con mi Seiko.</p>
+            <p class="testimonial-author">Jaime Donovard</p>
+            <div class="testimonial-watch"><img src="./img/seikomodpepsi.png" alt="Reloj Jaime"></div>
+          </article>
+
+          <!-- 8 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Seiko Mod Day-Date Roman Blue</h4>
+            <p class="testimonial-text">Todo perfecto, la calidad es brutal, el reloj pesa y se nota la calidad.</p>
+            <p class="testimonial-author">Andres.M</p>
+            <div class="testimonial-watch"><img src="./img/seikomodromanblue.png" alt="Reloj Andres"></div>
+          </article>
+
+          <!-- 9 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Me ha sorprendido gratamente</h4>
+            <p class="testimonial-text">Me ha sorprendido gratamente, es muy preciso y la calidad es excelente.</p>
+            <p class="testimonial-author">Anónimo</p>
+            <div class="testimonial-watch"><img src="./img/seikomodnautilus.png" alt="Reloj Anónimo"></div>
+          </article>
+
+          <!-- 10 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Todo perfecto</h4>
+            <p class="testimonial-text">Todo perfecto, el trato rápido y cercano, el producto de 10, más que recomendable.</p>
+            <p class="testimonial-author">Anónimo</p>
+            <div class="testimonial-watch"><img src="./img/seikomodsubmariner.png" alt="Reloj Anónimo"></div>
+          </article>
+
+          <!-- 11 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Hice un pedido y la verdad...</h4>
+            <p class="testimonial-text">Hice un pedido y la verdad que una maravilla. Llegó perfectamente y a su tiempo.</p>
+            <p class="testimonial-author">Juan Francisco Romero Pedrosa</p>
+            <div class="testimonial-watch"><img src="./img/seikomodroyaloak.png" alt="Reloj Juan"></div>
+          </article>
+
+          <!-- 12 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <h4 class="testimonial-title">Muy elegante</h4>
+            <p class="testimonial-text">Me ha encantado el reloj, muy elegante</p>
+            <p class="testimonial-author">BENJAMIN MARTINEZ CABRE...</p>
+            <div class="testimonial-watch"><img src="./img/seikomodpanda.png" alt="Reloj Benjamin"></div>
+          </article>
+        </div> <!-- .testimonials-container -->
+      </div> <!-- .testimonials-viewport -->
+
+      <button class="slider-btn next" aria-label="Siguiente">›</button>
+    </div> <!-- .testimonials-slider -->
+  </div> <!-- .container -->
+</section>
+
+    <!-- Collections Showcase -->
+    <section class="collections-showcase">
+        <div class="container">
+            <!-- Configurando La Jubilee sin clase reverse para texto izquierda, imagen derecha -->
+            <div class="collection-item">
+                <div class="collection-content">
+                    <h2>La Jubilee</h2>
+                    <p>Un diseño de cinco piezas enlazadas reconocido por su intricada artesanía y elegancia atemporal. Sus piezas más pequeñas y estrechamente vinculadas proporcionan una flexibilidad y comodidad excepcionales, lo que la hace ideal tanto para relojes de vestir como para estilos informales.</p>
+                </div>
+                <div class="collection-image">
+                    <img src="./img/lajubilee.png" alt="La Jubilee">
+                </div>
+            </div>
+
+            <!-- Configurando La President con clase reverse para imagen izquierda, texto derecha -->
+            <div class="collection-item reverse">
+                <div class="collection-image">
+                    <img src="./img/lapresident.png" alt="La President">
+                </div>
+                <div class="collection-content">
+                    <h2>La President</h2>
+                    <p>Conocido por su diseño semi-circular de enlaces de tres piezas, el brazalete del presidente tiene el equilibrio perfecto entre elegancia y comodidad. Hecho con precisión, sofisticación, lo que lo convierte en un favorito para las ocasiones formales o como una pieza de declaración para el uso diario.</p>
+                </div>
+            </div>
+
+            <!-- Configurando La Oyster sin clase reverse para texto izquierda, imagen derecha -->
+            <div class="collection-item">
+                <div class="collection-content">
+                    <h2>La Oyster</h2>
+                    <p>Su estructura de enlace de tres piezas ofrece un ajuste fuerte y seguro, perfecto para el uso diario y las actividades aventureras. Conocido por su versatilidad, el brazalete Oyster pasa perfectamente de entornos casuales a ocasiones más formales, asegurando el estilo y el rendimiento en cualquier entorno.</p>
+                </div>
+                <div class="collection-image">
+                    <img src="./img/laoyster.png" alt="La Oyster">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daytona Showcase -->
+    <section class="daytona-showcase">
+        <div class="daytona-background">
+            <!-- Actualizando imagen de fondo de Daytona según código proporcionado -->
+            <img src="./img/daytonafondo.png" alt="Daytona Collection">
+        </div>
+        <div class="daytona-content">
+            <h2>Daytona</h2>
+            <!-- Cambiar redirección del botón "Ver modelos" al catálogo de Daytona -->
+            <button class="btn btn-outline" onclick="window.location.href='./catalogos/catalog-daytona.html'">Ver modelos</button>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <!-- Cambiando pregunta de CROWNMODS a MODWATCHES -->
+                        <span>¿QUÉ ES UN RELOJ MODWATCHES?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <!-- Actualizando respuesta con nueva marca ModWatches -->
+                        <p>Un reloj ModWatches es una versión <strong>personalizada</strong> de un reloj estándar. El término "MOD" proviene de "modificación". Estas modificaciones se realizan generalmente para aquellos que desean <strong>personalizar</strong> su reloj según sus gustos o necesidades específicas. Las modificaciones pueden variar considerablemente, desde pequeños cambios estéticos hasta revisiones técnicas más complejas. Lo que hace que los relojes ModWatches sean especialmente aptos para modificaciones es la amplia disponibilidad de piezas de repuesto. Esta abundancia de componentes permite una amplia gama de personalización, lo que hace que cada reloj ModWatches <strong>sea único</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿QUÉ MOVIMIENTOS UTILIZAMOS?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Utilizamos <strong>movimientos automáticos</strong>, que son famosos por su confiabilidad, precisión y rendimiento duradero.</p>
+                        <!-- Actualizando texto con nueva marca ModWatches -->
+                        <p>Movimientos que utilizamos en ModWatches:</p>
+                        <ul>
+                            <li>Movimientos automáticos NH35, NH36, NH38.</li>
+                            <li>Movimiento mecánico VK63.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>TIEMPO Y COSTO DE ENVÍO</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El tiempo necesario para todo el proceso de pedido, desde el montaje hasta la entrega, <strong>es de 15-20 días</strong>.</p>
+                        <p>En cuanto al coste, el envío es <strong>totalmente gratuito</strong>, y también hemos incluido los aranceles de importación de tu país en el precio, por lo que no incurrirás en ningún cargo o tarifa adicional durante la entrega de tu reloj.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿SON ORIGINALES?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Utilizamos <strong>movimientos genuinos</strong> para crear relojes únicos inspirados en los mejores diseños.</p>
+                        <p>Nuestros relojes <strong>no son réplicas</strong> y <strong>no estamos afiliados</strong> a ninguna marca de ninguna manera.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿PUEDO DISEÑAR MI PROPIO RELOJ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Puedes elegir/personalizar tu pulsera, caja, esfera, manecillas e incluso añadir tu propio <strong>logotipo o iniciales</strong>.</p>
+                        <p>Si desea un reloj personalizado, contáctenos por WhatsApp para discutir sus opciones con uno de nuestros relojeros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Envío gratis</h3>
+                    <p>Envío gratuito a toda la península</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-tags"></i>
+                    <h3>Precios más competitivos de todo el mercado</h3>
+                    <p>¡Precios imbatibles!</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Hechos a mano</h3>
+                    <p>Cuidando hasta el último detalle</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-star"></i>
+                    <h3>¡Personaliza tu reloj!</h3>
+                    <p>Mandanos tu sueño y te lo cumplimos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                </div>
+                
+                <div class="footer-section">
+                    <div class="payment-methods">
+                        <!-- Actualizando imágenes de métodos de pago con rutas correctas -->
+                        <img src="./img/americanexpress.png" alt="American Express">
+                        <img src="./img/applepay.png" alt="Apple Pay">
+                        <img src="./img/googlepay.png" alt="Google Pay">
+                        <img src="./img/mastercard.png" alt="Mastercard">
+                        <img src="./img/visa.png" alt="Visa">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <!-- Cambiando copyright de CrownMods a ModWatches -->
+                <p>© 2025, ModWatches</p>
+                <div class="footer-menu">
+                    <!-- Updated footer links to point to actual HTML files instead of anchor links -->
+                    <a href="politica-privacidad.html">Política de privacidad</a>
+                    <a href="politica-reembolso.html">Política de reembolso</a>
+                    <a href="terminos-servicio.html">Términos del servicio</a>
+                    <a href="politica-envio.html">Política de envío</a>
+                    <a href="informacion-contacto.html">Información de contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
