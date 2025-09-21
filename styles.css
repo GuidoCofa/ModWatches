@@ -70,11 +70,12 @@ body {
 
 .nav-content {
   display: flex;
-  justify-content: space-between; /* Changed back to space-between for proper mobile menu positioning */
+  justify-content: center; /* centramos el logo */
   align-items: center;
   margin-bottom: 15px;
   position: relative;
 }
+
 
 .search-btn,
 .user-btn,
@@ -2089,3 +2090,68 @@ body {
                 padding: 1rem;
             }
         }
+
+/* Mantener proporción imágenes en modales y catálogos */
+@media (max-width: 500px) {
+  .product-card img,
+  .modal-content img {
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: 1 / 1; /* cuadrado; ajusta si prefieres otra proporción */
+    object-fit: contain; /* mantiene la imagen sin recortes */
+  }
+}
+
+/* ensure dropdowns aren't clipped and center logo on desktop */
+.navbar, .container, .nav-menu { overflow: visible !important; }
+.nav-menu::-webkit-scrollbar { display: none; }
+@media (min-width: 769px) {
+  .logo { position: absolute; left:50%; transform:translateX(-50%); z-index:1100; pointer-events:none; }
+  .nav-content { justify-content:center; }
+}
+/* dropdown improvements */
+.dropdown-content{
+  display:none!important;
+  position:absolute;
+  top:calc(100% + 8px);
+  left:0;
+  z-index:9999!important;
+  min-width:220px;
+  max-height:70vh;
+  overflow-y:auto;
+  transition:opacity .18s, transform .18s;
+  visibility:hidden; opacity:0; transform:translateY(-6px);
+}
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
+  display:block!important; visibility:visible; opacity:1; transform:translateY(0);
+}
+
+/* modal images keep aspect ratio on small screens */
+@media (max-width:500px){
+  .modal-content img{ width:100%!important; height:auto!important; object-fit:contain!important; max-height:80vh!important; }
+}
+
+/* Mejorar usabilidad del dropdown en escritorio */
+@media (min-width: 769px) {
+  .dropdown-content {
+    top: 100% !important;   /* sin gap con el link */
+    margin-top: 0 !important;
+    padding-top: 4px;       /* pequeño margen interno para que no se cierre fácil */
+  }
+}
+
+/* Separar logo del banner superior en escritorio */
+@media (min-width: 769px) {
+  .logo {
+    margin-top: 13px; /* ajusta el valor si quieres más o menos separación */
+  }
+}
+
+.navbar {
+  padding: 25px 0; /* antes estaba en 15px 0 */
+}
+
+.nav-menu .nav-link {
+  line-height: 50px; /* ajustá según el alto que quieras */
+}
