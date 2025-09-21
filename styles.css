@@ -47,7 +47,18 @@ body {
   text-align: center;
   padding: 8px 0;
   font-size: 14px;
+  overflow-x: hidden;
+  width: 100%;
   font-weight: bold;
+  box-sizing: border-box;
+}
+
+.promo-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: inline-block;
 }
 
 .navbar {
@@ -157,10 +168,37 @@ body {
   display: block;
 }
 
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
 /* Mobile First Responsive Design */
 @media (max-width: 480px) {
   .container {
     padding: 0 15px;
+  }
+
+  /* Show hamburger menu on small mobile */
+  .mobile-menu-toggle {
+    display: block !important;
+  }
+
+  /* Hide regular nav menu on small mobile */
+  .nav-menu {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--primary-blue);
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    display: flex !important;
   }
 
   .header-top {
@@ -325,12 +363,19 @@ body {
   .nav-menu {
     display: flex !important;
     gap: 20px;
-    position: static;
-    background: none;
-    box-shadow: none;
-    padding: 0;
-    flex-direction: row;
-    width: auto;
+    position: static !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    flex-direction: row !important;
+    width: auto !important;
+    top: auto !important;
+    left: auto !important;
+  }
+
+  /* Ensure nav-menu is never hidden on tablet */
+  .nav-menu.active {
+    display: flex !important;
   }
 
   .hero {
@@ -517,6 +562,11 @@ body {
   .dropdown-content a {
     padding: 10px 20px;
     color: var(--white);
+  }
+
+  /* Fix dropdown on mobile - show on click instead of hover */
+  .dropdown.active .dropdown-content {
+    display: block;
   }
 }
 

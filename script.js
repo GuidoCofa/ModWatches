@@ -1841,6 +1841,24 @@ function toggleMobileMenu() {
   }
 }
 
+// ------------------------------------------------------------------
+// Dropdown functionality for mobile and desktop
+function toggleDropdown(dropdownElement) {
+  console.log("[v0] toggleDropdown called with:", dropdownElement)
+  
+  // Close all other dropdowns first
+  document.querySelectorAll('.dropdown').forEach(dropdown => {
+    if (dropdown !== dropdownElement) {
+      dropdown.classList.remove('active')
+      console.log("[v0] Closed dropdown:", dropdown)
+    }
+  })
+  
+  // Toggle current dropdown
+  dropdownElement.classList.toggle('active')
+  console.log("[v0] Toggled dropdown, active class:", dropdownElement.classList.contains('active'))
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-link")
   const navMenu = document.querySelector(".nav-menu")
@@ -1873,6 +1891,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     }
+  })
+
+  // Add click event listeners to dropdown links for better functionality
+  const dropdownLinks = document.querySelectorAll('.dropdown > .nav-link')
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault() // Prevent default link behavior
+      const dropdown = link.parentElement
+      toggleDropdown(dropdown)
+    })
   })
 })
 
