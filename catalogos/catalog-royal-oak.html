@@ -9,46 +9,92 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header-top">
+<header class="header">
+  <!-- Promo Banner -->
+  <div class="promo-banner">
     <div class="container">
-      <p>$15 de descuento si te llevas 3 relojes →</p>
+      <span class="promo-text">$15 de descuento si te llevas 3 relojes →</span>
     </div>
-  </header>
+  </div>
 
-  <nav class="navbar">
+  <!-- LOGO centrado -->
+  <div class="header-top">
     <div class="container">
-      <div class="nav-content">
-        <div class="logo">
-          <h1>MOD<span class="crown-icon">⌚</span>WATCHES</h1>
-        </div>
-       
-      </div>
+      <a href="../index.html" class="logo-center">
+        <h1>MOD<span class="crown-icon">⌚</span>WATCHES</h1>
+      </a>
+    </div>
+  </div>
 
-      <div class="nav-menu">
-        <a href="../index.html" class="nav-link">Inicio</a>
-        <div class="dropdown">
-          <a href="#catalogo" class="nav-link">Catálogo <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-content">
-            <a href="catalog-daytona.html">Daytona</a>
-            <a href="catalog-gmt-master-2.html">Gmt Master 2</a>
-            <a href="catalog-submariner.html">Submariner</a>
-            <a href="catalog-datejust-daydate.html">Datejust Daydate</a>
-            <a href="catalog-land-dweller.html">Land Dweller</a>
-            <a href="catalog-nautilus-aquanaut.html">Nautilus Aquanaut</a>
-            <a href="catalog-royal-oak.html">Royal Oak</a>
-            <a href="catalog-yacht-master.html">Yacht Master</a>
-            <a href="catalog-santos.html">Santos</a>
-            <a href="catalog-speedmaster.html">Speedmaster</a>
-            <a href="catalog-prx.html">Prx</a>
-            <a href="catalog-accesorios.html">Accesorios</a>
-            <a href="catalog-all.html">Ver todo</a>
+  <!-- NAVBAR centrada -->
+  <nav class="header-bottom">
+    <div class="container">
+      <ul class="nav-list center-nav">
+        <li><a href="../index.html" class="nav-link active">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#catalogo" class="nav-link dropdown-toggle">
+            Catálogo <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="../catalogos/catalog-daytona.html">Daytona</a>
+            <a href="../catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+            <a href="../catalogos/catalog-submariner.html">Submariner</a>
+            <a href="../catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+            <a href="../catalogos/catalog-land-dweller.html">Land-Dweller</a>
+            <a href="../catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+            <a href="../catalogos/catalog-royal-oak.html">Royal Oak</a>
+            <a href="../catalogos/catalog-yacht-master.html">Yacht Master</a>
+            <a href="../catalogos/catalog-santos.html">Santos</a>
+            <a href="../catalogos/catalog-speedmaster.html">SpeedMaster</a>
+            <a href="../catalogos/catalog-prx.html">PRX</a>
+            <a href="../catalogos/catalog-accesorios.html">Accesorios</a>
+            <a href="../catalogos/catalog-all.html">Ver todo</a>
           </div>
-        </div>
-        <a href="../personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a>
-        <a href="../informacion-contacto.html" class="nav-link">Contacto</a>
-      </div>
+        </li>
+        <li><a href="../personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a></li>
+        <li><a href="../informacion-contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+      <!-- Botón menú móvil -->
+<button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+</button>
+
+<!-- Navegación móvil -->
+<div class="mobile-nav" id="mobile-nav">
+  <ul class="mobile-nav-list">
+    <li><a href="../index.html" class="mobile-nav-link">Inicio</a></li>
+   <li class="mobile-dropdown">
+<a href="javascript:void(0)" class="mobile-nav-link dropdown-toggle" onclick="toggleMobileDropdown(event)">
+  Catálogo <i class="fas fa-chevron-down"></i>
+</a>
+
+  <div class="mobile-dropdown-menu">
+    <a href="../catalogos/catalog-daytona.html">Daytona</a>
+    <a href="../catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+    <a href="../catalogos/catalog-submariner.html">Submariner</a>
+    <a href="../catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+    <a href="../catalogos/catalog-land-dweller.html">Land-Dweller</a>
+    <a href="../catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+    <a href="../catalogos/catalog-royal-oak.html">Royal Oak</a>
+    <a href="../catalogos/catalog-yacht-master.html">Yacht Master</a>
+    <a href="../catalogos/catalog-santos.html">Santos</a>
+    <a href="../catalogos/catalog-speedmaster.html">SpeedMaster</a>
+    <a href="../catalogos/catalog-prx.html">PRX</a>
+    <a href="../catalogos/catalog-accesorios.html">Accesorios</a>
+    <a href="../catalogos/catalog-all.html">Ver todo</a>
+  </div>
+</li>
+
+    <li><a href="../personalizar-reloj.html" class="mobile-nav-link">Personalizar mi reloj</a></li>
+    <li><a href="../informacion-contacto.html" class="mobile-nav-link">Contacto</a></li>
+  </ul>
+</div>
+
     </div>
   </nav>
+</header>
 
   <main class="policy-page">
     <div class="container">
@@ -61,8 +107,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "Negro"</h3>
             <div class="product-price">
-              <span class="current-price">€176,99</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$176,99</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
@@ -73,8 +119,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "Navy blue"</h3>
             <div class="product-price">
-              <span class="current-price">€176,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$176,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
@@ -85,8 +131,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "Skeleton"</h3>
             <div class="product-price">
-              <span class="current-price">€189,99</span>
-              <span class="original-price">€245,99</span>
+              <span class="current-price">$189,99</span>
+              <span class="original-price">$245,99</span>
             </div>
           </div>
         </div>
@@ -97,8 +143,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "Panda Cronógrafo"</h3>
             <div class="product-price">
-              <span class="current-price">€173,96</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,96</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
@@ -109,8 +155,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "Cronógrafo Azul Marino"</h3>
             <div class="product-price">
-              <span class="current-price">€173,96</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,96</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
@@ -121,8 +167,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "Tiffany"</h3>
             <div class="product-price">
-              <span class="current-price">€176,99</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$176,99</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
@@ -133,8 +179,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak Chronograph "Oro Rosa dial azul"</h3>
             <div class="product-price">
-              <span class="current-price">€183,98</span>
-              <span class="original-price">€234,98</span>
+              <span class="current-price">$183,98</span>
+              <span class="original-price">$234,98</span>
             </div>
           </div>
         </div>
@@ -145,8 +191,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "Blanco"</h3>
             <div class="product-price">
-              <span class="current-price">€176,99</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$176,99</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
@@ -157,8 +203,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "Cronógrafo negro"</h3>
             <div class="product-price">
-              <span class="current-price">€173,96</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,96</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
@@ -169,8 +215,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "Cronógrafo verde"</h3>
             <div class="product-price">
-              <span class="current-price">€173,96</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,96</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
@@ -181,8 +227,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "Cronógrafo blanco"</h3>
             <div class="product-price">
-              <span class="current-price">€173,96</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,96</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
@@ -193,8 +239,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "Verde"</h3>
             <div class="product-price">
-              <span class="current-price">€176,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$176,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
@@ -205,8 +251,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak "oro rosa y azul marino"</h3>
             <div class="product-price">
-              <span class="current-price">€183,95</span>
-              <span class="original-price">€229,99</span>
+              <span class="current-price">$183,95</span>
+              <span class="original-price">$229,99</span>
             </div>
           </div>
         </div>
@@ -217,8 +263,8 @@
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Royal Oak Negro y Oro Rosa</h3>
             <div class="product-price">
-              <span class="current-price">€189,99</span>
-              <span class="original-price">€229,99</span>
+              <span class="current-price">$189,99</span>
+              <span class="original-price">$229,99</span>
             </div>
           </div>
         </div>

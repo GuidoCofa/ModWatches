@@ -9,289 +9,353 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header-top">
+<header class="header">
+  <!-- Promo Banner -->
+  <div class="promo-banner">
     <div class="container">
-      <p>$15 de descuento si te llevas 3 relojes →</p>
+      <span class="promo-text">$15 de descuento si te llevas 3 relojes →</span>
     </div>
-  </header>
+  </div>
 
-  <nav class="navbar">
+  <!-- LOGO centrado -->
+  <div class="header-top">
     <div class="container">
-      <div class="nav-content">
-        <div class="logo">
-          <h1>MOD<span class="crown-icon">⌚</span>WATCHES</h1>
-        </div>
+      <a href="../index.html" class="logo-center">
+        <h1>MOD<span class="crown-icon">⌚</span>WATCHES</h1>
+      </a>
+    </div>
+  </div>
 
-      </div>
- 
-      <div class="nav-menu">
-        <a href="../index.html" class="nav-link">Inicio</a>
-        <div class="dropdown">
-          <a href="#catalogo" class="nav-link">Catálogo <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-content">
-            <a href="catalog-daytona.html">Daytona</a><a href="catalog-gmt-master-2.html">Gmt Master 2</a><a href="catalog-submariner.html">Submariner</a><a href="catalog-datejust-daydate.html">Datejust Daydate</a><a href="catalog-land-dweller.html">Land Dweller</a><a href="catalog-nautilus-aquanaut.html">Nautilus Aquanaut</a><a href="catalog-royal-oak.html">Royal Oak</a><a href="catalog-yacht-master.html">Yacht Master</a><a href="catalog-santos.html">Santos</a><a href="catalog-speedmaster.html">Speedmaster</a><a href="catalog-prx.html">Prx</a><a href="catalog-accesorios.html">Accesorios</a>
-            <a href="catalog-all.html">Ver todo</a>
+  <!-- NAVBAR centrada -->
+  <nav class="header-bottom">
+    <div class="container">
+      <ul class="nav-list center-nav">
+        <li><a href="../index.html" class="nav-link active">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#catalogo" class="nav-link dropdown-toggle">
+            Catálogo <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="../catalogos/catalog-daytona.html">Daytona</a>
+            <a href="../catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+            <a href="../catalogos/catalog-submariner.html">Submariner</a>
+            <a href="../catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+            <a href="../catalogos/catalog-land-dweller.html">Land-Dweller</a>
+            <a href="../catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+            <a href="../catalogos/catalog-royal-oak.html">Royal Oak</a>
+            <a href="../catalogos/catalog-yacht-master.html">Yacht Master</a>
+            <a href="../catalogos/catalog-santos.html">Santos</a>
+            <a href="../catalogos/catalog-speedmaster.html">SpeedMaster</a>
+            <a href="../catalogos/catalog-prx.html">PRX</a>
+            <a href="../catalogos/catalog-accesorios.html">Accesorios</a>
+            <a href="../catalogos/catalog-all.html">Ver todo</a>
           </div>
-        </div>
-        <a href="../personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a>
-        <a href="../informacion-contacto.html" class="nav-link">Contacto</a>
-      </div>
+        </li>
+        <li><a href="../personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a></li>
+        <li><a href="../informacion-contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+      <!-- Botón menú móvil -->
+<button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+</button>
+
+<!-- Navegación móvil -->
+<div class="mobile-nav" id="mobile-nav">
+  <ul class="mobile-nav-list">
+    <li><a href="../index.html" class="mobile-nav-link">Inicio</a></li>
+   <li class="mobile-dropdown">
+<a href="javascript:void(0)" class="mobile-nav-link dropdown-toggle" onclick="toggleMobileDropdown(event)">
+  Catálogo <i class="fas fa-chevron-down"></i>
+</a>
+
+  <div class="mobile-dropdown-menu">
+    <a href="../catalogos/catalog-daytona.html">Daytona</a>
+    <a href="../catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+    <a href="../catalogos/catalog-submariner.html">Submariner</a>
+    <a href="../catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+    <a href="../catalogos/catalog-land-dweller.html">Land-Dweller</a>
+    <a href="../catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+    <a href="../catalogos/catalog-royal-oak.html">Royal Oak</a>
+    <a href="../catalogos/catalog-yacht-master.html">Yacht Master</a>
+    <a href="../catalogos/catalog-santos.html">Santos</a>
+    <a href="../catalogos/catalog-speedmaster.html">SpeedMaster</a>
+    <a href="../catalogos/catalog-prx.html">PRX</a>
+    <a href="../catalogos/catalog-accesorios.html">Accesorios</a>
+    <a href="../catalogos/catalog-all.html">Ver todo</a>
+  </div>
+</li>
+
+    <li><a href="../personalizar-reloj.html" class="mobile-nav-link">Personalizar mi reloj</a></li>
+    <li><a href="../informacion-contacto.html" class="mobile-nav-link">Contacto</a></li>
+  </ul>
+</div>
+
     </div>
   </nav>
-
+</header>
   <main class="policy-page">
     <div class="container">
       <h1 style="text-align:center; margin:50px 0;">Datejust Daydate</h1>
       <div class="products-grid">
         
-        <div class="product-card" onclick="showProductModal(24)">
+        <!-- Updated product name to match user's list: Seiko Mod Day-date "Roman Blue" -->
+        <div class="product-card" onclick="showProductModal(29)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate1.png" alt="Seiko Mod Day-date Roman Blue">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Day-date "Roman Blue"</h3>
             <div class="product-price">
-              <span class="current-price">€176,95</span>
-              <span class="original-price">€229,99</span>
+              <span class="current-price">$176,95</span>
+              <span class="original-price">$229,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(25)">
+        <!-- Updated product name to match user's list: Seiko Mod Day-date "Roman Green" -->
+        <div class="product-card" onclick="showProductModal(30)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate2.png" alt="Seiko Mod Day-date Roman Green">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Day-date "Roman Green"</h3>
             <div class="product-price">
-              <span class="current-price">€176,95</span>
-              <span class="original-price">€229,99</span>
+              <span class="current-price">$176,95</span>
+              <span class="original-price">$229,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(26)">
+        <!-- Updated product name to match user's list: Seiko Mod Day-date Oro Rosa "Roman Green" -->
+        <div class="product-card" onclick="showProductModal(31)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate3.png" alt="Seiko Mod Day-date Oro Rosa Roman Green">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Day-date Oro Rosa "Roman Green"</h3>
             <div class="product-price">
-              <span class="current-price">€176,95</span>
-              <span class="original-price">€229,99</span>
+              <span class="current-price">$176,95</span>
+              <span class="original-price">$229,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(27)">
+        <!-- Updated product name to match user's list: Seiko Mod Day-date "Ice Blue" -->
+        <div class="product-card" onclick="showProductModal(32)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate4.png" alt="Seiko Mod Day-date Ice Blue">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Day-date "Ice Blue"</h3>
             <div class="product-price">
-              <span class="current-price">€176,95</span>
-              <span class="original-price">€229,99</span>
+              <span class="current-price">$176,95</span>
+              <span class="original-price">$229,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(28)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust "Wimbledon" -->
+        <div class="product-card" onclick="showProductModal(33)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate5.png" alt="Seiko Mod Datejust Wimbledon">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust "Wimbledon"</h3>
             <div class="product-price">
-              <span class="current-price">€173,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(29)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust "Verde oliva" -->
+        <div class="product-card" onclick="showProductModal(34)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate6.png" alt="Seiko Mod Datejust Verde oliva">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust "Verde oliva"</h3>
             <div class="product-price">
-              <span class="current-price">€173,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(30)">
+        <!-- Updated product name to match user's list: Seiko Mod Oyster Perpetual "Tiffany" -->
+        <div class="product-card" onclick="showProductModal(35)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate7.png" alt="Seiko Mod Oyster Perpetual Tiffany">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Oyster Perpetual "Tiffany"</h3>
             <div class="product-price">
-              <span class="current-price">€179,99</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$179,99</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(31)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust "Who cares I'm already late?" -->
+        <div class="product-card" onclick="showProductModal(36)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate8.png" alt="Seiko Mod Datejust Who cares I'm already late">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust "Who cares I'm already late?"</h3>
             <div class="product-price">
-              <span class="current-price">€184,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$184,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(32)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust "Arabic Blue" -->
+        <div class="product-card" onclick="showProductModal(37)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate9.png" alt="Seiko Mod Datejust Arabic Blue">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust "Arabic Blue"</h3>
             <div class="product-price">
-              <span class="current-price">€173,99</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,99</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(33)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust "Arabic black" -->
+        <div class="product-card" onclick="showProductModal(38)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate10.png" alt="Seiko Mod Datejust Arabic black">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust "Arabic black"</h3>
             <div class="product-price">
-              <span class="current-price">€173,99</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,99</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(34)">
+        <!-- Updated product name to match user's list: Seiko Mod Oyster Perpetual "Bubbles celebration" -->
+        <div class="product-card" onclick="showProductModal(39)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate11.png" alt="Seiko Mod Oyster Perpetual Bubbles celebration">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Oyster Perpetual "Bubbles celebration"</h3>
             <div class="product-price">
-              <span class="current-price">€173,99</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,99</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(35)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust "Azul degradado árabe" -->
+        <div class="product-card" onclick="showProductModal(40)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate12.png" alt="Seiko Mod Datejust Azul degradado árabe">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust "Azul degradado árabe"</h3>
             <div class="product-price">
-              <span class="current-price">€173,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(36)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust "Ice blue Roman" -->
+        <div class="product-card" onclick="showProductModal(41)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate13.png" alt="Seiko Mod Datejust Ice blue Roman">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust "Ice blue Roman"</h3>
             <div class="product-price">
-              <span class="current-price">€173,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(37)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust "Arabic green" -->
+        <div class="product-card" onclick="showProductModal(42)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate14.png" alt="Seiko Mod Datejust Arabic green">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust "Arabic green"</h3>
             <div class="product-price">
-              <span class="current-price">€173,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(38)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust "Arabic Dial Ice Blue" -->
+        <div class="product-card" onclick="showProductModal(43)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate15.png" alt="Seiko Mod Datejust Arabic Dial Ice Blue">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust "Arabic Dial Ice Blue"</h3>
             <div class="product-price">
-              <span class="current-price">€173,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(39)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust " Arabic Verde oliva" -->
+        <div class="product-card" onclick="showProductModal(44)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate16.png" alt="Seiko Mod Datejust Arabic Verde oliva">
           <div class="product-info">
-            <h3 class="product-name">Seiko Mod Datejust "Arabic Verde oliva"</h3>
+            <h3 class="product-name">Seiko Mod Datejust " Arabic Verde oliva"</h3>
             <div class="product-price">
-              <span class="current-price">€173,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
         
-        <div class="product-card" onclick="showProductModal(40)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust "Arabic Steel" -->
+        <div class="product-card" onclick="showProductModal(45)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate17.png" alt="Seiko Mod Datejust Arabic Steel">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust "Arabic Steel"</h3>
             <div class="product-price">
-              <span class="current-price">€173,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
 
-        <div class="product-card" onclick="showProductModal(41)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust Esfera con degradado "Arabic White" -->
+        <div class="product-card" onclick="showProductModal(46)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate18.png" alt="Seiko Mod Datejust Esfera con degradado Arabic White">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust Esfera con degradado "Arabic White"</h3>
             <div class="product-price">
-              <span class="current-price">€173,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
 
-        <div class="product-card" onclick="showProductModal(42)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust Negro -->
+        <div class="product-card" onclick="showProductModal(47)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate19.png" alt="Seiko Mod Datejust Negro">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust Negro</h3>
             <div class="product-price">
-              <span class="current-price">€173,95</span>
-              <span class="original-price">€209,99</span>
+              <span class="current-price">$173,95</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>
 
-        <div class="product-card" onclick="showProductModal(43)">
+        <!-- Updated product name to match user's list: Seiko Mod Datejust "Blue Diamonds Dial" -->
+        <div class="product-card" onclick="showProductModal(48)">
           <div class="offer-badge">Oferta</div>
           <img src="../img/relojDatejustyDayDate20.png" alt="Seiko Mod Datejust Blue Diamonds Dial">
           <div class="product-info">
             <h3 class="product-name">Seiko Mod Datejust "Blue Diamonds Dial"</h3>
             <div class="product-price">
-              <span class="current-price">€173,45</span>
-              <span class="original-price">€209,99</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" onclick="showProductModal(44)">
-          <div class="offer-badge">Oferta</div>
-          <img src="../img/relojDatejustyDayDate21.png" alt="Seiko Mod Datejust Twotone Mujer Dial Blanco">
-          <div class="product-info">
-            <h3 class="product-name">Seiko Mod Datejust Twotone Mujer Dial Blanco</h3>
-            <div class="product-price">
-              <span class="current-price">€179,95</span>
-              <span class="original-price">€224,95</span>
+              <span class="current-price">$173,45</span>
+              <span class="original-price">$209,99</span>
             </div>
           </div>
         </div>

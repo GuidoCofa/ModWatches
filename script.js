@@ -32,13 +32,43 @@ const products = {
         "Función día y fecha",
       ],
     },
-    // Datejust/Day-Date products (IDs 29-44) - renumerados para evitar conflicto
+    // Datejust/Day-Date products (IDs 29-48) - updated with correct names and prices in dollars
     {
       id: 29,
-      name: 'Seiko Mod Day-date Oro Rosa "Roman Green"',
-      price: "€176,95",
-      originalPrice: "€229,99",
+      name: 'Seiko Mod Day-date "Roman Blue"',
+      price: "$176.95",
+      originalPrice: "$229.99",
       image: "../img/relojDatejustyDayDate1.png",
+      description: "Elegante Day-Date con esfera azul y números romanos, perfecto para ocasiones especiales.",
+      features: [
+        "Movimiento NH36 automático",
+        "Caja de acero 40mm",
+        "Esfera azul con números romanos",
+        "Brazalete President",
+        "Función día y fecha",
+      ],
+    },
+    {
+      id: 30,
+      name: 'Seiko Mod Day-date "Roman Green"',
+      price: "$176.95",
+      originalPrice: "$229.99",
+      image: "../img/relojDatejustyDayDate2.png",
+      description: "Lujoso Day-Date con esfera verde y números romanos, elegancia suprema.",
+      features: [
+        "Movimiento NH36 automático",
+        "Caja de acero 40mm",
+        "Esfera verde con números romanos",
+        "Brazalete President",
+        "Función día y fecha",
+      ],
+    },
+    {
+      id: 31,
+      name: 'Seiko Mod Day-date Oro Rosa "Roman Green"',
+      price: "$176.95",
+      originalPrice: "$229.99",
+      image: "../img/relojDatejustyDayDate3.png",
       description: "Lujoso Day-Date en oro rosa con esfera verde y números romanos, elegancia suprema.",
       features: [
         "Movimiento NH36 automático",
@@ -49,72 +79,26 @@ const products = {
       ],
     },
     {
-      id: 30,
-      name: 'Seiko Mod Day-date Oro Rosa "Roman Blue"',
-      price: "€176,95",
-      originalPrice: "€229,99",
-      image: "../img/relojDatejustyDayDate2.png",
-      description:
-        "Elegante Day-Date en oro rosa con esfera azul y números romanos, perfecto para ocasiones especiales.",
-      features: [
-        "Movimiento NH36 automático",
-        "Caja de oro rosa 40mm",
-        "Esfera azul con números romanos",
-        "Brazalete President",
-        "Función día y fecha",
-      ],
-    },
-    {
-      id: 31,
-      name: 'Seiko Mod Day-date Oro Rosa "Roman White"',
-      price: "€176,95",
-      originalPrice: "€229,99",
-      image: "../img/relojDatejustyDayDate3.png",
-      description: "Clásico Day-Date en oro rosa con esfera blanca y números romanos, elegancia atemporal.",
-      features: [
-        "Movimiento NH36 automático",
-        "Caja de oro rosa 40mm",
-        "Esfera blanca con números romanos",
-        "Brazalete President",
-        "Función día y fecha",
-      ],
-    },
-    {
       id: 32,
-      name: 'Seiko Mod Day-date Oro Rosa "Roman Black"',
-      price: "€176,95",
-      originalPrice: "€229,99",
+      name: 'Seiko Mod Day-date "Ice Blue"',
+      price: "$176.95",
+      originalPrice: "$229.99",
       image: "../img/relojDatejustyDayDate4.png",
-      description: "Sofisticado Day-Date en oro rosa con esfera negra y números romanos, máxima elegancia.",
+      description: "Sofisticado Day-Date con esfera azul hielo, máxima elegancia.",
       features: [
         "Movimiento NH36 automático",
-        "Caja de oro rosa 40mm",
-        "Esfera negra con números romanos",
+        "Caja de acero 40mm",
+        "Esfera azul hielo",
         "Brazalete President",
         "Función día y fecha",
       ],
     },
     {
       id: 33,
-      name: 'Seiko Mod Datejust "Tiffany"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate5.png",
-      description: "Datejust con la icónica esfera azul Tiffany, una pieza única y llamativa.",
-      features: [
-        "Movimiento NH35 automático",
-        "Caja de acero 40mm",
-        "Esfera azul Tiffany",
-        "Brazalete Oyster",
-        "Función fecha",
-      ],
-    },
-    {
-      id: 34,
       name: 'Seiko Mod Datejust "Wimbledon"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate6.png",
+      price: "$173.95",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate5.png",
       description: "Datejust Wimbledon con esfera verde oliva y números romanos, inspirado en el prestigioso torneo.",
       features: [
         "Movimiento NH35 automático",
@@ -125,42 +109,207 @@ const products = {
       ],
     },
     {
-      id: 35,
-      name: 'Seiko Mod Datejust "Champagne"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate7.png",
-      description: "Elegante Datejust con esfera champagne, perfecto para ocasiones formales.",
+      id: 34,
+      name: 'Seiko Mod Datejust "Verde oliva"',
+      price: "$173.95",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate6.png",
+      description: "Elegante Datejust con esfera verde oliva, perfecto para ocasiones formales.",
       features: [
         "Movimiento NH35 automático",
         "Caja de acero 40mm",
-        "Esfera champagne",
+        "Esfera verde oliva",
+        "Brazalete Oyster",
+        "Función fecha",
+      ],
+    },
+    {
+      id: 35,
+      name: 'Seiko Mod Oyster Perpetual "Tiffany"',
+      price: "$179.99",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate7.png",
+      description: "Oyster Perpetual con la icónica esfera azul Tiffany, una pieza única y llamativa.",
+      features: [
+        "Movimiento NH35 automático",
+        "Caja de acero 40mm",
+        "Esfera azul Tiffany",
         "Brazalete Oyster",
         "Función fecha",
       ],
     },
     {
       id: 36,
-      name: 'Seiko Mod Datejust "Blue Dial"',
-      price: "€176,95",
-      originalPrice: "€199,99",
+      name: 'Seiko Mod Datejust "Who cares I\'m already late?"',
+      price: "$184.95",
+      originalPrice: "$209.99",
       image: "../img/relojDatejustyDayDate8.png",
-      description: "Datejust con hermosa esfera azul, una combinación clásica y elegante.",
+      description: "Datejust con mensaje divertido, perfecto para los que siempre llegan tarde.",
       features: [
         "Movimiento NH35 automático",
         "Caja de acero 40mm",
-        "Esfera azul",
+        "Esfera con mensaje único",
         "Brazalete Oyster",
         "Función fecha",
       ],
     },
     {
       id: 37,
-      name: 'Seiko Mod Datejust "Black Dial"',
-      price: "€176,95",
-      originalPrice: "€199,99",
+      name: 'Seiko Mod Datejust "Arabic Blue"',
+      price: "$173.99",
+      originalPrice: "$209.99",
       image: "../img/relojDatejustyDayDate9.png",
-      description: "Datejust con esfera negra, un clásico atemporal para cualquier ocasión.",
+      description: "Datejust con esfera azul y números árabes, un clásico elegante.",
+      features: [
+        "Movimiento NH35 automático",
+        "Caja de acero 40mm",
+        "Esfera azul con números árabes",
+        "Brazalete Oyster",
+        "Función fecha",
+      ],
+    },
+    {
+      id: 38,
+      name: 'Seiko Mod Datejust "Arabic black"',
+      price: "$173.99",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate10.png",
+      description: "Datejust con esfera negra y números árabes, elegancia atemporal.",
+      features: [
+        "Movimiento NH35 automático",
+        "Caja de acero 40mm",
+        "Esfera negra con números árabes",
+        "Brazalete Oyster",
+        "Función fecha",
+      ],
+    },
+    {
+      id: 39,
+      name: 'Seiko Mod Oyster Perpetual "Bubbles celebration"',
+      price: "$173.99",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate11.png",
+      description: "Oyster Perpetual con diseño de burbujas celebrativo, alegría en tu muñeca.",
+      features: [
+        "Movimiento NH35 automático",
+        "Caja de acero 40mm",
+        "Esfera con diseño de burbujas",
+        "Brazalete Oyster",
+        "Función fecha",
+      ],
+    },
+    {
+      id: 40,
+      name: 'Seiko Mod Datejust "Azul degradado árabe"',
+      price: "$173.95",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate12.png",
+      description: "Datejust con esfera azul degradado y números árabes, una opción fresca y distintiva.",
+      features: [
+        "Movimiento NH35 automático",
+        "Caja de acero 40mm",
+        "Esfera azul degradado con números árabes",
+        "Brazalete Oyster",
+        "Función fecha",
+      ],
+    },
+    {
+      id: 41,
+      name: 'Seiko Mod Datejust "Ice blue Roman"',
+      price: "$173.95",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate13.png",
+      description: "Datejust con esfera azul hielo y números romanos, lujo y elegancia en cada detalle.",
+      features: [
+        "Movimiento NH35 automático",
+        "Caja de acero 40mm",
+        "Esfera azul hielo con números romanos",
+        "Brazalete Oyster",
+        "Función fecha",
+      ],
+    },
+    {
+      id: 42,
+      name: 'Seiko Mod Datejust "Arabic green"',
+      price: "$173.95",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate14.png",
+      description: "Datejust con esfera verde y números árabes, la perfecta combinación natural.",
+      features: [
+        "Movimiento NH35 automático",
+        "Caja de acero 40mm",
+        "Esfera verde con números árabes",
+        "Brazalete Oyster",
+        "Función fecha",
+      ],
+    },
+    {
+      id: 43,
+      name: 'Seiko Mod Datejust "Arabic Dial Ice Blue"',
+      price: "$173.95",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate15.png",
+      description: "Datejust con esfera azul hielo y números árabes, el detalle que marca la diferencia.",
+      features: [
+        "Movimiento NH35 automático",
+        "Caja de acero 40mm",
+        "Esfera azul hielo con números árabes",
+        "Brazalete Oyster",
+        "Función fecha",
+      ],
+    },
+    {
+      id: 44,
+      name: 'Seiko Mod Datejust "Arabic Verde oliva"',
+      price: "$173.95",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate16.png",
+      description: "Datejust con esfera verde oliva y números árabes, comodidad y estilo en perfecta armonía.",
+      features: [
+        "Movimiento NH35 automático",
+        "Caja de acero 40mm",
+        "Esfera verde oliva con números árabes",
+        "Brazalete Oyster",
+        "Función fecha",
+      ],
+    },
+    {
+      id: 45,
+      name: 'Seiko Mod Datejust "Arabic Steel"',
+      price: "$173.95",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate17.png",
+      description: "Datejust con esfera acero y números árabes, robustez y elegancia combinadas.",
+      features: [
+        "Movimiento NH35 automático",
+        "Caja de acero 40mm",
+        "Esfera acero con números árabes",
+        "Brazalete Oyster",
+        "Función fecha",
+      ],
+    },
+    {
+      id: 46,
+      name: 'Seiko Mod Datejust Esfera con degradado "Arabic White"',
+      price: "$173.95",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate18.png",
+      description: "Datejust con esfera blanca degradado y números árabes, lujo y brillantez en cada hora.",
+      features: [
+        "Movimiento NH35 automático",
+        "Caja de acero 40mm",
+        "Esfera blanca degradado con números árabes",
+        "Brazalete Oyster",
+        "Función fecha",
+      ],
+    },
+    {
+      id: 47,
+      name: "Seiko Mod Datejust Negro",
+      price: "$173.95",
+      originalPrice: "$209.99",
+      image: "../img/relojDatejustyDayDate19.png",
+      description: "Datejust negro, simplicidad y elegancia en estado puro.",
       features: [
         "Movimiento NH35 automático",
         "Caja de acero 40mm",
@@ -170,162 +319,18 @@ const products = {
       ],
     },
     {
-      id: 38,
-      name: 'Seiko Mod Datejust "White Dial"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate10.png",
-      description: "Datejust con esfera blanca, pureza y elegancia en su máxima expresión.",
-      features: [
-        "Movimiento NH35 automático",
-        "Caja de acero 40mm",
-        "Esfera blanca",
-        "Brazalete Oyster",
-        "Función fecha",
-      ],
-    },
-    {
-      id: 39,
-      name: 'Seiko Mod Datejust "Silver Dial"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate11.png",
-      description: "Datejust con esfera plateada, sofisticación y versatilidad en un solo reloj.",
-      features: [
-        "Movimiento NH35 automático",
-        "Caja de acero 40mm",
-        "Esfera plateada",
-        "Brazalete Oyster",
-        "Función fecha",
-      ],
-    },
-    {
-      id: 40,
-      name: 'Seiko Mod Datejust "Green Dial"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate12.png",
-      description: "Datejust con esfera verde, una opción fresca y distintiva.",
-      features: [
-        "Movimiento NH35 automático",
-        "Caja de acero 40mm",
-        "Esfera verde",
-        "Brazalete Oyster",
-        "Función fecha",
-      ],
-    },
-    {
-      id: 41,
-      name: 'Seiko Mod Datejust "Rose Gold"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate13.png",
-      description: "Datejust en oro rosa, lujo y elegancia en cada detalle.",
-      features: [
-        "Movimiento NH35 automático",
-        "Caja de oro rosa 40mm",
-        "Brazalete President",
-        "Función fecha",
-        "Acabado premium",
-      ],
-    },
-    {
-      id: 42,
-      name: 'Seiko Mod Datejust "Two-Tone"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate14.png",
-      description: "Datejust bicolor, la perfecta combinación de acero y oro.",
-      features: [
-        "Movimiento NH35 automático",
-        "Caja bicolor 40mm",
-        "Brazalete Jubilee",
-        "Función fecha",
-        "Diseño distintivo",
-      ],
-    },
-    {
-      id: 43,
-      name: 'Seiko Mod Datejust "Fluted Bezel"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate15.png",
-      description: "Datejust con bisel estriado, el detalle que marca la diferencia.",
-      features: [
-        "Movimiento NH35 automático",
-        "Caja de acero 40mm",
-        "Bisel estriado",
-        "Brazalete Oyster",
-        "Función fecha",
-      ],
-    },
-    {
-      id: 44,
-      name: 'Seiko Mod Datejust "Jubilee Bracelet"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate16.png",
-      description: "Datejust con brazalete Jubilee, comodidad y estilo en perfecta armonía.",
-      features: [
-        "Movimiento NH35 automático",
-        "Caja de acero 40mm",
-        "Brazalete Jubilee",
-        "Función fecha",
-        "Máxima comodidad",
-      ],
-    },
-    {
-      id: 45,
-      name: 'Seiko Mod Datejust "Oyster Bracelet"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate17.png",
-      description: "Datejust con brazalete Oyster, robustez y elegancia combinadas.",
-      features: [
-        "Movimiento NH35 automático",
-        "Caja de acero 40mm",
-        "Brazalete Oyster",
-        "Función fecha",
-        "Diseño robusto",
-      ],
-    },
-    {
-      id: 46,
-      name: 'Seiko Mod Datejust "Diamond Markers"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate18.png",
-      description: "Datejust con marcadores de diamante, lujo y brillantez en cada hora.",
-      features: [
-        "Movimiento NH35 automático",
-        "Caja de acero 40mm",
-        "Marcadores de diamante",
-        "Brazalete Oyster",
-        "Función fecha",
-      ],
-    },
-    {
-      id: 47,
-      name: 'Seiko Mod Datejust "Smooth Bezel"',
-      price: "€176,95",
-      originalPrice: "€199,99",
-      image: "../img/relojDatejustyDayDate19.png",
-      description: "Datejust con bisel liso, simplicidad y elegancia en estado puro.",
-      features: ["Movimiento NH35 automático", "Caja de acero 40mm", "Bisel liso", "Brazalete Oyster", "Función fecha"],
-    },
-    {
       id: 48,
-      name: 'Seiko Mod Datejust "Cyclops Lens"',
-      price: "€176,95",
-      originalPrice: "€199,99",
+      name: 'Seiko Mod Datejust "Blue Diamonds Dial"',
+      price: "$173.45",
+      originalPrice: "$209.99",
       image: "../img/relojDatejustyDayDate20.png",
-      description: "Datejust con lente Cyclops, la fecha siempre visible y clara.",
+      description: "Datejust con esfera azul y marcadores de diamante, la fecha siempre visible y clara.",
       features: [
         "Movimiento NH35 automático",
         "Caja de acero 40mm",
-        "Lente Cyclops",
+        "Esfera azul con marcadores de diamante",
         "Brazalete Oyster",
-        "Función fecha amplificada",
+        "Función fecha",
       ],
     },
     {
@@ -1820,111 +1825,118 @@ function initTestimonialsCarousel() {
 }
 
 // ------------------------------------------------------------------
-// New Mobile Menu Toggle Function
+// FUNCIONES PARA MENÚ MÓVIL Y DROPDOWNS
+
+// Abre/cierra el menú hamburguesa
 function toggleMobileMenu() {
-  const mobileNav = document.getElementById("mobile-nav")
-  const mobileToggle = document.querySelector(".mobile-menu-toggle")
+  const mobileNav = document.getElementById("mobile-nav");
+  const mobileToggle = document.querySelector(".mobile-menu-toggle");
 
   if (!mobileNav || !mobileToggle) {
-    console.log("[v0] Mobile menu elements not found")
-    return
+    console.log("[v0] Mobile menu elements not found");
+    return;
   }
 
-  mobileNav.classList.toggle("active")
-  mobileToggle.classList.toggle("active")
+  mobileNav.classList.toggle("active");
+  mobileToggle.classList.toggle("active");
 }
 
-// ------------------------------------------------------------------
-// Mobile Dropdown Toggle Function
+// Abre/cierra el dropdown “Catálogo” dentro del menú móvil
 function toggleMobileDropdown(event) {
-  event.preventDefault()
-  event.stopPropagation()
-  
-  const dropdown = event.target.closest('.mobile-dropdown')
-  const dropdownMenu = dropdown.querySelector('.mobile-dropdown-menu')
-  
+  event.preventDefault();
+  event.stopPropagation();
+
+  const dropdown = event.currentTarget.closest('.mobile-dropdown');
+  const dropdownMenu = dropdown.querySelector('.mobile-dropdown-menu');
+
   if (!dropdown || !dropdownMenu) {
-    console.log("[v0] Mobile dropdown elements not found")
-    return
+    console.log("[v1] Mobile dropdown elements not found");
+    return;
   }
 
-  // Close all other mobile dropdowns
+  // Cierra otros dropdowns abiertos
   document.querySelectorAll('.mobile-dropdown-menu').forEach(menu => {
     if (menu !== dropdownMenu) {
-      menu.classList.remove('active')
+      menu.classList.remove('active');
     }
-  })
+  });
 
-  // Toggle current dropdown
-  dropdownMenu.classList.toggle('active')
-  
-  // If dropdown is being closed, also close the mobile menu
-  if (!dropdownMenu.classList.contains('active')) {
-    const mobileNav = document.getElementById('mobile-nav')
-    const mobileToggle = document.querySelector('.mobile-menu-toggle')
-    if (mobileNav && mobileToggle) {
-      mobileNav.classList.remove('active')
-      mobileToggle.classList.remove('active')
-    }
-  }
+  // Alterna este dropdown
+  dropdownMenu.classList.toggle('active');
 }
 
 // ------------------------------------------------------------------
-// Dropdown functionality for mobile and desktop
+// CERRAR EL MENÚ MÓVIL AL HACER CLIC EN LINKS NORMALES
+// (pero NO cerrar cuando se pulsa el toggle de Catálogo)
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      // Si es el toggle del Catálogo NO cerrar el menú hamburguesa
+      if (link.classList.contains('dropdown-toggle')) {
+        e.preventDefault();
+        return; // salir sin cerrar menú
+      }
+      // Para cualquier otro link normal, sí cerramos el menú hamburguesa
+      const mobileNav = document.getElementById("mobile-nav");
+      const mobileToggle = document.querySelector(".mobile-menu-toggle");
+      if (mobileNav && mobileToggle) {
+        mobileNav.classList.remove("active");
+        mobileToggle.classList.remove("active");
+      }
+    });
+  });
+});
+
+// ------------------------------------------------------------------
+// OPCIONAL: Dropdowns en desktop si quieres mantenerlos
 function toggleDropdown(dropdownElement) {
-  console.log("[v0] toggleDropdown called with:", dropdownElement)
-  
-  // Close all other dropdowns first
+  console.log("[v0] toggleDropdown called with:", dropdownElement);
+
+  // Cierra otros dropdowns primero
   document.querySelectorAll('.dropdown').forEach(dropdown => {
     if (dropdown !== dropdownElement) {
-      dropdown.classList.remove('active')
-      console.log("[v0] Closed dropdown:", dropdown)
+      dropdown.classList.remove('active');
+      console.log("[v0] Closed dropdown:", dropdown);
     }
-  })
-  
-  // Toggle current dropdown
-  dropdownElement.classList.toggle('active')
-  console.log("[v0] Toggled dropdown, active class:", dropdownElement.classList.contains('active'))
+  });
+
+  // Alterna este dropdown
+  dropdownElement.classList.toggle('active');
+  console.log("[v0] Toggled dropdown, active class:", dropdownElement.classList.contains('active'));
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Close mobile menu when clicking on nav links
-  const mobileNavLinks = document.querySelectorAll(".mobile-nav-link")
-  const mobileNav = document.getElementById("mobile-nav")
-  const mobileToggle = document.querySelector(".mobile-menu-toggle")
-
-  mobileNavLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      if (mobileNav && mobileNav.classList.contains("active")) {
-        mobileNav.classList.remove("active")
-        mobileToggle.classList.remove("active")
+// CERRAR EL MENÚ MÓVIL AL HACER CLIC EN LINKS NORMALES
+// (pero NO cerrar cuando se pulsa el toggle de Catálogo)
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      // Si es el toggle del Catálogo NO cerrar el menú hamburguesa
+      if (link.classList.contains('dropdown-toggle')) {
+        e.preventDefault();
+        return; // salir sin cerrar menú
       }
-    })
-  })
+      // Para cualquier otro link normal, sí cerramos el menú hamburguesa
+      const mobileNav = document.getElementById("mobile-nav");
+      const mobileToggle = document.querySelector(".mobile-menu-toggle");
+      if (mobileNav && mobileToggle) {
+        mobileNav.classList.remove("active");
+        mobileToggle.classList.remove("active");
+      }
+    });
+  });
 
-  // Close mobile menu when clicking outside
+  // Cerrar menú móvil al hacer clic fuera
   document.addEventListener('click', (event) => {
-    const mobileNav = document.getElementById("mobile-nav")
-    const mobileToggle = document.querySelector(".mobile-menu-toggle")
-    
+    const mobileNav = document.getElementById("mobile-nav");
+    const mobileToggle = document.querySelector(".mobile-menu-toggle");
     if (mobileNav && mobileNav.classList.contains("active")) {
       if (!mobileNav.contains(event.target) && !mobileToggle.contains(event.target)) {
-        mobileNav.classList.remove("active")
-        mobileToggle.classList.remove("active")
+        mobileNav.classList.remove("active");
+        mobileToggle.classList.remove("active");
       }
     }
-  })
+  });
+});
 
-  // Add click event listeners to dropdown links for better functionality
-  const dropdownLinks = document.querySelectorAll('.dropdown > .nav-link')
-  dropdownLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault() // Prevent default link behavior
-      const dropdown = link.parentElement
-      toggleDropdown(dropdown)
-    })
-  })
-})
 
 // ------------------------------------------------------------------
 
@@ -2159,3 +2171,11 @@ document.querySelectorAll('.dropdown > .nav-link').forEach(link=>{
   });
 });
 
+function toggleMobileDropdown(event) {
+  event.preventDefault();            // <- evita que el enlace haga scroll o cierre el menú
+  event.stopPropagation();           // <- evita que se propague al resto del menú
+  const dropdownMenu = event.currentTarget
+      .closest('.mobile-dropdown')
+      .querySelector('.mobile-dropdown-menu');
+  dropdownMenu.classList.toggle('active');
+}

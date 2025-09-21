@@ -9,94 +9,93 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-      <!-- Header -->
-  <header class="header">
-    <!-- Promo Banner -->
-    <div class="promo-banner">
-      <div class="container">
-        <span class="promo-text">$15 de descuento si te llevas 3 relojes →</span>
-      </div>
+<header class="header">
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    <div class="container">
+      <span class="promo-text">$15 de descuento si te llevas 3 relojes →</span>
     </div>
-    
-    <!-- Main Navigation -->
-    <nav class="main-nav">
-      <div class="container">
-        <div class="nav-wrapper">
-          <!-- Logo -->
-          <div class="logo">
-            <a href="../index.html">
-              <h1>MOD<span class="crown-icon">⌚</span>WATCHES</h1>
-            </a>
+  </div>
+
+  <!-- LOGO centrado -->
+  <div class="header-top">
+    <div class="container">
+      <a href="../index.html" class="logo-center">
+        <h1>MOD<span class="crown-icon">⌚</span>WATCHES</h1>
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVBAR centrada -->
+  <nav class="header-bottom">
+    <div class="container">
+      <ul class="nav-list center-nav">
+        <li><a href="../index.html" class="nav-link active">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#catalogo" class="nav-link dropdown-toggle">
+            Catálogo <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="../catalogos/catalog-daytona.html">Daytona</a>
+            <a href="../catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+            <a href="../catalogos/catalog-submariner.html">Submariner</a>
+            <a href="../catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+            <a href="../catalogos/catalog-land-dweller.html">Land-Dweller</a>
+            <a href="../catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+            <a href="../catalogos/catalog-royal-oak.html">Royal Oak</a>
+            <a href="../catalogos/catalog-yacht-master.html">Yacht Master</a>
+            <a href="../catalogos/catalog-santos.html">Santos</a>
+            <a href="../catalogos/catalog-speedmaster.html">SpeedMaster</a>
+            <a href="../catalogos/catalog-prx.html">PRX</a>
+            <a href="../catalogos/catalog-accesorios.html">Accesorios</a>
+            <a href="../catalogos/catalog-all.html">Ver todo</a>
           </div>
-          
-          <!-- Desktop Navigation -->
-          <div class="desktop-nav">
-            <ul class="nav-list">
-              <li><a href="../index.html" class="nav-link">Inicio</a></li>
-              <li class="dropdown">
-                <a href="#catalogo" class="nav-link dropdown-toggle">
-                  Catálogo <i class="fas fa-chevron-down"></i>
-                </a>
-                <div class="dropdown-menu">
-                  <a href="catalog-daytona.html">Daytona</a>
-                  <a href="catalog-gmt-master-2.html">GMT Master II</a>
-                  <a href="catalog-submariner.html">Submariner</a>
-                  <a href="catalog-datejust-daydate.html">Datejust y Day-Date</a>
-                  <a href="catalog-land-dweller.html">Land-Dweller</a>
-                  <a href="catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
-                  <a href="catalog-royal-oak.html">Royal Oak</a>
-                  <a href="catalog-yacht-master.html">Yacht Master</a>
-                  <a href="catalog-santos.html">Santos</a>
-                  <a href="catalog-speedmaster.html">SpeedMaster</a>
-                  <a href="catalog-prx.html">PRX</a>
-                  <a href="catalog-accesorios.html">Accesorios</a>
-                  <a href="catalog-all.html">Ver todo</a>
-                </div>
-              </li>
-              <li><a href="../personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a></li>
-              <li><a href="../informacion-contacto.html" class="nav-link">Contacto</a></li>
-            </ul>
-          </div>
-          
-          <!-- Mobile Menu Toggle -->
-          <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-          </button>
-        </div>
-        
-        <!-- Mobile Navigation -->
-        <div class="mobile-nav" id="mobile-nav">
-          <ul class="mobile-nav-list">
-            <li><a href="../index.html" class="mobile-nav-link">Inicio</a></li>
-            <li class="mobile-dropdown">
-              <a href="#catalogo" class="mobile-nav-link dropdown-toggle" onclick="toggleMobileDropdown(event)">
-                Catálogo <i class="fas fa-chevron-down"></i>
-              </a>
-              <div class="mobile-dropdown-menu">
-                <a href="catalog-daytona.html">Daytona</a>
-                <a href="catalog-gmt-master-2.html">GMT Master II</a>
-                <a href="catalog-submariner.html">Submariner</a>
-                <a href="catalog-datejust-daydate.html">Datejust y Day-Date</a>
-                <a href="catalog-land-dweller.html">Land-Dweller</a>
-                <a href="catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
-                <a href="catalog-royal-oak.html">Royal Oak</a>
-                <a href="catalog-yacht-master.html">Yacht Master</a>
-                <a href="catalog-santos.html">Santos</a>
-                <a href="catalog-speedmaster.html">SpeedMaster</a>
-                <a href="catalog-prx.html">PRX</a>
-                <a href="catalog-accesorios.html">Accesorios</a>
-                <a href="catalog-all.html">Ver todo</a>
-              </div>
-            </li>
-            <li><a href="../personalizar-reloj.html" class="mobile-nav-link">Personalizar mi reloj</a></li>
-            <li><a href="../informacion-contacto.html" class="mobile-nav-link">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+        </li>
+        <li><a href="../personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a></li>
+        <li><a href="../informacion-contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+      <!-- Botón menú móvil -->
+<button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+</button>
+
+<!-- Navegación móvil -->
+<div class="mobile-nav" id="mobile-nav">
+  <ul class="mobile-nav-list">
+    <li><a href="../index.html" class="mobile-nav-link">Inicio</a></li>
+   <li class="mobile-dropdown">
+<a href="javascript:void(0)" class="mobile-nav-link dropdown-toggle" onclick="toggleMobileDropdown(event)">
+  Catálogo <i class="fas fa-chevron-down"></i>
+</a>
+
+  <div class="mobile-dropdown-menu">
+    <a href="../catalogos/catalog-daytona.html">Daytona</a>
+    <a href="../catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+    <a href="../catalogos/catalog-submariner.html">Submariner</a>
+    <a href="../catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+    <a href="../catalogos/catalog-land-dweller.html">Land-Dweller</a>
+    <a href="../catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+    <a href="../catalogos/catalog-royal-oak.html">Royal Oak</a>
+    <a href="../catalogos/catalog-yacht-master.html">Yacht Master</a>
+    <a href="../catalogos/catalog-santos.html">Santos</a>
+    <a href="../catalogos/catalog-speedmaster.html">SpeedMaster</a>
+    <a href="../catalogos/catalog-prx.html">PRX</a>
+    <a href="../catalogos/catalog-accesorios.html">Accesorios</a>
+    <a href="../catalogos/catalog-all.html">Ver todo</a>
+  </div>
+</li>
+
+    <li><a href="../personalizar-reloj.html" class="mobile-nav-link">Personalizar mi reloj</a></li>
+    <li><a href="../informacion-contacto.html" class="mobile-nav-link">Contacto</a></li>
+  </ul>
+</div>
+
+    </div>
+  </nav>
+</header>
+
 
     <!-- Collections Section -->
     <main class="policy-page">
