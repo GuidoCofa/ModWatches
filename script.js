@@ -1821,8 +1821,13 @@ function initTestimonialsCarousel() {
 
 // ------------------------------------------------------------------
 function toggleMobileMenu() {
-  const navMenu = document.getElementById("nav-menu")
+  const navMenu = document.querySelector(".nav-menu")
   const mobileToggle = document.querySelector(".mobile-menu-toggle i")
+
+  if (!navMenu || !mobileToggle) {
+    console.log("[v0] Mobile menu elements not found")
+    return
+  }
 
   navMenu.classList.toggle("active")
 
@@ -1838,17 +1843,36 @@ function toggleMobileMenu() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-link")
-  const navMenu = document.getElementById("nav-menu")
+  const navMenu = document.querySelector(".nav-menu")
   const mobileToggle = document.querySelector(".mobile-menu-toggle i")
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      if (navMenu.classList.contains("active")) {
+      if (navMenu && navMenu.classList.contains("active")) {
         navMenu.classList.remove("active")
-        mobileToggle.classList.remove("fa-times")
-        mobileToggle.classList.add("fa-bars")
+        if (mobileToggle) {
+          mobileToggle.classList.remove("fa-times")
+          mobileToggle.classList.add("fa-bars")
+        }
       }
     })
+  })
+
+  // Close mobile menu when clicking outside
+  document.addEventListener("click", (event) => {
+    const navMenu = document.querySelector(".nav-menu")
+    const mobileToggle = document.querySelector(".mobile-menu-toggle")
+    
+    if (navMenu && navMenu.classList.contains("active")) {
+      if (!navMenu.contains(event.target) && !mobileToggle.contains(event.target)) {
+        navMenu.classList.remove("active")
+        const mobileToggleIcon = document.querySelector(".mobile-menu-toggle i")
+        if (mobileToggleIcon) {
+          mobileToggleIcon.classList.remove("fa-times")
+          mobileToggleIcon.classList.add("fa-bars")
+        }
+      }
+    }
   })
 })
 

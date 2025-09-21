@@ -9,15 +9,22 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header-top">
-    <div class="container">
-      <p>$15 de descuento si te llevas 3 relojes →</p>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <span class="promo-text">$15 de descuento si te llevas 3 relojes →</span>
+      </div>
     </div>
-  </header>
-
-  <nav class="navbar">
+    
+    <nav class="navbar">
     <div class="container">
       <div class="nav-content">
+        <!-- Mobile menu toggle button -->
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        
         <div class="logo">
           <h1>MOD<span class="crown-icon">⌚</span>WATCHES</h1>
         </div>
@@ -37,7 +44,8 @@
         <a href="../informacion-contacto.html" class="nav-link">Contacto</a>
       </div>
     </div>
-  </nav>
+    </nav>
+  </header>
 
   <main class="policy-page">
     <div class="container">
