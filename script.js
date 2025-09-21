@@ -1820,24 +1820,52 @@ function initTestimonialsCarousel() {
 }
 
 // ------------------------------------------------------------------
+// New Mobile Menu Toggle Function
 function toggleMobileMenu() {
-  const navMenu = document.querySelector(".nav-menu")
-  const mobileToggle = document.querySelector(".mobile-menu-toggle i")
+  const mobileNav = document.getElementById("mobile-nav")
+  const mobileToggle = document.querySelector(".mobile-menu-toggle")
 
-  if (!navMenu || !mobileToggle) {
+  if (!mobileNav || !mobileToggle) {
     console.log("[v0] Mobile menu elements not found")
     return
   }
 
-  navMenu.classList.toggle("active")
+  mobileNav.classList.toggle("active")
+  mobileToggle.classList.toggle("active")
+}
 
-  // Change hamburger to X when menu is open
-  if (navMenu.classList.contains("active")) {
-    mobileToggle.classList.remove("fa-bars")
-    mobileToggle.classList.add("fa-times")
-  } else {
-    mobileToggle.classList.remove("fa-times")
-    mobileToggle.classList.add("fa-bars")
+// ------------------------------------------------------------------
+// Mobile Dropdown Toggle Function
+function toggleMobileDropdown(event) {
+  event.preventDefault()
+  event.stopPropagation()
+  
+  const dropdown = event.target.closest('.mobile-dropdown')
+  const dropdownMenu = dropdown.querySelector('.mobile-dropdown-menu')
+  
+  if (!dropdown || !dropdownMenu) {
+    console.log("[v0] Mobile dropdown elements not found")
+    return
+  }
+
+  // Close all other mobile dropdowns
+  document.querySelectorAll('.mobile-dropdown-menu').forEach(menu => {
+    if (menu !== dropdownMenu) {
+      menu.classList.remove('active')
+    }
+  })
+
+  // Toggle current dropdown
+  dropdownMenu.classList.toggle('active')
+  
+  // If dropdown is being closed, also close the mobile menu
+  if (!dropdownMenu.classList.contains('active')) {
+    const mobileNav = document.getElementById('mobile-nav')
+    const mobileToggle = document.querySelector('.mobile-menu-toggle')
+    if (mobileNav && mobileToggle) {
+      mobileNav.classList.remove('active')
+      mobileToggle.classList.remove('active')
+    }
   }
 }
 
@@ -1860,35 +1888,29 @@ function toggleDropdown(dropdownElement) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll(".nav-link")
-  const navMenu = document.querySelector(".nav-menu")
-  const mobileToggle = document.querySelector(".mobile-menu-toggle i")
+  // Close mobile menu when clicking on nav links
+  const mobileNavLinks = document.querySelectorAll(".mobile-nav-link")
+  const mobileNav = document.getElementById("mobile-nav")
+  const mobileToggle = document.querySelector(".mobile-menu-toggle")
 
-  navLinks.forEach((link) => {
+  mobileNavLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      if (navMenu && navMenu.classList.contains("active")) {
-        navMenu.classList.remove("active")
-        if (mobileToggle) {
-          mobileToggle.classList.remove("fa-times")
-          mobileToggle.classList.add("fa-bars")
-        }
+      if (mobileNav && mobileNav.classList.contains("active")) {
+        mobileNav.classList.remove("active")
+        mobileToggle.classList.remove("active")
       }
     })
   })
 
   // Close mobile menu when clicking outside
-  document.addEventListener("click", (event) => {
-    const navMenu = document.querySelector(".nav-menu")
+  document.addEventListener('click', (event) => {
+    const mobileNav = document.getElementById("mobile-nav")
     const mobileToggle = document.querySelector(".mobile-menu-toggle")
     
-    if (navMenu && navMenu.classList.contains("active")) {
-      if (!navMenu.contains(event.target) && !mobileToggle.contains(event.target)) {
-        navMenu.classList.remove("active")
-        const mobileToggleIcon = document.querySelector(".mobile-menu-toggle i")
-        if (mobileToggleIcon) {
-          mobileToggleIcon.classList.remove("fa-times")
-          mobileToggleIcon.classList.add("fa-bars")
-        }
+    if (mobileNav && mobileNav.classList.contains("active")) {
+      if (!mobileNav.contains(event.target) && !mobileToggle.contains(event.target)) {
+        mobileNav.classList.remove("active")
+        mobileToggle.classList.remove("active")
       }
     }
   })
