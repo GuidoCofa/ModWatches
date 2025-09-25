@@ -4,8 +4,8 @@ const products = {
     {
       id: 1,
       name: "CrownMods Datejust 'Panda'",
-      price: "$189.95",
-      originalPrice: "$219.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "./img/seikomodpanda.png",
       description:
         "Reloj Datejust con esfera blanca y detalles negros, inspirado en el icónico diseño 'Panda'. Movimiento automático NH35, caja de acero inoxidable de 40mm.",
@@ -20,8 +20,8 @@ const products = {
     {
       id: 2,
       name: "CrownMods Day-Date 'Roman Blue'",
-      price: "$194.95",
-      originalPrice: "$249.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "./img/seikomodpepsi.png",
       description: "Elegante Day-Date con esfera azul y números romanos. Perfecto para ocasiones formales.",
       features: [
@@ -36,8 +36,8 @@ const products = {
     {
       id: 29,
       name: 'Seiko Mod Day-date "Roman Blue"',
-      price: "$176.95",
-      originalPrice: "$229.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate1.png",
       description: "Elegante Day-Date con esfera azul y números romanos, perfecto para ocasiones especiales.",
       features: [
@@ -51,8 +51,8 @@ const products = {
     {
       id: 30,
       name: 'Seiko Mod Day-date "Roman Green"',
-      price: "$176.95",
-      originalPrice: "$229.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate2.png",
       description: "Lujoso Day-Date con esfera verde y números romanos, elegancia suprema.",
       features: [
@@ -66,8 +66,8 @@ const products = {
     {
       id: 31,
       name: 'Seiko Mod Day-date Oro Rosa "Roman Green"',
-      price: "$176.95",
-      originalPrice: "$229.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate3.png",
       description: "Lujoso Day-Date en oro rosa con esfera verde y números romanos, elegancia suprema.",
       features: [
@@ -81,8 +81,8 @@ const products = {
     {
       id: 32,
       name: 'Seiko Mod Day-date "Ice Blue"',
-      price: "$176.95",
-      originalPrice: "$229.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate4.png",
       description: "Sofisticado Day-Date con esfera azul hielo, máxima elegancia.",
       features: [
@@ -96,8 +96,8 @@ const products = {
     {
       id: 33,
       name: 'Seiko Mod Datejust "Wimbledon"',
-      price: "$173.95",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate5.png",
       description: "Datejust Wimbledon con esfera verde oliva y números romanos, inspirado en el prestigioso torneo.",
       features: [
@@ -111,8 +111,8 @@ const products = {
     {
       id: 34,
       name: 'Seiko Mod Datejust "Verde oliva"',
-      price: "$173.95",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate6.png",
       description: "Elegante Datejust con esfera verde oliva, perfecto para ocasiones formales.",
       features: [
@@ -126,8 +126,8 @@ const products = {
     {
       id: 35,
       name: 'Seiko Mod Oyster Perpetual "Tiffany"',
-      price: "$179.99",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate7.png",
       description: "Oyster Perpetual con la icónica esfera azul Tiffany, una pieza única y llamativa.",
       features: [
@@ -141,8 +141,8 @@ const products = {
     {
       id: 36,
       name: 'Seiko Mod Datejust "Who cares I\'m already late?"',
-      price: "$184.95",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate8.png",
       description: "Datejust con mensaje divertido, perfecto para los que siempre llegan tarde.",
       features: [
@@ -156,8 +156,8 @@ const products = {
     {
       id: 37,
       name: 'Seiko Mod Datejust "Arabic Blue"',
-      price: "$173.99",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate9.png",
       description: "Datejust con esfera azul y números árabes, un clásico elegante.",
       features: [
@@ -171,8 +171,8 @@ const products = {
     {
       id: 38,
       name: 'Seiko Mod Datejust "Arabic black"',
-      price: "$173.99",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate10.png",
       description: "Datejust con esfera negra y números árabes, elegancia atemporal.",
       features: [
@@ -186,8 +186,8 @@ const products = {
     {
       id: 39,
       name: 'Seiko Mod Oyster Perpetual "Bubbles celebration"',
-      price: "$173.99",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate11.png",
       description: "Oyster Perpetual con diseño de burbujas celebrativo, alegría en tu muñeca.",
       features: [
@@ -201,8 +201,8 @@ const products = {
     {
       id: 40,
       name: 'Seiko Mod Datejust "Azul degradado árabe"',
-      price: "$173.95",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate12.png",
       description: "Datejust con esfera azul degradado y números árabes, una opción fresca y distintiva.",
       features: [
@@ -216,8 +216,8 @@ const products = {
     {
       id: 41,
       name: 'Seiko Mod Datejust "Ice blue Roman"',
-      price: "$173.95",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate13.png",
       description: "Datejust con esfera azul hielo y números romanos, lujo y elegancia en cada detalle.",
       features: [
@@ -231,8 +231,8 @@ const products = {
     {
       id: 42,
       name: 'Seiko Mod Datejust "Arabic green"',
-      price: "$173.95",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate14.png",
       description: "Datejust con esfera verde y números árabes, la perfecta combinación natural.",
       features: [
@@ -246,8 +246,8 @@ const products = {
     {
       id: 43,
       name: 'Seiko Mod Datejust "Arabic Dial Ice Blue"',
-      price: "$173.95",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate15.png",
       description: "Datejust con esfera azul hielo y números árabes, el detalle que marca la diferencia.",
       features: [
@@ -261,8 +261,8 @@ const products = {
     {
       id: 44,
       name: 'Seiko Mod Datejust "Arabic Verde oliva"',
-      price: "$173.95",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate16.png",
       description: "Datejust con esfera verde oliva y números árabes, comodidad y estilo en perfecta armonía.",
       features: [
@@ -276,8 +276,8 @@ const products = {
     {
       id: 45,
       name: 'Seiko Mod Datejust "Arabic Steel"',
-      price: "$173.95",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate17.png",
       description: "Datejust con esfera acero y números árabes, robustez y elegancia combinadas.",
       features: [
@@ -291,8 +291,8 @@ const products = {
     {
       id: 46,
       name: 'Seiko Mod Datejust Esfera con degradado "Arabic White"',
-      price: "$173.95",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate18.png",
       description: "Datejust con esfera blanca degradado y números árabes, lujo y brillantez en cada hora.",
       features: [
@@ -306,8 +306,8 @@ const products = {
     {
       id: 47,
       name: "Seiko Mod Datejust Negro",
-      price: "$173.95",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate19.png",
       description: "Datejust negro, simplicidad y elegancia en estado puro.",
       features: [
@@ -321,8 +321,8 @@ const products = {
     {
       id: 48,
       name: 'Seiko Mod Datejust "Blue Diamonds Dial"',
-      price: "$173.45",
-      originalPrice: "$209.99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate20.png",
       description: "Datejust con esfera azul y marcadores de diamante, la fecha siempre visible y clara.",
       features: [
@@ -336,8 +336,8 @@ const products = {
     {
       id: 49,
       name: 'Seiko Mod Datejust "Presidential"',
-      price: "€176,95",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojDatejustyDayDate21.png",
       description: "Datejust Presidential, el reloj de los líderes y visionarios.",
       features: [
@@ -353,8 +353,8 @@ const products = {
     {
       id: 3,
       name: "CrownMods Submariner 'Negro'",
-      price: "$194.95",
-      originalPrice: "$229.99",
+      price: "$245",
+      originalPrice: "$310",
       image: "./img/seikomodromanblue.png",
       description: "Submariner clásico con esfera negra, perfecto para actividades acuáticas y uso diario.",
       features: [
@@ -368,8 +368,8 @@ const products = {
     {
       id: 4,
       name: "CrownMods Submariner 'Hulk'",
-      price: "$209.95",
-      originalPrice: "$259.95",
+      price: "$245",
+      originalPrice: "$310",
       image: "./img/seikomodroyaloak.png",
       description: "Submariner verde 'Hulk', una pieza llamativa y deportiva con excelente legibilidad.",
       features: [
@@ -383,8 +383,8 @@ const products = {
     {
       id: 21,
       name: 'Seiko Mod Submariner "Hulk"',
-      price: "€176,95",
-      originalPrice: "€239,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojsubmariner1.png", // Hulk - imagen correcta
       description: "Submariner verde 'Hulk', una pieza llamativa y deportiva con excelente legibilidad submarina.",
       features: [
@@ -398,8 +398,8 @@ const products = {
     {
       id: 22,
       name: 'Seiko Mod Submariner "Negro"',
-      price: "€176,95",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojsubmariner2.png", // Negro - imagen correcta
       description: "Submariner clásico con esfera negra, perfecto para actividades acuáticas y uso diario.",
       features: [
@@ -413,8 +413,8 @@ const products = {
     {
       id: 23,
       name: 'Seiko Mod Submariner "Dos tonos"',
-      price: "€182,95",
-      originalPrice: "€229,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojsubmariner3.png", // Dos tonos - imagen correcta
       description: "Submariner bicolor que combina acero y oro, elegancia deportiva para cualquier ocasión.",
       features: [
@@ -428,8 +428,8 @@ const products = {
     {
       id: 24,
       name: 'Seiko Mod Submariner "Starbucks"',
-      price: "€176,95",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojsubmariner4.png",
       description: "Submariner con bizel verde y negro 'Starbucks', una combinación única y llamativa.",
       features: [
@@ -443,8 +443,8 @@ const products = {
     {
       id: 25,
       name: 'Seiko Mod Submariner "Bluesy"',
-      price: "€176,95",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojsubmariner5.png",
       description: "Submariner bicolor con esfera azul 'Bluesy', perfecta combinación de lujo y deportividad.",
       features: [
@@ -458,8 +458,8 @@ const products = {
     {
       id: 26,
       name: 'Seiko Mod Submariner "Vintage"',
-      price: "€176,99",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojSubmariner6.png", // Vintage - imagen corregida
       description: "Submariner con estética vintage, un homenaje a los modelos clásicos de los años 60.",
       features: [
@@ -473,8 +473,8 @@ const products = {
     {
       id: 27,
       name: 'Seiko Mod Submariner "Azul cielo"',
-      price: "€176,99",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojSubmariner7.png", // Azul cielo - imagen corregida
       description: "Submariner con esfera azul cielo, una variante fresca y moderna del clásico diseño.",
       features: [
@@ -488,8 +488,8 @@ const products = {
     {
       id: 28,
       name: 'Seiko Mod Submariner "Azul"',
-      price: "€176,95",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojSubmariner8.png", // Azul - imagen corregida
       description: "Submariner azul clásico, elegancia marina en su máxima expresión para el buceador moderno.",
       features: [
@@ -505,8 +505,8 @@ const products = {
     {
       id: 5,
       name: 'Seiko Mod Daytona "Ice Blue"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$235",
+      originalPrice: "$280",
       image: "../img/daytonareloj1.png",
       description:
         "Cronógrafo Daytona con esfera azul hielo, inspirado en el mundo de las carreras. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
@@ -521,8 +521,8 @@ const products = {
     {
       id: 6,
       name: 'Seiko Mod Daytona "Panda"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$235",
+      originalPrice: "$280",
       image: "../img/daytonareloj2.png",
       description:
         "Cronógrafo Daytona con esfera blanca y subdiales negros, inspirado en el mundo de las carreras. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
@@ -537,8 +537,8 @@ const products = {
     {
       id: 7,
       name: 'Seiko Mod Daytona "Plata y azul marino"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$235",
+      originalPrice: "$280",
       image: "../img/daytonareloj3.png",
       description:
         "Cronógrafo Daytona con elegante combinación de plata y azul marino. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
@@ -553,8 +553,8 @@ const products = {
     {
       id: 8,
       name: 'Seiko Mod Daytona "Negro"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$235",
+      originalPrice: "$280",
       image: "../img/daytonareloj4.png",
       description:
         "Cronógrafo Daytona con esfera negra, perfecto para un look deportivo y elegante. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
@@ -569,8 +569,8 @@ const products = {
     {
       id: 9,
       name: 'Seiko Mod Daytona "Plata y verde"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$235",
+      originalPrice: "$280",
       image: "../img/daytonareloj5.png",
       description:
         "Cronógrafo Daytona con distintiva combinación de plata y verde. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
@@ -585,8 +585,8 @@ const products = {
     {
       id: 10,
       name: 'Seiko Mod Daytona "Oro y negro"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$235",
+      originalPrice: "$280",
       image: "../img/daytonareloj6.png",
       description:
         "Cronógrafo Daytona con lujosa combinación de oro y negro. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
@@ -601,8 +601,8 @@ const products = {
     {
       id: 11,
       name: 'Seiko Mod Daytona "Raimbow" Oro Rosa',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$235",
+      originalPrice: "$280",
       image: "../img/daytonareloj7.png",
       description:
         "Cronógrafo Daytona con detalles multicolor y oro rosa, una pieza única y llamativa. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
@@ -617,8 +617,8 @@ const products = {
     {
       id: 12,
       name: 'Seiko Mod Daytona "John Mayer dorado y verde"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$235",
+      originalPrice: "$280",
       image: "../img/daytonareloj8.png",
       description:
         "Cronógrafo Daytona inspirado en John Mayer con elegante combinación dorada y verde. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
@@ -633,8 +633,8 @@ const products = {
     {
       id: 13,
       name: 'Seiko Mod Daytona "Bicolor negro"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$235",
+      originalPrice: "$280",
       image: "../img/daytonareloj9.png",
       description:
         "Cronógrafo Daytona con diseño bicolor negro, perfecto para cualquier ocasión. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
@@ -651,8 +651,8 @@ const products = {
     {
       id: 14,
       name: 'Seiko Mod GMT Master II "Bruce Wayne"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojgmtmaster1.png",
       description:
         "GMT Master II con esfera negra y bisel negro, inspirado en el estilo elegante de Bruce Wayne. Perfecto para viajeros frecuentes.",
@@ -661,8 +661,8 @@ const products = {
     {
       id: 15,
       name: 'Seiko Mod GMT Master II "Pepsi"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojgmtmaster2.png",
       description:
         "Icónico GMT Master II con bisel rojo y azul 'Pepsi', perfecto para mostrar dos zonas horarias simultáneamente.",
@@ -677,8 +677,8 @@ const products = {
     {
       id: 16,
       name: 'Seiko Mod GMT Master II "Batman"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojgmtmaster3.png",
       description:
         "GMT Master II con bisel negro y azul 'Batman', una combinación elegante y deportiva para el viajero moderno.",
@@ -693,8 +693,8 @@ const products = {
     {
       id: 17,
       name: 'Seiko Mod GMT Master II "Sprite"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojgmtmaster4.png",
       description: "GMT Master II con bisel verde y negro 'Sprite', una opción fresca y llamativa para destacar.",
       features: [
@@ -708,8 +708,8 @@ const products = {
     {
       id: 18,
       name: 'Seiko Mod GMT Master II dorado "Bruce Wayne"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojgmtmaster5.png",
       description: "GMT Master II en oro con esfera negra, la versión más lujosa del icónico Bruce Wayne.",
       features: [
@@ -723,8 +723,8 @@ const products = {
     {
       id: 19,
       name: 'Seiko Mod GMT Master II "Coca-Cola"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojgmtmaster6.png",
       description:
         "GMT Master II con bisel rojo y negro 'Coca-Cola', un clásico atemporal para los amantes de los relojes vintage.",
@@ -739,8 +739,8 @@ const products = {
     {
       id: 20,
       name: 'Seiko Mod GMT Master II "Root Beer"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojgmtmaster7.png",
       description: "GMT Master II con bisel marrón y dorado 'Root Beer', elegancia vintage en su máxima expresión.",
       features: [
@@ -752,41 +752,32 @@ const products = {
       ],
     },
     {
-      id: 21,
-      name: 'Seiko Mod GMT Master II "Green"',
-      price: "€179,95",
-      originalPrice: "€209,99",
-      image: "../img/relojgmtmaster8.png",
-      description: "GMT Master II con bisel verde, una opción única y distintiva para el coleccionista exigente.",
-      features: ["Movimiento NH34 GMT", "Caja de acero 40mm", "Bisel verde", "Función GMT", "Brazalete Oyster"],
-    },
-    {
-      id: 22,
-      name: 'Seiko Mod GMT Master II "Blue"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      id: 281,
+      name: 'Seiko Mod GMT Master II "Blanco"',
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojgmtmaster9.png",
-      description: "GMT Master II con bisel azul, elegancia marina para el viajero sofisticado.",
-      features: ["Movimiento NH34 GMT", "Caja de acero 40mm", "Bisel azul", "Función GMT", "Brazalete Oyster"],
+      description: "GMT Master II Blanco, elegancia sofisticada y neutra.",
+      features: ["Movimiento NH34 GMT", "Caja de acero 40mm", "Bisel Blanco", "Función GMT", "Brazalete Oyster"],
     },
     {
-      id: 23,
-      name: 'Seiko Mod GMT Master II "Two-Tone"',
-      price: "€179,95",
-      originalPrice: "€209,99",
+      id: 282,
+      name: 'Seiko Mod GMT Master II "Negro"',
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojgmtmaster10.png",
-      description: "GMT Master II bicolor, la perfecta combinación de acero y oro para el ejecutivo moderno.",
-      features: ["Movimiento NH34 GMT", "Caja bicolor 40mm", "Función GMT", "Bisel bidireccional", "Brazalete Jubilee"],
+      description: "GMT Master II Negro, la perfecta combinación de elegancia y minimalismo.",
+      features: ["Movimiento NH34 GMT", "Caja de acero 40mm", "Función GMT", "Bisel Negro", "Brazalete Oyster"],
     },
   ],
   landdweller: [
-    // Land Dweller products (IDs 45-49)
+    // Land Dweller products (IDs 210-214)
     {
-      id: 45,
+      id: 210,
       name: 'Seiko Mod Land-Dweller "Azul cielo"',
-      price: "€179,95",
-      originalPrice: "€209,99",
-      image: "../img/relojlandDweller4.png",
+      price: "$240",
+      originalPrice: "$300",
+      image: "../img/relojlandDweller1.png",
       description: "Land-Dweller con esfera azul cielo, resistencia extrema y elegancia marina.",
       features: [
         "Movimiento NH35 automático",
@@ -797,11 +788,11 @@ const products = {
       ],
     },
     {
-      id: 46,
+      id: 211,
       name: 'Seiko Mod Land-Dweller "Blanco"',
-      price: "€179,95",
-      originalPrice: "€209,99",
-      image: "../img/relojlandDweller5.png",
+      price: "$240",
+      originalPrice: "$300",
+      image: "../img/relojlandDweller2.png",
       description: "Land-Dweller con esfera blanca, pureza y resistencia en perfecta armonía.",
       features: [
         "Movimiento NH35 automático",
@@ -812,11 +803,11 @@ const products = {
       ],
     },
     {
-      id: 47,
+      id: 212,
       name: 'Seiko Mod Land-Dweller "Azul"',
-      price: "€179,99",
-      originalPrice: "€224,95",
-      image: "../img/relojlandDweller6.png",
+      price: "$240",
+      originalPrice: "$300",
+      image: "../img/relojlandDweller3.png",
       description: "Land-Dweller con esfera azul profundo, para los exploradores de las profundidades.",
       features: [
         "Movimiento NH35 automático",
@@ -827,11 +818,11 @@ const products = {
       ],
     },
     {
-      id: 48,
+      id: 213,
       name: 'Seiko Mod Land-Dweller "Verde"',
-      price: "€179,99",
-      originalPrice: "€209,99",
-      image: "../img/relojlandDweller7.png",
+      price: "$240",
+      originalPrice: "$300",
+      image: "../img/relojlandDweller4.png",
       description: "Land-Dweller con esfera verde, inspirado en la naturaleza y la aventura.",
       features: [
         "Movimiento NH35 automático",
@@ -842,11 +833,11 @@ const products = {
       ],
     },
     {
-      id: 49,
+      id: 214,
       name: 'Seiko Mod Land-Dweller "Gris"',
-      price: "€179,95",
-      originalPrice: "€209,99",
-      image: "../img/relojlandDweller8.png",
+      price: "$240",
+      originalPrice: "$300",
+      image: "../img/relojlandDweller5.png",
       description: "Land-Dweller con esfera gris, elegancia urbana y resistencia extrema.",
       features: [
         "Movimiento NH35 automático",
@@ -862,8 +853,8 @@ const products = {
     {
       id: 50,
       name: 'Seiko Mod Nautilus Negro "Open Heart"',
-      price: "€186,99",
-      originalPrice: "€219,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut1.png",
       description: "Nautilus con esfera negra y corazón abierto, elegancia deportiva con vista al movimiento.",
       features: [
@@ -877,8 +868,8 @@ const products = {
     {
       id: 51,
       name: 'Seiko Mod Nautilus "Azul Open Heart"',
-      price: "€186,99",
-      originalPrice: "€219,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut2.png",
       description: "Nautilus con esfera azul y corazón abierto, sofisticación marina con vista al mecanismo.",
       features: [
@@ -892,8 +883,8 @@ const products = {
     {
       id: 52,
       name: 'Seiko Mod Nautilus "Oro rosa y chocolate Open Heart"',
-      price: "€199,99",
-      originalPrice: "€229,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut3.png",
       description: "Nautilus en oro rosa con esfera chocolate y corazón abierto, lujo y elegancia suprema.",
       features: [
@@ -907,8 +898,8 @@ const products = {
     {
       id: 53,
       name: 'Seiko Mod Nautilus "Tiffany"',
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut4.png",
       description: "Nautilus con la icónica esfera azul Tiffany, una pieza única y codiciada.",
       features: [
@@ -922,8 +913,8 @@ const products = {
     {
       id: 54,
       name: "Seiko Mod Nautilus Blanco",
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut5.png",
       description: "Nautilus con esfera blanca, pureza y elegancia deportiva en perfecta armonía.",
       features: [
@@ -937,8 +928,8 @@ const products = {
     {
       id: 55,
       name: "Seiko Mod Aquanaut Chocolate (Oro Rosa)",
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut6.png",
       description: "Aquanaut en oro rosa con esfera chocolate, elegancia cálida y deportiva.",
       features: [
@@ -952,8 +943,8 @@ const products = {
     {
       id: 56,
       name: "Seiko Mod Aquanaut Navy Blue",
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut7.png",
       description: "Aquanaut con esfera azul marino, elegancia náutica en su máxima expresión.",
       features: [
@@ -967,8 +958,8 @@ const products = {
     {
       id: 57,
       name: 'Seiko Mod Nautilus "Azul"',
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut8.png",
       description: "Nautilus con esfera azul, el clásico deportivo elegante de Patek Philippe.",
       features: [
@@ -982,8 +973,8 @@ const products = {
     {
       id: 58,
       name: "Seiko Mod Nautilus Verde",
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut9.png",
       description: "Nautilus con esfera verde, una opción fresca y distintiva para el coleccionista.",
       features: [
@@ -997,8 +988,8 @@ const products = {
     {
       id: 59,
       name: "Seiko Mod Aquanaut Black",
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut10.png",
       description: "Aquanaut con esfera negra, elegancia deportiva en su forma más pura.",
       features: [
@@ -1012,8 +1003,8 @@ const products = {
     {
       id: 60,
       name: 'Seiko Mod Nautilus "Oro rosa y chocolate"',
-      price: "€184,95",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut11.png",
       description: "Nautilus en oro rosa con esfera chocolate, lujo y calidez en perfecta combinación.",
       features: [
@@ -1027,8 +1018,8 @@ const products = {
     {
       id: 61,
       name: 'Seiko Mod Nautilus "Negro"',
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojNautilusAquanaut12.png",
       description: "Nautilus con esfera negra, elegancia atemporal y deportiva.",
       features: [
@@ -1045,8 +1036,8 @@ const products = {
     {
       id: 62,
       name: 'Seiko Mod Royal Oak "Negro"',
-      price: "€176,99",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak1.png",
       description:
         "Royal Oak con esfera negra, el icónico diseño octagonal de Audemars Piguet en su versión más elegante.",
@@ -1061,8 +1052,8 @@ const products = {
     {
       id: 63,
       name: 'Seiko Mod Royal Oak "Navy blue"',
-      price: "€176,95",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak2.png",
       description: "Royal Oak con esfera azul marino, elegancia náutica con el distintivo diseño octagonal.",
       features: [
@@ -1076,8 +1067,8 @@ const products = {
     {
       id: 64,
       name: 'Seiko Mod Royal Oak "Skeleton"',
-      price: "€189,99",
-      originalPrice: "€245,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak3.png",
       description: "Royal Oak Skeleton, la mecánica visible en toda su gloria con el icónico diseño octagonal.",
       features: [
@@ -1091,8 +1082,8 @@ const products = {
     {
       id: 65,
       name: 'Seiko Mod Royal Oak "Panda Cronógrafo"',
-      price: "€173,96",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak4.png",
       description: "Royal Oak Cronógrafo Panda, funcionalidad deportiva con el elegante diseño octagonal.",
       features: [
@@ -1106,8 +1097,8 @@ const products = {
     {
       id: 66,
       name: 'Seiko Mod Royal Oak "Cronógrafo Azul Marino"',
-      price: "€173,96",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak5.png",
       description: "Royal Oak Cronógrafo con esfera azul marino, deportividad y elegancia en perfecta armonía.",
       features: [
@@ -1121,8 +1112,8 @@ const products = {
     {
       id: 67,
       name: 'Seiko Mod Royal Oak "Tiffany"',
-      price: "€176,99",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak6.png",
       description: "Royal Oak con la codiciada esfera azul Tiffany, una pieza única y exclusiva.",
       features: [
@@ -1136,8 +1127,8 @@ const products = {
     {
       id: 68,
       name: 'Seiko Mod Royal Oak Chronograph "Oro Rosa dial azul"',
-      price: "€183,98",
-      originalPrice: "€234,98",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak7.png",
       description: "Royal Oak Cronógrafo en oro rosa con esfera azul, lujo y deportividad en su máxima expresión.",
       features: [
@@ -1151,8 +1142,8 @@ const products = {
     {
       id: 69,
       name: 'Seiko Mod Royal Oak "Blanco"',
-      price: "€176,99",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak8.png",
       description: "Royal Oak con esfera blanca, pureza y elegancia con el icónico diseño octagonal.",
       features: [
@@ -1166,8 +1157,8 @@ const products = {
     {
       id: 70,
       name: 'Seiko Mod Royal Oak "Cronógrafo negro"',
-      price: "€173,96",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak9.png",
       description: "Royal Oak Cronógrafo negro, funcionalidad deportiva con elegancia atemporal.",
       features: [
@@ -1181,8 +1172,8 @@ const products = {
     {
       id: 71,
       name: 'Seiko Mod Royal Oak "Cronógrafo verde"',
-      price: "€173,96",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak10.png",
       description: "Royal Oak Cronógrafo verde, una opción fresca y distintiva para el deportista elegante.",
       features: [
@@ -1196,8 +1187,8 @@ const products = {
     {
       id: 72,
       name: 'Seiko Mod Royal Oak "Cronógrafo blanco"',
-      price: "€173,96",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak11.png",
       description: "Royal Oak Cronógrafo blanco, pureza deportiva con el distintivo diseño octagonal.",
       features: [
@@ -1211,8 +1202,8 @@ const products = {
     {
       id: 73,
       name: 'Seiko Mod Royal Oak "Verde"',
-      price: "€176,95",
-      originalPrice: "€209,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak12.png",
       description: "Royal Oak con esfera verde, naturaleza y elegancia en el icónico diseño octagonal.",
       features: [
@@ -1226,8 +1217,8 @@ const products = {
     {
       id: 74,
       name: 'Seiko Mod Royal Oak "oro rosa y azul marino"',
-      price: "€183,95",
-      originalPrice: "€229,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak13.png",
       description: "Royal Oak en oro rosa con esfera azul marino, lujo y elegancia marina en perfecta armonía.",
       features: [
@@ -1241,8 +1232,8 @@ const products = {
     {
       id: 75,
       name: "Seiko Mod Royal Oak Negro y Oro Rosa",
-      price: "€189,99",
-      originalPrice: "€229,99",
+      price: "$245",
+      originalPrice: "$310",
       image: "../img/relojRoyalOak14.png",
       description: "Royal Oak bicolor negro y oro rosa, la perfecta combinación de elegancia y lujo.",
       features: [
@@ -1259,8 +1250,8 @@ const products = {
     {
       id: 76,
       name: 'Seiko Mod Yacht Master "Oro y negro"',
-      price: "€176,96",
-      originalPrice: "€199,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojYachtMaster1.png",
       description: "Yacht Master con elegante combinación de oro y negro, lujo náutico en su máxima expresión.",
       features: [
@@ -1274,8 +1265,8 @@ const products = {
     {
       id: 77,
       name: 'Seiko Mod Yacht Master "Plata"',
-      price: "€176,96",
-      originalPrice: "€199,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojYachtMaster2.png",
       description: "Yacht Master en plata, elegancia náutica clásica para el navegante sofisticado.",
       features: [
@@ -1289,8 +1280,8 @@ const products = {
     {
       id: 78,
       name: 'Seiko Mod Yacht Master "Oro rosa y marrón"',
-      price: "€183,95",
-      originalPrice: "€199,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojYachtMaster3.png",
       description: "Yacht Master en oro rosa con detalles marrones, calidez y elegancia náutica.",
       features: [
@@ -1304,8 +1295,8 @@ const products = {
     {
       id: 79,
       name: 'Seiko Mod Yacht-Master "Plata y azul marino"',
-      price: "€176,96",
-      originalPrice: "€199,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojYachtMaster4.png",
       description: "Yacht Master con combinación plata y azul marino, elegancia marina en estado puro.",
       features: [
@@ -1322,8 +1313,8 @@ const products = {
     {
       id: 80,
       name: 'Seiko Mod Santos "Negro"',
-      price: "€176,99",
-      originalPrice: "€209,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojSantos1.png",
       description: "Santos con esfera negra, el icónico diseño cuadrado de Cartier en su versión más elegante.",
       features: [
@@ -1337,8 +1328,8 @@ const products = {
     {
       id: 81,
       name: "Seiko Mod Santos (Blanco)",
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojSantos2.png",
       description: "Santos con esfera blanca, pureza y elegancia en el distintivo diseño cuadrado.",
       features: [
@@ -1352,8 +1343,8 @@ const products = {
     {
       id: 82,
       name: 'Seiko Mod Santos "Blanco dos tonos"',
-      price: "€176,99",
-      originalPrice: "€209,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojSantos3.png",
       description: "Santos bicolor con esfera blanca, la perfecta combinación de acero y oro.",
       features: [
@@ -1367,9 +1358,8 @@ const products = {
     {
       id: 83,
       name: 'Seiko Mod Santos "Marrón"',
-      price: "€176,99",
-      originalPrice: "€199,99",
-      image: "../img/relojSantos4.png",
+      price: "$240",
+      originalPrice: "$300",
       description: "Santos con esfera marrón, calidez y elegancia en el icónico diseño cuadrado.",
       features: [
         "Movimiento NH35 automático",
@@ -1382,8 +1372,8 @@ const products = {
     {
       id: 84,
       name: 'Seiko Mod Santos "Azul"',
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojSantos5.png",
       description: "Santos con esfera azul, elegancia marina en el distintivo diseño cuadrado.",
       features: [
@@ -1397,8 +1387,8 @@ const products = {
     {
       id: 85,
       name: 'Seiko Mod Santos "Verde"',
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojSantos6.png",
       description: "Santos con esfera verde, naturaleza y elegancia en el icónico diseño cuadrado.",
       features: [
@@ -1412,8 +1402,8 @@ const products = {
     {
       id: 86,
       name: 'Seiko Mod Santos "F*ck 9-5"',
-      price: "€176,99",
-      originalPrice: "€199,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojSantos7.png",
       description: "Santos con mensaje rebelde, para quienes viven fuera de lo convencional.",
       features: [
@@ -1430,8 +1420,8 @@ const products = {
     {
       id: 87,
       name: "Seiko Mod Speedmaster",
-      price: "€173,99",
-      originalPrice: "€199,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojSpeedmaster1.png",
       description: "Speedmaster clásico, el icónico cronógrafo que llegó a la luna, ahora en versión Seiko Mod.",
       features: [
@@ -1445,8 +1435,8 @@ const products = {
     {
       id: 88,
       name: 'Seiko Mod Speedmaster "Panda"',
-      price: "€173,99",
-      originalPrice: "€199,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojSpeedmaster2.png",
       description: "Speedmaster Panda, el clásico diseño blanco y negro del cronógrafo más famoso del mundo.",
       features: [
@@ -1460,8 +1450,8 @@ const products = {
     {
       id: 89,
       name: 'Seiko Mod Speedmaster "Negro y naranja"',
-      price: "€173,99",
-      originalPrice: "€199,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojSpeedmaster3.png",
       description: "Speedmaster con combinación negro y naranja, una versión moderna y llamativa del clásico.",
       features: [
@@ -1475,8 +1465,8 @@ const products = {
     {
       id: 90,
       name: 'Seiko Mod Speedmaster "Azul y plateado"',
-      price: "€173,99",
-      originalPrice: "€199,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojSpeedmaster4.png",
       description: "Speedmaster con elegante combinación azul y plateado, sofisticación cronográfica.",
       features: [
@@ -1490,8 +1480,8 @@ const products = {
     {
       id: 91,
       name: 'Seiko Mod Speedmaster "Azul y plateado correa nylon"',
-      price: "€173,99",
-      originalPrice: "€199,99",
+      price: "$250",
+      originalPrice: "$300",
       image: "../img/relojSpeedmaster5.png",
       description: "Speedmaster con correa de nylon, comodidad deportiva con el icónico diseño cronográfico.",
       features: [
@@ -1508,8 +1498,8 @@ const products = {
     {
       id: 92,
       name: "Seiko Mod Prx Blanco",
-      price: "€176,96",
-      originalPrice: "€209,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojPrx1.png",
       description: "PRX con esfera blanca, el icónico diseño deportivo-elegante de Tissot en versión Seiko Mod.",
       features: [
@@ -1523,8 +1513,8 @@ const products = {
     {
       id: 93,
       name: "Seiko Mod Prx Azul cielo",
-      price: "€176,96",
-      originalPrice: "€209,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojPrx2.png",
       description: "PRX con esfera azul cielo, elegancia celestial en el distintivo diseño deportivo.",
       features: [
@@ -1538,8 +1528,8 @@ const products = {
     {
       id: 94,
       name: "Seiko Mod Prx Verde",
-      price: "€176,96",
-      originalPrice: "€209,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojPrx3.png",
       description: "PRX con esfera verde, naturaleza y elegancia en el icónico diseño deportivo-elegante.",
       features: [
@@ -1553,8 +1543,8 @@ const products = {
     {
       id: 95,
       name: "Seiko Mod Prx Negro",
-      price: "€176,96",
-      originalPrice: "€209,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojPrx4.png",
       description: "PRX con esfera negra, elegancia atemporal en el distintivo diseño deportivo.",
       features: [
@@ -1568,8 +1558,8 @@ const products = {
     {
       id: 96,
       name: "Seiko Mod Prx Azul",
-      price: "€176,96",
-      originalPrice: "€209,99",
+      price: "$240",
+      originalPrice: "$300",
       image: "../img/relojPrx5.png",
       description: "PRX con esfera azul, elegancia marina en el icónico diseño deportivo-elegante.",
       features: [
@@ -1586,8 +1576,8 @@ const products = {
     {
       id: 97,
       name: "Correa Jubilee",
-      price: "A partir de €24,95",
-      originalPrice: "€49,99",
+      price: "A partir de $24,95",
+      originalPrice: "$49,99",
       image: "../img/relojAccesorios1.png",
       description:
         "Correa Jubilee de alta calidad, el clásico brazalete de cinco eslabones para máxima comodidad y elegancia.",
@@ -1602,8 +1592,8 @@ const products = {
     {
       id: 98,
       name: "Correa Oyster",
-      price: "A partir de €24,95",
-      originalPrice: "€49,99",
+      price: "A partir de $24,95",
+      originalPrice: "$49,99",
       image: "../img/relojAccesorios2.png",
       description: "Correa Oyster robusta y elegante, el brazalete deportivo por excelencia para uso diario.",
       features: [
@@ -1617,8 +1607,8 @@ const products = {
     {
       id: 99,
       name: "Correa Oysterflex",
-      price: "€24,95",
-      originalPrice: "€49,99",
+      price: "$24,95",
+      originalPrice: "$49,99",
       image: "../img/relojAccesorios3.png",
       description: "Correa Oysterflex de caucho premium, comodidad deportiva con la elegancia del metal.",
       features: [
@@ -1632,8 +1622,8 @@ const products = {
     {
       id: 100,
       name: "Caja de Almacenamiento Premium para Relojes",
-      price: "A partir de €22,95",
-      originalPrice: "€35,99",
+      price: "A partir de $22,95",
+      originalPrice: "$35,99",
       image: "../img/relojAccesorios4.png",
       description: "Caja de almacenamiento premium para proteger y exhibir tu colección de relojes con elegancia.",
       features: [
@@ -1647,8 +1637,8 @@ const products = {
     {
       id: 101,
       name: "Estuche de viaje para 2 relojes",
-      price: "€28,95",
-      originalPrice: "€64,95",
+      price: "$28,95",
+      originalPrice: "$64,95",
       image: "../img/relojAccesorios5.png",
       description: "Estuche de viaje compacto para 2 relojes, protección y portabilidad para tus piezas favoritas.",
       features: [
@@ -1662,8 +1652,8 @@ const products = {
     {
       id: 102,
       name: "Estuche de viaje para 3 relojes",
-      price: "€34,95",
-      originalPrice: "€64,95",
+      price: "$34,95",
+      originalPrice: "$64,95",
       image: "../img/relojAccesorios6.png",
       description: "Estuche de viaje para 3 relojes, mayor capacidad sin comprometer la protección y portabilidad.",
       features: [
@@ -1677,8 +1667,8 @@ const products = {
     {
       id: 103,
       name: "Destornillador para eslabones",
-      price: "€5,95",
-      originalPrice: "€14,95",
+      price: "$5,95",
+      originalPrice: "$14,95",
       image: "../img/relojAccesorios7.png",
       description:
         "Herramienta profesional para ajustar eslabones de brazaletes, indispensable para el mantenimiento de relojes.",
@@ -1829,114 +1819,113 @@ function initTestimonialsCarousel() {
 
 // Abre/cierra el menú hamburguesa
 function toggleMobileMenu() {
-  const mobileNav = document.getElementById("mobile-nav");
-  const mobileToggle = document.querySelector(".mobile-menu-toggle");
+  const mobileNav = document.getElementById("mobile-nav")
+  const mobileToggle = document.querySelector(".mobile-menu-toggle")
 
   if (!mobileNav || !mobileToggle) {
-    console.log("[v0] Mobile menu elements not found");
-    return;
+    console.log("[v0] Mobile menu elements not found")
+    return
   }
 
-  mobileNav.classList.toggle("active");
-  mobileToggle.classList.toggle("active");
+  mobileNav.classList.toggle("active")
+  mobileToggle.classList.toggle("active")
 }
 
 // Abre/cierra el dropdown “Catálogo” dentro del menú móvil
 function toggleMobileDropdown(event) {
-  event.preventDefault();
-  event.stopPropagation();
+  event.preventDefault()
+  event.stopPropagation()
 
-  const dropdown = event.currentTarget.closest('.mobile-dropdown');
-  const dropdownMenu = dropdown.querySelector('.mobile-dropdown-menu');
+  const dropdown = event.currentTarget.closest(".mobile-dropdown")
+  const dropdownMenu = dropdown.querySelector(".mobile-dropdown-menu")
 
   if (!dropdown || !dropdownMenu) {
-    console.log("[v1] Mobile dropdown elements not found");
-    return;
+    console.log("[v1] Mobile dropdown elements not found")
+    return
   }
 
   // Cierra otros dropdowns abiertos
-  document.querySelectorAll('.mobile-dropdown-menu').forEach(menu => {
+  document.querySelectorAll(".mobile-dropdown-menu").forEach((menu) => {
     if (menu !== dropdownMenu) {
-      menu.classList.remove('active');
+      menu.classList.remove("active")
     }
-  });
+  })
 
   // Alterna este dropdown
-  dropdownMenu.classList.toggle('active');
+  dropdownMenu.classList.toggle("active")
 }
 
 // ------------------------------------------------------------------
 // CERRAR EL MENÚ MÓVIL AL HACER CLIC EN LINKS NORMALES
 // (pero NO cerrar cuando se pulsa el toggle de Catálogo)
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.mobile-nav-link').forEach(link => {
-    link.addEventListener('click', (e) => {
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+    link.addEventListener("click", (e) => {
       // Si es el toggle del Catálogo NO cerrar el menú hamburguesa
-      if (link.classList.contains('dropdown-toggle')) {
-        e.preventDefault();
-        return; // salir sin cerrar menú
+      if (link.classList.contains("dropdown-toggle")) {
+        e.preventDefault()
+        return // salir sin cerrar menú
       }
       // Para cualquier otro link normal, sí cerramos el menú hamburguesa
-      const mobileNav = document.getElementById("mobile-nav");
-      const mobileToggle = document.querySelector(".mobile-menu-toggle");
+      const mobileNav = document.getElementById("mobile-nav")
+      const mobileToggle = document.querySelector(".mobile-menu-toggle")
       if (mobileNav && mobileToggle) {
-        mobileNav.classList.remove("active");
-        mobileToggle.classList.remove("active");
+        mobileNav.classList.remove("active")
+        mobileToggle.classList.remove("active")
       }
-    });
-  });
-});
+    })
+  })
+})
 
 // ------------------------------------------------------------------
 // OPCIONAL: Dropdowns en desktop si quieres mantenerlos
 function toggleDropdown(dropdownElement) {
-  console.log("[v0] toggleDropdown called with:", dropdownElement);
+  console.log("[v0] toggleDropdown called with:", dropdownElement)
 
   // Cierra otros dropdowns primero
-  document.querySelectorAll('.dropdown').forEach(dropdown => {
+  document.querySelectorAll(".dropdown").forEach((dropdown) => {
     if (dropdown !== dropdownElement) {
-      dropdown.classList.remove('active');
-      console.log("[v0] Closed dropdown:", dropdown);
+      dropdown.classList.remove("active")
+      console.log("[v0] Closed dropdown:", dropdown)
     }
-  });
+  })
 
   // Alterna este dropdown
-  dropdownElement.classList.toggle('active');
-  console.log("[v0] Toggled dropdown, active class:", dropdownElement.classList.contains('active'));
+  dropdownElement.classList.toggle("active")
+  console.log("[v0] Toggled dropdown, active class:", dropdownElement.classList.contains("active"))
 }
 // CERRAR EL MENÚ MÓVIL AL HACER CLIC EN LINKS NORMALES
 // (pero NO cerrar cuando se pulsa el toggle de Catálogo)
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.mobile-nav-link').forEach(link => {
-    link.addEventListener('click', (e) => {
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+    link.addEventListener("click", (e) => {
       // Si es el toggle del Catálogo NO cerrar el menú hamburguesa
-      if (link.classList.contains('dropdown-toggle')) {
-        e.preventDefault();
-        return; // salir sin cerrar menú
+      if (link.classList.contains("dropdown-toggle")) {
+        e.preventDefault()
+        return // salir sin cerrar menú
       }
       // Para cualquier otro link normal, sí cerramos el menú hamburguesa
-      const mobileNav = document.getElementById("mobile-nav");
-      const mobileToggle = document.querySelector(".mobile-menu-toggle");
+      const mobileNav = document.getElementById("mobile-nav")
+      const mobileToggle = document.querySelector(".mobile-menu-toggle")
       if (mobileNav && mobileToggle) {
-        mobileNav.classList.remove("active");
-        mobileToggle.classList.remove("active");
+        mobileNav.classList.remove("active")
+        mobileToggle.classList.remove("active")
       }
-    });
-  });
+    })
+  })
 
   // Cerrar menú móvil al hacer clic fuera
-  document.addEventListener('click', (event) => {
-    const mobileNav = document.getElementById("mobile-nav");
-    const mobileToggle = document.querySelector(".mobile-menu-toggle");
+  document.addEventListener("click", (event) => {
+    const mobileNav = document.getElementById("mobile-nav")
+    const mobileToggle = document.querySelector(".mobile-menu-toggle")
     if (mobileNav && mobileNav.classList.contains("active")) {
       if (!mobileNav.contains(event.target) && !mobileToggle.contains(event.target)) {
-        mobileNav.classList.remove("active");
-        mobileToggle.classList.remove("active");
+        mobileNav.classList.remove("active")
+        mobileToggle.classList.remove("active")
       }
     }
-  });
-});
-
+  })
+})
 
 // ------------------------------------------------------------------
 
@@ -2136,41 +2125,47 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 })
 
 // safe click handler (no crashes if mobile toggle missing)
-document.addEventListener('click', function(event){ 
-  var navMenu = document.querySelector('.nav-menu');
-  var mobileToggle = document.querySelector('.mobile-menu-toggle');
-  if(navMenu && navMenu.classList.contains('active')){
-    if( !navMenu.contains(event.target) && (!mobileToggle || !mobileToggle.contains(event.target)) ){
-      navMenu.classList.remove('active');
-      var icon = document.querySelector('.mobile-menu-toggle i');
-      if(icon){ icon.classList.remove('fa-times'); icon.classList.add('fa-bars'); }
+document.addEventListener(
+  "click",
+  (event) => {
+    var navMenu = document.querySelector(".nav-menu")
+    var mobileToggle = document.querySelector(".mobile-menu-toggle")
+    if (navMenu && navMenu.classList.contains("active")) {
+      if (!navMenu.contains(event.target) && (!mobileToggle || !mobileToggle.contains(event.target))) {
+        navMenu.classList.remove("active")
+        var icon = document.querySelector(".mobile-menu-toggle i")
+        if (icon) {
+          icon.classList.remove("fa-times")
+          icon.classList.add("fa-bars")
+        }
+      }
     }
-  }
-}, true);
+  },
+  true,
+)
 
 // enable hover-open on desktop (mouseenter / mouseleave)
-function enableDesktopDropdownHover(){
-  if(window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches){
-    document.querySelectorAll('.dropdown').forEach(d => {
-      d.addEventListener('mouseenter', ()=> d.classList.add('active'));
-      d.addEventListener('mouseleave', ()=> d.classList.remove('active'));
-    });
+function enableDesktopDropdownHover() {
+  if (window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    document.querySelectorAll(".dropdown").forEach((d) => {
+      d.addEventListener("mouseenter", () => d.classList.add("active"))
+      d.addEventListener("mouseleave", () => d.classList.remove("active"))
+    })
   }
 }
-document.addEventListener('DOMContentLoaded', enableDesktopDropdownHover);
+document.addEventListener("DOMContentLoaded", enableDesktopDropdownHover)
 
 // only prevent default dropdown-link clicks on mobile
-document.querySelectorAll('.dropdown > .nav-link').forEach(link=>{
-  link.addEventListener('click', function(e){
-    if(window.matchMedia && window.matchMedia('(max-width:768px)').matches){
-      e.preventDefault();
-      var dropdown = link.parentElement;
-      if(typeof toggleDropdown === 'function') toggleDropdown(dropdown);
-      else dropdown.classList.toggle('active');
+document.querySelectorAll(".dropdown > .nav-link").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    if (window.matchMedia && window.matchMedia("(max-width:768px)").matches) {
+      e.preventDefault()
+      var dropdown = link.parentElement
+      if (typeof toggleDropdown === "function") toggleDropdown(dropdown)
+      else dropdown.classList.toggle("active")
     }
-  });
-});
-
+  })
+})
 function toggleMobileDropdown(event) {
   event.preventDefault();            // <- evita que el enlace haga scroll o cierre el menú
   event.stopPropagation();           // <- evita que se propague al resto del menú

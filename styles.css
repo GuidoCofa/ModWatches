@@ -133,6 +133,7 @@ body {
   letter-spacing: 2px;
   margin: 0;
   transition: color 0.3s ease;
+  
 }
 
 .logo h1:hover {
@@ -1893,6 +1894,7 @@ body {
   color: var(--accent-gold);
   font-weight: 700;
   margin-bottom: 20px;
+  
 }
 
 .customize-subtitle {
@@ -2171,6 +2173,7 @@ body {
   margin-bottom: 40px;
   color: var(--accent-gold);
   font-weight: 700;
+  
 }
 
 .policy-content {
@@ -2555,6 +2558,7 @@ body {
   background: var(--primary-blue);
   text-align: center;
   padding: 15px 0;
+  
 }
 
 .logo-center h1 {
@@ -2562,6 +2566,7 @@ body {
   font-size: 32px;
   margin: 0;
   letter-spacing: 2px;
+  
 }
 
 .header-bottom {
@@ -3003,4 +3008,9 @@ body {
 .product-modal-overlay {
   background: rgba(0,0,0,0.5); /* o transparent */
   backdrop-filter: blur(2px);  /* opcional */
+}
+
+/* Adding text-decoration: none to remove hyperlink underline */
+.logo-center {
+  text-decoration: none;
 }
