@@ -2145,3 +2145,98 @@ function toggleMobileDropdown(event) {
       .querySelector('.mobile-dropdown-menu');
   dropdownMenu.classList.toggle('active');
 }
+
+// ====== Carrusel automático de Testimonials (solución definitiva) ======
+document.addEventListener("DOMContentLoaded", () => {
+  const viewport = document.querySelector(".testimonials-viewport");
+  const container = document.querySelector(".testimonials-container");
+  if (!viewport || !container) return;
+
+  // elementos
+  let cards = Array.from(container.querySelectorAll(".testimonial-card"));
+  if (cards.length === 0) return;
+
+  // forzar estilos útiles (evita gaps por CSS externo)
+  cards.forEach(c => {
+    c.style.margin = "0";
+    c.style.flex = "0 0 100%";
+    c.style.boxSizing = "border-box";
+  });
+  container.style.display = "flex";
+  container.style.gap = "0";
+
+  // clone del primer card para loop suave
+  const firstClone = cards[0].cloneNode(true);
+  container.appendChild(firstClone);
+
+  const total = cards.length; // cantidad original (sin el clone)
+  let index = 0;
+  let cardWidth = 0;
+  let intervalId = null;
+
+  function setSizes() {
+    // ancho real del viewport donde está el slider
+    cardWidth = viewport.clientWidth;
+    const allCards = container.querySelectorAll(".testimonial-card");
+    allCards.forEach(c => c.style.width = `${cardWidth}px`);
+    // ajustar posición acorde al índice actual
+    container.style.transform = `translateX(-${index * cardWidth}px)`;
+  }
+
+  // init sizes
+  container.style.transition = "transform 0.6s ease-in-out";
+  setSizes();
+
+  // recalcular al redimensionar (responsive)
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    // quitar transición temporal para evitar saltos jankies al cambiar ancho
+    container.style.transition = "none";
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      setSizes();
+      // forzar reflow y volver la transición
+      void container.offsetWidth;
+      container.style.transition = "transform 0.6s ease-in-out";
+    }, 60);
+  });
+
+  // función que avanza 1 slide (usa px para evitar desalineos)
+  function goNext() {
+    index++;
+    container.style.transition = "transform 0.6s ease-in-out";
+    container.style.transform = `translateX(-${index * cardWidth}px)`;
+  }
+
+  // manejo del "wrap" cuando llegamos al clone (index === total)
+  container.addEventListener("transitionend", () => {
+    if (index === total) {
+      // estamos en el clone (última posición), reseteamos instantáneamente a 0
+      container.style.transition = "none";
+      index = 0;
+      container.style.transform = `translateX(0px)`;
+      // reactivar transición para las siguientes animaciones
+      // forzar reflow antes de reactivar
+      void container.offsetWidth;
+      container.style.transition = "transform 0.6s ease-in-out";
+    }
+  });
+
+  // autoplay
+  function startAutoplay() {
+    if (intervalId) return;
+    intervalId = setInterval(goNext, 3000); // cada 5s (ajustable)
+  }
+  function stopAutoplay() {
+    if (!intervalId) return;
+    clearInterval(intervalId);
+    intervalId = null;
+  }
+
+  // pausa al hover (opcional, recomendable)
+  viewport.addEventListener("mouseenter", stopAutoplay);
+  viewport.addEventListener("mouseleave", startAutoplay);
+
+  // arrancar
+  startAutoplay();
+});
