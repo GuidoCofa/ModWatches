@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datejust – Configuración</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header class="header">
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    <div class="container">
+      <span class="promo-text">$15 de descuento si te llevas 3 relojes →</span>
+    </div>
+  </div>
+  <!-- LOGO centrado -->
+  <div class="header-top">
+    <div class="container">
+      <a href="./index.html" class="logo-center">
+        <h1>MOD WATCHES</h1>
+      </a>
+    </div>
+  </div>
+ <!-- NAVBAR centrada -->
+  <nav class="header-bottom">
+    <div class="container">
+      <ul class="nav-list center-nav">
+        <li><a href="./index.html" class="nav-link active">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#catalogo" class="nav-link dropdown-toggle">
+            Catálogo <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="./catalogos/catalog-daytona.html">Daytona</a>
+            <a href="./catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+            <a href="./catalogos/catalog-submariner.html">Submariner</a>
+            <a href="./catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+            <a href="./catalogos/catalog-land-dweller.html">Land-Dweller</a>
+            <a href="./catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+            <a href="./catalogos/catalog-royal-oak.html">Royal Oak</a>
+            <a href="./catalogos/catalog-yacht-master.html">Yacht Master</a>
+            <a href="./catalogos/catalog-santos.html">Santos</a>
+            <a href="./catalogos/catalog-speedmaster.html">SpeedMaster</a>
+            <a href="./catalogos/catalog-prx.html">PRX</a>
+            <a href="./catalogos/catalog-accesorios.html">Accesorios</a>
+            <a href="./catalogos/catalog-all.html">Ver todo</a>
+          </div>
+        </li>
+        <li><a href="./personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a></li>
+        <li><a href="./informacion-contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+      <!-- Botón menú móvil -->
+<button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+</button>
+
+<!-- Navegación móvil -->
+<div class="mobile-nav" id="mobile-nav">
+  <ul class="mobile-nav-list">
+    <li><a href="./index.html" class="mobile-nav-link">Inicio</a></li>
+   <li class="mobile-dropdown">
+<a href="javascript:void(0)" class="mobile-nav-link dropdown-toggle" onclick="toggleMobileDropdown(event)">
+  Catálogo <i class="fas fa-chevron-down"></i>
+</a>
+  </a>
+  <div class="mobile-dropdown-menu">
+    <a href="./catalogos/catalog-daytona.html">Daytona</a>
+    <a href="./catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+    <a href="./catalogos/catalog-submariner.html">Submariner</a>
+    <a href="./catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+    <a href="./catalogos/catalog-land-dweller.html">Land-Dweller</a>
+    <a href="./catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+    <a href="./catalogos/catalog-royal-oak.html">Royal Oak</a>
+    <a href="./catalogos/catalog-yacht-master.html">Yacht Master</a>
+    <a href="./catalogos/catalog-santos.html">Santos</a>
+    <a href="./catalogos/catalog-speedmaster.html">SpeedMaster</a>
+    <a href="./catalogos/catalog-prx.html">PRX</a>
+    <a href="./catalogos/catalog-accesorios.html">Accesorios</a>
+    <a href="./catalogos/catalog-all.html">Ver todo</a>
+  </div>
+</li>
+
+    <li><a href="./personalizar-reloj.html" class="mobile-nav-link">Personalizar mi reloj</a></li>
+    <li><a href="./informacion-contacto.html" class="mobile-nav-link">Contacto</a></li>
+  </ul>
+</div>
+
+    </div>
+  </nav>
+</header>
+
+    <!-- CONTENIDO -->
+    <main class="dj-container">
+
+        <!-- PREVIEW IZQUIERDA -->
+        <section class="dj-preview">
+            <div id="dj-watch">
+    <img id="dj-bracelet" class="dj-layer" src="">
+    <img id="dj-case" class="dj-layer" src="">
+    <img id="dj-dial" class="dj-layer" src="">
+    <img id="dj-hands" class="dj-layer" src="">
+    <img id="dj-date" class="dj-layer" src="">
+
+            </div>
+        </section>
+
+        <!-- OPCIONES DERECHA -->
+        <aside class="dj-options">
+
+            <h2>Datejust</h2>
+
+            <!-- CASE -->
+            <details open>
+                <summary>Case</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="case" data-value="fluted">
+                        <img src="img/datejust/case/fluted.png">
+                        <span>Fluted</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="plain">
+                        <img src="img/datejust/case/plain.png">
+                        <span>Plain</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="rose-flutted">
+                        <img src="img/datejust/case/rose-flutted.png">
+                        <span>Rose Gold Flutted</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="rose-plain">
+                        <img src="img/datejust/case/rose-plain.png">
+                        <span>Rose Gold Plain</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="gold-flutted">
+                        <img src="img/datejust/case/gold-flutted.png">
+                        <span>Gold Flutted</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="gold-plain">
+                        <img src="img/datejust/case/gold-plain.png">
+                        <span>Gold Plain</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- SIZE -->
+            <details>
+                <summary>Size</summary>
+                <div class="dj-grid">
+                    <div class="dj-option" data-part="size" data-value="36mm"><span>36MM</span></div>
+                    <div class="dj-option" data-part="size" data-value="40mm"><span>40MM</span></div>
+                </div>
+            </details>
+
+            <!-- BRACELET -->
+    <details>
+    <summary>Bracelet</summary>
+    <div class="dj-grid">
+
+        <!-- 1 — Jubilee -->
+        <div class="dj-option" data-part="bracelet" data-value="jubilee">
+            <img src="img/datejust/bracelet/jubilee.png" alt="Jubilee">
+            <span>Jubilee</span>
+        </div>
+
+        <!-- 2 — Oyster -->
+        <div class="dj-option" data-part="bracelet" data-value="oyster">
+            <img src="img/datejust/bracelet/oyster.png" alt="Oyster">
+            <span>Oyster</span>
+        </div>
+
+        <!-- 3 — Presidential -->
+        <div class="dj-option" data-part="bracelet" data-value="presidential">
+            <img src="img/datejust/bracelet/presidential.png" alt="Presidential">
+            <span>Presidential</span>
+        </div>
+
+        <!-- 4 — Rose Gold Jubilee -->
+        <div class="dj-option" data-part="bracelet" data-value="rose-jubilee">
+            <img src="img/datejust/bracelet/rose-jubilee.png" alt="Rose Gold Jubilee">
+            <span>Rose Gold Jubilee</span>
+        </div>
+
+        <!-- 5 — Oyster Rose Gold -->
+        <div class="dj-option" data-part="bracelet" data-value="oyster-rose">
+            <img src="img/datejust/bracelet/oyster-rose.png" alt="Oyster Rose Gold">
+            <span>Oyster Rose Gold</span>
+        </div>
+
+        <!-- 6 — Presidential Rose Gold -->
+        <div class="dj-option" data-part="bracelet" data-value="presidential-rose">
+            <img src="img/datejust/bracelet/presidential-rose.png" alt="Presidential Rose Gold">
+            <span>Presidential Rose Gold</span>
+        </div>
+
+        <!-- 7 — Gold Jubilee -->
+        <div class="dj-option" data-part="bracelet" data-value="gold-jubilee">
+            <img src="img/datejust/bracelet/gold-jubilee.png" alt="Gold Jubilee">
+            <span>Gold Jubilee</span>
+        </div>
+
+        <!-- 8 — Oyster Gold -->
+        <div class="dj-option" data-part="bracelet" data-value="oyster-gold">
+            <img src="img/datejust/bracelet/oyster-gold.png" alt="Oyster Gold">
+            <span>Oyster Gold</span>
+        </div>
+
+        <!-- 9 — Gold Presidential -->
+        <div class="dj-option" data-part="bracelet" data-value="gold-presidential">
+            <img src="img/datejust/bracelet/gold-presidential.png" alt="Gold Presidential">
+            <span>Gold Presidential</span>
+        </div>
+
+        <!-- 10 — Jubilee Gold Silver -->
+        <div class="dj-option" data-part="bracelet" data-value="jubilee-gold-silver">
+            <img src="img/datejust/bracelet/jubilee-gold-silver.png" alt="Jubilee Gold Silver">
+            <span>Jubilee Gold Silver</span>
+        </div>
+
+        <!-- 11 — Oyster Gold Silver -->
+        <div class="dj-option" data-part="bracelet" data-value="oyster-gold-silver">
+            <img src="img/datejust/bracelet/oyster-gold-silver.png" alt="Oyster Gold Silver">
+            <span>Oyster Gold Silver</span>
+        </div>
+
+        <!-- 12 — Jubilee Rose Gold Silver -->
+        <div class="dj-option" data-part="bracelet" data-value="jubilee-rose-silver">
+            <img src="img/datejust/bracelet/jubilee-rose-silver.png" alt="Jubilee Rose Gold Silver">
+            <span>Jubilee Rose Gold Silver</span>
+        </div>
+
+        <!-- 13 — Oyster Rose Gold Silver -->
+        <div class="dj-option" data-part="bracelet" data-value="oyster-rose-silver">
+            <img src="img/datejust/bracelet/oyster-rose-silver.png" alt="Oyster Rose Gold Silver">
+            <span>Oyster Rose Gold Silver</span>
+        </div>
+
+        <!-- 14 — Rubber -->
+        <div class="dj-option" data-part="bracelet" data-value="rubber">
+            <img src="img/datejust/bracelet/rubber.png" alt="Rubber">
+            <span>Rubber</span>
+        </div>
+
+    </div>
+</details>
+
+
+            <!-- DIAL -->
+            <details>
+                <summary>Dial</summary>
+                <div class="dj-grid" id="dj-dials-container"></div>
+            </details>
+
+            <!-- HANDS -->
+            <details>
+                <summary>Hands</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="hands" data-value="1">
+                        <img src="img/datejust/hands/h1.png">
+                        <span>Hands 1</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="2">
+                        <img src="img/datejust/hands/h2.png">
+                        <span>Hands 2</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="3">
+                        <img src="img/datejust/hands/h3.png">
+                        <span>Hands 3</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="4">
+                        <img src="img/datejust/hands/h4.png">
+                        <span>Hands 4</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- DATE -->
+            <details>
+                <summary>Date</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="date" data-value="date">
+                        <img src="img/datejust/date/date.png">
+                        <span>Date</span>
+                    </div>
+
+                    <div class="dj-option" data-part="date" data-value="no-date">
+                        <img src="img/datejust/date/no-date.png">
+                        <span>No Date</span>
+                    </div>
+
+                </div>
+            </details>
+
+        </aside>
+
+    </main>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                </div>
+            
+            <div class="footer-links">
+                <!-- Cambiando copyright de CrownMods a ModWatches -->
+                <p>© 2025, ModWatches</p>
+                <div class="footer-menu">
+                    <!-- Updated footer links to point to actual HTML files instead of anchor links -->
+                    <a href="politica-privacidad.html">Política de privacidad</a>
+                    <a href="politica-reembolso.html">Política de reembolso</a>
+                    <a href="terminos-servicio.html">Términos del servicio</a>
+                    <a href="politica-envio.html">Política de envío</a>
+                    <a href="informacion-contacto.html">Información de contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

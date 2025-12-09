@@ -23,6 +23,7 @@ html, body {
   --light-blue: #4a90e2; /* <-- Azul francés claro */
   --background: #fafafa; /* <-- Fondo más suave */
   --primary-color: #022141; /* <-- Added for mobile menu background */
+  --red: #991f1f;
 }
 
 body {
@@ -848,9 +849,8 @@ body {
 }
 
 .btn-secondary {
-  background: transparent;
+  background: var(--accent-gold);
   color: var(--white);
-  border: 2px solid var(--white);
 }
 
 .btn-secondary:hover {
@@ -3067,4 +3067,215 @@ body {
 /* Adding text-decoration: none to remove hyperlink underline */
 .logo-center {
   text-decoration: none;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+
+.configurator {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+@media (max-width: 900px) {
+    .configurator {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== PREVIEW ===== */
+
+.preview {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#watch-stage {
+    width: 420px;
+    height: 420px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    position: relative;
+}
+
+#watch-stage img.layer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    pointer-events: none;
+}
+
+/* GRID DE CONFIGURADORES – 3 ARRIBA, 3 ABAJO */
+.config-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 40px; /* separación entre cards */
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* CARD */
+.config-card {
+    position: relative;
+    background: #000;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.config-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen */
+.config-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Título */
+.config-card h3 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Precios */
+.price {
+    color: #f1c40f;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.price .old {
+    color: #aaa;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+
+/* Sale Tag */
+.sale-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f1c40f;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #000;
+}
+
+/* 📱 Responsive */
+@media (max-width: 992px) {
+    .config-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .config-grid {
+        grid-template-columns: 1fr; /* 1 columna en móvil */
+    }
+}
+/* ESTILOS DE CONFIGURADOR DATEJUST*/
+.dj-container {
+    display: grid;
+    grid-template-columns: 550px 1fr;
+    padding: 40px;
+    gap: 40px;
+}
+
+.dj-preview {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#dj-watch {
+    width: 480px;
+    height: 480px;
+    position: relative;
+}
+
+#dj-watch img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    max-width:95%;
+    pointer-events:none;
+}
+
+/* RIGHT PANEL */
+
+.dj-options h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+details {
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+summary {
+    padding:14px;
+    font-size:18px;
+    background:#f7f7f7;
+    cursor:pointer;
+}
+
+.dj-grid {
+    padding:14px;
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(120px,1fr));
+    gap:12px;
+}
+
+.dj-option {
+    border:1px solid #ddd;
+    border-radius:10px;
+    background:white;
+    padding:10px;
+    cursor:pointer;
+    transition:.15s;
+    text-align:center;
+}
+
+.dj-option img {
+    width:100%;
+    margin-bottom:6px;
+}
+
+.dj-option:hover {
+    transform: translateY(-3px);
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dj-option.active {
+    border-color:#e6c200;
+    background:#fffbea;
+    box-shadow:0 4px 14px rgba(230,194,0,0.4);
 }

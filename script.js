@@ -2240,3 +2240,143 @@ document.addEventListener("DOMContentLoaded", () => {
   // arrancar
   startAutoplay();
 });
+
+// RUTA BASE REAL
+const BASE = "img/datejust/";
+
+// ASSETS BASE
+const ASSETS = {
+    case: {
+        "fluted":       BASE + "case/fluted.png",
+        "plain":        BASE + "case/plain.png",
+        "rose-flutted": BASE + "case/rose-flutted.png",
+        "rose-plain":   BASE + "case/rose-plain.png",
+        "gold-flutted": BASE + "case/gold-flutted.png",
+        "gold-plain":   BASE + "case/gold-plain.png"
+    },
+    bracelet: {
+        "jubilee":      BASE + "bracelet/jubilee.png",
+        "oyster":       BASE + "bracelet/oyster.png",
+        "presidential": BASE + "bracelet/presidential.png",
+        "rubber":       BASE + "bracelet/rubber.png"
+    },
+    dial: {},
+    hands: {},
+    date: {
+        "date":    BASE + "date/date.png",
+        "no-date": BASE + "date/no-date.png"
+    }
+};
+
+
+// ==========================================
+// 🔥 HANDS — usando h1.png, h2.png, h3.png, h4.png
+// ==========================================
+
+ASSETS.hands = {
+    1: BASE + "hands/h1.png",
+    2: BASE + "hands/h2.png",
+    3: BASE + "hands/h3.png",
+    4: BASE + "hands/h4.png"
+};
+
+
+// ==========================================
+// 🔥 GENERAR AUTOMÁTICAMENTE LOS 27 DIALES
+// ==========================================
+
+const dialContainer = document.getElementById("dj-dials-container");
+
+for (let i = 1; i <= 27; i++) {
+    ASSETS.dial[i] = `${BASE}dial/${i}.png`;
+
+    dialContainer.innerHTML += `
+        <div class="dj-option" data-part="dial" data-value="${i}">
+            <img src="${ASSETS.dial[i]}">
+            <span>${i}</span>
+        </div>
+    `;
+}
+
+
+// ==========================================
+// DEFAULT SELECTION
+// ==========================================
+
+const selected = {
+    case: "fluted",
+    bracelet: "jubilee",
+    dial: "1",
+    hands: "1",
+    date: "date",
+    size: "36mm"
+};
+
+
+// ==========================================
+// APLICAR AL CARGAR
+// ==========================================
+
+window.onload = () => {
+    updateLayer("case", selected.case);
+    updateLayer("bracelet", selected.bracelet);
+    updateLayer("dial", selected.dial);
+    updateLayer("hands", selected.hands);
+    updateLayer("date", selected.date);
+
+    activateInitialOptions();
+};
+
+
+function activateInitialOptions() {
+    for (let part in selected) {
+        const el = document.querySelector(`.dj-option[data-part="${part}"][data-value="${selected[part]}"]`);
+        if (el) el.classList.add("active");
+    }
+}
+
+
+// ==========================================
+// FUNCION PARA CAMBIAR SPRITES
+// ==========================================
+
+function updateLayer(part, value) {
+    const img = document.getElementById(`dj-${part}`);
+
+    if (part === "date") {
+        if (value === "no-date") {
+            // No mostrar nada en la preview
+            img.style.display = "none";
+        } else {
+            // Mostrar la ventana de fecha normal
+            img.style.display = "block";
+            img.src = ASSETS.date[value];   // date.png
+        }
+        selected[part] = value;
+        return;
+    }
+
+    // Para las demás partes
+    img.src = ASSETS[part][value];
+    selected[part] = value;
+}
+
+// ==========================================
+// CLICKS DEL CONFIGURADOR
+// ==========================================
+
+document.addEventListener("click", e => {
+    const option = e.target.closest(".dj-option");
+    if (!option) return;
+
+    const part = option.dataset.part;
+    const value = option.dataset.value;
+
+    document
+        .querySelectorAll(`.dj-option[data-part="${part}"]`)
+        .forEach(o => o.classList.remove("active"));
+
+    option.classList.add("active");
+
+    updateLayer(part, value);
+});
