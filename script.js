@@ -2254,12 +2254,27 @@ const ASSETS = {
         "gold-flutted": BASE + "case/gold-flutted.png",
         "gold-plain":   BASE + "case/gold-plain.png"
     },
-    bracelet: {
-        "jubilee":      BASE + "bracelet/jubilee.png",
-        "oyster":       BASE + "bracelet/oyster.png",
-        "presidential": BASE + "bracelet/presidential.png",
-        "rubber":       BASE + "bracelet/rubber.png"
-    },
+bracelet: {
+    "jubilee":                 BASE + "bracelet/jubilee.png",
+    "oyster":                  BASE + "bracelet/oyster.png",
+    "presidential":            BASE + "bracelet/presidential.png",
+
+    "rose-jubilee":            BASE + "bracelet/rose-jubilee.png",
+    "oyster-rose":             BASE + "bracelet/oyster-rose.png",
+    "presidential-rose":       BASE + "bracelet/presidential-rose.png",
+
+    "gold-jubilee":             BASE + "bracelet/gold-jubilee.png",
+    "oyster-gold":              BASE + "bracelet/oyster-gold.png",
+    "gold-presidential":        BASE + "bracelet/gold-presidential.png",
+
+    "jubilee-gold-silver":      BASE + "bracelet/jubilee-gold-silver.png",
+    "oyster-gold-silver":       BASE + "bracelet/oyster-gold-silver.png",
+
+    "jubilee-rose-silver":      BASE + "bracelet/jubilee-rose-silver.png",
+    "oyster-rose-silver":       BASE + "bracelet/oyster-rose-silver.png",
+
+    "rubber":                  BASE + "bracelet/rubber.png"
+},
     dial: {},
     hands: {},
     date: {
@@ -2379,4 +2394,42 @@ document.addEventListener("click", e => {
     option.classList.add("active");
 
     updateLayer(part, value);
+});
+
+function buyCurrentProduct() {
+    const phoneNumber = "5491137003736"; // +54 9 11 3700-3736
+
+    // Texto base
+    let message = `Hola, quiero comprar mi Datejust personalizado.%0A%0A`;
+
+    // Configuración elegida
+    message += `*Configuración elegida:*%0A`;
+    message += `• Case: ${formatValue(selected.case)}%0A`;
+    message += `• Size: ${selected.size}%0A`;
+    message += `• Bracelet: ${formatValue(selected.bracelet)}%0A`;
+    message += `• Dial: ${selected.dial}%0A`;
+    message += `• Hands: ${selected.hands}%0A`;
+    message += `• Date: ${selected.date === "date" ? "Con Date" : "Sin Date"}%0A`;
+
+    // URL final de WhatsApp
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+
+    // Abrir WhatsApp
+    window.open(whatsappURL, "_blank");
+}
+
+function formatValue(value) {
+    return value
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, l => l.toUpperCase());
+}
+
+document.querySelectorAll("details").forEach(d => {
+    d.addEventListener("toggle", () => {
+        if (d.open) {
+            document.querySelectorAll("details").forEach(o => {
+                if (o !== d) o.open = false;
+            });
+        }
+    });
 });

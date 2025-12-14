@@ -3130,7 +3130,7 @@ body {
 /* CARD */
 .config-card {
     position: relative;
-    background: #000;
+    background: var(--dark-gray);
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -3148,6 +3148,7 @@ body {
     height: auto;
     object-fit: cover;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 /* Título */
@@ -3279,3 +3280,4 @@ summary {
     background:#fffbea;
     box-shadow:0 4px 14px rgba(230,194,0,0.4);
 }
+
