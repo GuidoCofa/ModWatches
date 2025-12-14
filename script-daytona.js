@@ -125,3 +125,66 @@ window.addEventListener("DOMContentLoaded", () => {
 
   activateInitialOptionsDaytona();
 });
+
+// ------------------------------------------------------------------
+// FUNCIONES PARA MENÚ MÓVIL Y DROPDOWNS
+
+// Abre/cierra el menú hamburguesa
+function toggleMobileMenu() {
+  const mobileNav = document.getElementById("mobile-nav")
+  const mobileToggle = document.querySelector(".mobile-menu-toggle")
+
+  if (!mobileNav || !mobileToggle) {
+    console.log("[v0] Mobile menu elements not found")
+    return
+  }
+
+  mobileNav.classList.toggle("active")
+  mobileToggle.classList.toggle("active")
+}
+
+// Abre/cierra el dropdown “Catálogo” dentro del menú móvil
+function toggleMobileDropdown(event) {
+  event.preventDefault()
+  event.stopPropagation()
+
+  const dropdown = event.currentTarget.closest(".mobile-dropdown")
+  const dropdownMenu = dropdown.querySelector(".mobile-dropdown-menu")
+
+  if (!dropdown || !dropdownMenu) {
+    console.log("[v1] Mobile dropdown elements not found")
+    return
+  }
+
+  // Cierra otros dropdowns abiertos
+  document.querySelectorAll(".mobile-dropdown-menu").forEach((menu) => {
+    if (menu !== dropdownMenu) {
+      menu.classList.remove("active")
+    }
+  })
+
+  // Alterna este dropdown
+  dropdownMenu.classList.toggle("active")
+}
+
+// ------------------------------------------------------------------
+// CERRAR EL MENÚ MÓVIL AL HACER CLIC EN LINKS NORMALES
+// (pero NO cerrar cuando se pulsa el toggle de Catálogo)
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      // Si es el toggle del Catálogo NO cerrar el menú hamburguesa
+      if (link.classList.contains("dropdown-toggle")) {
+        e.preventDefault()
+        return // salir sin cerrar menú
+      }
+      // Para cualquier otro link normal, sí cerramos el menú hamburguesa
+      const mobileNav = document.getElementById("mobile-nav")
+      const mobileToggle = document.querySelector(".mobile-menu-toggle")
+      if (mobileNav && mobileToggle) {
+        mobileNav.classList.remove("active")
+        mobileToggle.classList.remove("active")
+      }
+    })
+  })
+})

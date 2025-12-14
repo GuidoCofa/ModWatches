@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="./img/faviconmodwatchs.jpg">
+    <title>Submariner & GMT – Configuración</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header class="header">
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    <div class="container">
+      <span class="promo-text">$15 de descuento si te llevas 3 relojes →</span>
+    </div>
+  </div>
+  <!-- LOGO centrado -->
+  <div class="header-top">
+    <div class="container">
+      <a href="./index.html" class="logo-center">
+        <h1>MOD WATCHES</h1>
+      </a>
+    </div>
+  </div>
+ <!-- NAVBAR centrada -->
+  <nav class="header-bottom">
+    <div class="container">
+      <ul class="nav-list center-nav">
+        <li><a href="./index.html" class="nav-link active">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#catalogo" class="nav-link dropdown-toggle">
+            Catálogo <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="./catalogos/catalog-daytona.html">Daytona</a>
+            <a href="./catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+            <a href="./catalogos/catalog-submariner.html">Submariner</a>
+            <a href="./catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+            <a href="./catalogos/catalog-land-dweller.html">Land-Dweller</a>
+            <a href="./catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+            <a href="./catalogos/catalog-royal-oak.html">Royal Oak</a>
+            <a href="./catalogos/catalog-yacht-master.html">Yacht Master</a>
+            <a href="./catalogos/catalog-santos.html">Santos</a>
+            <a href="./catalogos/catalog-speedmaster.html">SpeedMaster</a>
+            <a href="./catalogos/catalog-prx.html">PRX</a>
+            <a href="./catalogos/catalog-accesorios.html">Accesorios</a>
+            <a href="./catalogos/catalog-all.html">Ver todo</a>
+          </div>
+        </li>
+        <li><a href="./personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a></li>
+        <li><a href="./informacion-contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+      <!-- Botón menú móvil -->
+<button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+</button>
+
+<!-- Navegación móvil -->
+<div class="mobile-nav" id="mobile-nav">
+  <ul class="mobile-nav-list">
+    <li><a href="./index.html" class="mobile-nav-link">Inicio</a></li>
+   <li class="mobile-dropdown">
+<a href="javascript:void(0)" class="mobile-nav-link dropdown-toggle" onclick="toggleMobileDropdown(event)">
+  Catálogo <i class="fas fa-chevron-down"></i>
+</a>
+  </a>
+  <div class="mobile-dropdown-menu">
+    <a href="./catalogos/catalog-daytona.html">Daytona</a>
+    <a href="./catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+    <a href="./catalogos/catalog-submariner.html">Submariner</a>
+    <a href="./catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+    <a href="./catalogos/catalog-land-dweller.html">Land-Dweller</a>
+    <a href="./catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+    <a href="./catalogos/catalog-royal-oak.html">Royal Oak</a>
+    <a href="./catalogos/catalog-yacht-master.html">Yacht Master</a>
+    <a href="./catalogos/catalog-santos.html">Santos</a>
+    <a href="./catalogos/catalog-speedmaster.html">SpeedMaster</a>
+    <a href="./catalogos/catalog-prx.html">PRX</a>
+    <a href="./catalogos/catalog-accesorios.html">Accesorios</a>
+    <a href="./catalogos/catalog-all.html">Ver todo</a>
+  </div>
+</li>
+
+    <li><a href="./personalizar-reloj.html" class="mobile-nav-link">Personalizar mi reloj</a></li>
+    <li><a href="./informacion-contacto.html" class="mobile-nav-link">Contacto</a></li>
+  </ul>
+</div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- CONTENIDO -->
+    <main class="dj-container">
+
+        <!-- PREVIEW IZQUIERDA -->
+        <section class="dj-preview">
+<div id="dj-watch">
+  <img id="dj-bracelet" class="dj-layer" src="img/gmtsubmariner/bracelet/1.png">
+  <img id="dj-case" class="dj-layer" src="img/gmtsubmariner/case/1.png">
+  <img id="gmtsub-bezel" class="dj-layer" src="img/gmtsubmariner/bezel/1.png">
+  <img id="dj-dial" class="dj-layer" src="img/gmtsubmariner/dial/1.png">
+  <img id="gmtsub-hands" class="dj-layer" src="img/gmtsubmariner/hands/1.png">
+  <img id="gmtsub-secondhands" class="dj-layer" src="img/gmtsubmariner/secondhands/1.png">
+  <img id="gmtsub-gmthand" class="dj-layer" src="img/gmtsubmariner/gmthand/1.png">
+</div>
+
+        </section>
+
+        <!-- OPCIONES DERECHA -->
+        <aside class="dj-options">
+
+            <h2>Configurador de Submariner & GMT</h2>
+
+            <!-- CASES -->
+            <details open>
+                <summary>Cases</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="case" data-value="1">
+                        <img src="img/gmtsubmariner/case/1.png">
+                        <span>1</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="2">
+                        <img src="img/gmtsubmariner/case/2.png">
+                        <span>2</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="3">
+                        <img src="img/gmtsubmariner/case/3.png">
+                        <span>3</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="4">
+                        <img src="img/gmtsubmariner/case/4.png">
+                        <span>4</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="5">
+                        <img src="img/gmtsubmariner/case/5.png">
+                        <span>5</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="6">
+                        <img src="img/gmtsubmariner/case/6.png">
+                        <span>6</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="7">
+                        <img src="img/gmtsubmariner/case/7.png">
+                        <span>7</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="8">
+                        <img src="img/gmtsubmariner/case/8.png">
+                        <span>8</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- BRACELET -->
+            <details>
+                <summary>Bracelet</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="bracelet" data-value="1">
+                        <img src="img/gmtsubmariner/bracelet/1.png">
+                        <span>1</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="2">
+                        <img src="img/gmtsubmariner/bracelet/2.png">
+                        <span>2</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="3">
+                        <img src="img/gmtsubmariner/bracelet/3.png">
+                        <span>3</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="4">
+                        <img src="img/gmtsubmariner/bracelet/4.png">
+                        <span>4</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="5">
+                        <img src="img/gmtsubmariner/bracelet/5.png">
+                        <span>5</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="6">
+                        <img src="img/gmtsubmariner/bracelet/6.png">
+                        <span>6</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="7">
+                        <img src="img/gmtsubmariner/bracelet/7.png">
+                        <span>7</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="8">
+                        <img src="img/gmtsubmariner/bracelet/8.png">
+                        <span>8</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="9">
+                        <img src="img/gmtsubmariner/bracelet/9.png">
+                        <span>9</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="10">
+                        <img src="img/gmtsubmariner/bracelet/10.png">
+                        <span>10</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="11">
+                        <img src="img/gmtsubmariner/bracelet/11.png">
+                        <span>11</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="12">
+                        <img src="img/gmtsubmariner/bracelet/12.png">
+                        <span>12</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="13">
+                        <img src="img/gmtsubmariner/bracelet/13.png">
+                        <span>13</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="14">
+                        <img src="img/gmtsubmariner/bracelet/14.png">
+                        <span>14</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="15">
+                        <img src="img/gmtsubmariner/bracelet/15.png">
+                        <span>15</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="16">
+                        <img src="img/gmtsubmariner/bracelet/16.png">
+                        <span>16</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="17">
+                        <img src="img/gmtsubmariner/bracelet/17.png">
+                        <span>17</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="18">
+                        <img src="img/gmtsubmariner/bracelet/18.png">
+                        <span>18</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- BEZEL -->
+            <details>
+                <summary>Bezel</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="bezel" data-value="1">
+                        <img src="img/gmtsubmariner/bezel/1.png">
+                        <span>1</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="2">
+                        <img src="img/gmtsubmariner/bezel/2.png">
+                        <span>2</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="3">
+                        <img src="img/gmtsubmariner/bezel/3.png">
+                        <span>3</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="4">
+                        <img src="img/gmtsubmariner/bezel/4.png">
+                        <span>4</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="5">
+                        <img src="img/gmtsubmariner/bezel/5.png">
+                        <span>5</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="6">
+                        <img src="img/gmtsubmariner/bezel/6.png">
+                        <span>6</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="7">
+                        <img src="img/gmtsubmariner/bezel/7.png">
+                        <span>7</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="8">
+                        <img src="img/gmtsubmariner/bezel/8.png">
+                        <span>8</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="9">
+                        <img src="img/gmtsubmariner/bezel/9.png">
+                        <span>9</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="10">
+                        <img src="img/gmtsubmariner/bezel/10.png">
+                        <span>10</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="11">
+                        <img src="img/gmtsubmariner/bezel/11.png">
+                        <span>11</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="12">
+                        <img src="img/gmtsubmariner/bezel/12.png">
+                        <span>12</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="13">
+                        <img src="img/gmtsubmariner/bezel/13.png">
+                        <span>13</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="14">
+                        <img src="img/gmtsubmariner/bezel/14.png">
+                        <span>14</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="15">
+                        <img src="img/gmtsubmariner/bezel/15.png">
+                        <span>15</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="16">
+                        <img src="img/gmtsubmariner/bezel/16.png">
+                        <span>16</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="17">
+                        <img src="img/gmtsubmariner/bezel/17.png">
+                        <span>17</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="18">
+                        <img src="img/gmtsubmariner/bezel/18.png">
+                        <span>18</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bezel" data-value="19">
+                        <img src="img/gmtsubmariner/bezel/19.png">
+                        <span>19</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- DIAL -->
+            <details>
+                <summary>Dial</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="dial" data-value="1">
+                        <img src="img/gmtsubmariner/dial/1.png">
+                        <span>1</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="2">
+                        <img src="img/gmtsubmariner/dial/2.png">
+                        <span>2</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="3">
+                        <img src="img/gmtsubmariner/dial/3.png">
+                        <span>3</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="4">
+                        <img src="img/gmtsubmariner/dial/4.png">
+                        <span>4</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="5">
+                        <img src="img/gmtsubmariner/dial/5.png">
+                        <span>5</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="6">
+                        <img src="img/gmtsubmariner/dial/6.png">
+                        <span>6</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="7">
+                        <img src="img/gmtsubmariner/dial/7.png">
+                        <span>7</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="8">
+                        <img src="img/gmtsubmariner/dial/8.png">
+                        <span>8</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="9">
+                        <img src="img/gmtsubmariner/dial/9.png">
+                        <span>9</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="10">
+                        <img src="img/gmtsubmariner/dial/10.png">
+                        <span>10</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="11">
+                        <img src="img/gmtsubmariner/dial/11.png">
+                        <span>11</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="12">
+                        <img src="img/gmtsubmariner/dial/12.png">
+                        <span>12</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="13">
+                        <img src="img/gmtsubmariner/dial/13.png">
+                        <span>13</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="14">
+                        <img src="img/gmtsubmariner/dial/14.png">
+                        <span>14</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="15">
+                        <img src="img/gmtsubmariner/dial/15.png">
+                        <span>15</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="16">
+                        <img src="img/gmtsubmariner/dial/16.png">
+                        <span>16</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="17">
+                        <img src="img/gmtsubmariner/dial/17.png">
+                        <span>17</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="18">
+                        <img src="img/gmtsubmariner/dial/18.png">
+                        <span>18</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="19">
+                        <img src="img/gmtsubmariner/dial/19.png">
+                        <span>19</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="20">
+                        <img src="img/gmtsubmariner/dial/20.png">
+                        <span>20</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="21">
+                        <img src="img/gmtsubmariner/dial/21.png">
+                        <span>21</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="22">
+                        <img src="img/gmtsubmariner/dial/22.png">
+                        <span>22</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="23">
+                        <img src="img/gmtsubmariner/dial/23.png">
+                        <span>23</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="24">
+                        <img src="img/gmtsubmariner/dial/24.png">
+                        <span>24</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="25">
+                        <img src="img/gmtsubmariner/dial/25.png">
+                        <span>25</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="26">
+                        <img src="img/gmtsubmariner/dial/26.png">
+                        <span>26</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="27">
+                        <img src="img/gmtsubmariner/dial/27.png">
+                        <span>27</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="28">
+                        <img src="img/gmtsubmariner/dial/28.png">
+                        <span>28</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- HANDS -->
+            <details>
+                <summary>Hands</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="hands" data-value="1">
+                        <img src="img/gmtsubmariner/hands/1.png">
+                        <span>1</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="2">
+                        <img src="img/gmtsubmariner/hands/2.png">
+                        <span>2</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="3">
+                        <img src="img/gmtsubmariner/hands/3.png">
+                        <span>3</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="4">
+                        <img src="img/gmtsubmariner/hands/4.png">
+                        <span>4</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="5">
+                        <img src="img/gmtsubmariner/hands/5.png">
+                        <span>5</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="6">
+                        <img src="img/gmtsubmariner/hands/6.png">
+                        <span>6</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="7">
+                        <img src="img/gmtsubmariner/hands/7.png">
+                        <span>7</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="8">
+                        <img src="img/gmtsubmariner/hands/8.png">
+                        <span>8</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="9">
+                        <img src="img/gmtsubmariner/hands/9.png">
+                        <span>9</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="10">
+                        <img src="img/gmtsubmariner/hands/10.png">
+                        <span>10</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="11">
+                        <img src="img/gmtsubmariner/hands/11.png">
+                        <span>11</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="12">
+                        <img src="img/gmtsubmariner/hands/12.png">
+                        <span>12</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="13">
+                        <img src="img/gmtsubmariner/hands/13.png">
+                        <span>13</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- SECOND HANDS -->
+            <details>
+                <summary>Second Hands</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="secondhands" data-value="1">
+                        <img src="img/gmtsubmariner/secondhands/1.png">
+                        <span>1</span>
+                    </div>
+
+                    <div class="dj-option" data-part="secondhands" data-value="2">
+                        <img src="img/gmtsubmariner/secondhands/2.png">
+                        <span>2</span>
+                    </div>
+
+                    <div class="dj-option" data-part="secondhands" data-value="3">
+                        <img src="img/gmtsubmariner/secondhands/3.png">
+                        <span>3</span>
+                    </div>
+
+                    <div class="dj-option" data-part="secondhands" data-value="4">
+                        <img src="img/gmtsubmariner/secondhands/4.png">
+                        <span>4</span>
+                    </div>
+
+                    <div class="dj-option" data-part="secondhands" data-value="5">
+                        <img src="img/gmtsubmariner/secondhands/5.png">
+                        <span>5</span>
+                    </div>
+
+                    <div class="dj-option" data-part="secondhands" data-value="6">
+                        <img src="img/gmtsubmariner/secondhands/6.png">
+                        <span>6</span>
+                    </div>
+
+                    <div class="dj-option" data-part="secondhands" data-value="7">
+                        <img src="img/gmtsubmariner/secondhands/7.png">
+                        <span>7</span>
+                    </div>
+
+                    <div class="dj-option" data-part="secondhands" data-value="8">
+                        <img src="img/gmtsubmariner/secondhands/8.png">
+                        <span>8</span>
+                    </div>
+
+                    <div class="dj-option" data-part="secondhands" data-value="9">
+                        <img src="img/gmtsubmariner/secondhands/9.png">
+                        <span>9</span>
+                    </div>
+
+                    <div class="dj-option" data-part="secondhands" data-value="10">
+                        <img src="img/gmtsubmariner/secondhands/10.png">
+                        <span>10</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- GMT HAND -->
+            <details>
+                <summary>GMT Hand</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="gmthand" data-value="1">
+                        <img src="img/gmtsubmariner/gmthand/1.png">
+                        <span>1</span>
+                    </div>
+
+                    <div class="dj-option" data-part="gmthand" data-value="2">
+                        <img src="img/gmtsubmariner/gmthand/2.png">
+                        <span>2</span>
+                    </div>
+
+                    <div class="dj-option" data-part="gmthand" data-value="3">
+                        <img src="img/gmtsubmariner/gmthand/3.png">
+                        <span>3</span>
+                    </div>
+
+                    <div class="dj-option" data-part="gmthand" data-value="4">
+                        <img src="img/gmtsubmariner/gmthand/4.png">
+                        <span>4</span>
+                    </div>
+
+                    <div class="dj-option" data-part="gmthand" data-value="5">
+                        <img src="img/gmtsubmariner/gmthand/5.png">
+                        <span>5</span>
+                    </div>
+
+                    <div class="dj-option" data-part="gmthand" data-value="6">
+                        <img src="img/gmtsubmariner/gmthand/6.png">
+                        <span>6</span>
+                    </div>
+
+                    <div class="dj-option" data-part="gmthand" data-value="7">
+                        <img src="img/gmtsubmariner/gmthand/7.png">
+                        <span>7</span>
+                    </div>
+
+                    <div class="dj-option" data-part="gmthand" data-value="8">
+                        <img src="img/gmtsubmariner/gmthand/8.png">
+                        <span>8</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <div class="whatsapp-buy-wrapper">
+                <button onclick="buyCurrentProductGMTSubmariner()" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                </button>
+            </div>
+
+        </aside>
+
+    </main>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                </div>
+            
+            <div class="footer-links">
+                <p>© 2025, ModWatches</p>
+                <div class="footer-menu">
+                    <a href="politica-privacidad.html">Política de privacidad</a>
+                    <a href="politica-reembolso.html">Política de reembolso</a>
+                    <a href="terminos-servicio.html">Términos del servicio</a>
+                    <a href="politica-envio.html">Política de envío</a>
+                    <a href="informacion-contacto.html">Información de contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="script-gmtsubmariner.js"></script>
+</body>
+</html>
