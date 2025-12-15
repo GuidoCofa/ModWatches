@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="./img/faviconmodwatchs.jpg">    
+    <title>Santos – Configuración</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header class="header">
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    <div class="container">
+      <span class="promo-text">$15 de descuento si te llevas 3 relojes →</span>
+    </div>
+  </div>
+  <!-- LOGO centrado -->
+  <div class="header-top">
+    <div class="container">
+      <a href="./index.html" class="logo-center">
+        <h1>MOD WATCHES</h1>
+      </a>
+    </div>
+  </div>
+ <!-- NAVBAR centrada -->
+  <nav class="header-bottom">
+    <div class="container">
+      <ul class="nav-list center-nav">
+        <li><a href="./index.html" class="nav-link active">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#catalogo" class="nav-link dropdown-toggle">
+            Catálogo <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="./catalogos/catalog-daytona.html">Daytona</a>
+            <a href="./catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+            <a href="./catalogos/catalog-submariner.html">Submariner</a>
+            <a href="./catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+            <a href="./catalogos/catalog-land-dweller.html">Land-Dweller</a>
+            <a href="./catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+            <a href="./catalogos/catalog-royal-oak.html">Royal Oak</a>
+            <a href="./catalogos/catalog-yacht-master.html">Yacht Master</a>
+            <a href="./catalogos/catalog-santos.html">Santos</a>
+            <a href="./catalogos/catalog-speedmaster.html">SpeedMaster</a>
+            <a href="./catalogos/catalog-prx.html">PRX</a>
+            <a href="./catalogos/catalog-accesorios.html">Accesorios</a>
+            <a href="./catalogos/catalog-all.html">Ver todo</a>
+          </div>
+        </li>
+        <li><a href="./personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a></li>
+        <li><a href="./informacion-contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+      <!-- Botón menú móvil -->
+<button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+</button>
+
+<!-- Navegación móvil -->
+<div class="mobile-nav" id="mobile-nav">
+  <ul class="mobile-nav-list">
+    <li><a href="./index.html" class="mobile-nav-link">Inicio</a></li>
+   <li class="mobile-dropdown">
+<a href="javascript:void(0)" class="mobile-nav-link dropdown-toggle" onclick="toggleMobileDropdown(event)">
+  Catálogo <i class="fas fa-chevron-down"></i>
+</a>
+  </a>
+  <div class="mobile-dropdown-menu">
+    <a href="./catalogos/catalog-daytona.html">Daytona</a>
+    <a href="./catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+    <a href="./catalogos/catalog-submariner.html">Submariner</a>
+    <a href="./catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+    <a href="./catalogos/catalog-land-dweller.html">Land-Dweller</a>
+    <a href="./catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+    <a href="./catalogos/catalog-royal-oak.html">Royal Oak</a>
+    <a href="./catalogos/catalog-yacht-master.html">Yacht Master</a>
+    <a href="./catalogos/catalog-santos.html">Santos</a>
+    <a href="./catalogos/catalog-speedmaster.html">SpeedMaster</a>
+    <a href="./catalogos/catalog-prx.html">PRX</a>
+    <a href="./catalogos/catalog-accesorios.html">Accesorios</a>
+    <a href="./catalogos/catalog-all.html">Ver todo</a>
+  </div>
+</li>
+
+    <li><a href="./personalizar-reloj.html" class="mobile-nav-link">Personalizar mi reloj</a></li>
+    <li><a href="./informacion-contacto.html" class="mobile-nav-link">Contacto</a></li>
+  </ul>
+</div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- CONTENIDO -->
+    <main class="dj-container">
+
+        <!-- PREVIEW IZQUIERDA -->
+        <section class="dj-preview">
+<div id="dj-watch">
+  <img id="santos-bracelet" class="dj-layer" src="img/santos/bracelet/blue.png">
+  <img id="santos-case" class="dj-layer" src="img/santos/case/rose.png">
+  <img id="santos-dial" class="dj-layer" src="img/santos/dial/blue.png">
+  <img id="santos-hands" class="dj-layer" src="img/santos/hands/rose.png">
+</div>
+
+        </section>
+
+        <!-- OPCIONES DERECHA -->
+        <aside class="dj-options">
+
+            <h2>Configurador de Santos</h2>
+
+            <!-- BRACELET -->
+            <details open>
+                <summary>Bracelet</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="bracelet" data-value="blue">
+                        <img src="img/santos/bracelet/blue.png">
+                        <span>Blue</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="black">
+                        <img src="img/santos/bracelet/black.png">
+                        <span>Black</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="green">
+                        <img src="img/santos/bracelet/green.png">
+                        <span>Green</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="silver">
+                        <img src="img/santos/bracelet/silver.png">
+                        <span>Silver</span>
+                    </div>
+
+                    <div class="dj-option" data-part="bracelet" data-value="brown">
+                        <img src="img/santos/bracelet/brown.png">
+                        <span>Brown</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- CASE -->
+            <details>
+                <summary>Case</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="case" data-value="rose">
+                        <img src="img/santos/case/rose.png">
+                        <span>Rose</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="silver-blue">
+                        <img src="img/santos/case/silver-blue.png">
+                        <span>Silver-blue</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="silver-rose">
+                        <img src="img/santos/case/silver-rose.png">
+                        <span>Silver-rose</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="silver-gold">
+                        <img src="img/santos/case/silver-gold.png">
+                        <span>Silver-gold</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="silver">
+                        <img src="img/santos/case/silver.png">
+                        <span>Silver</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="gold">
+                        <img src="img/santos/case/gold.png">
+                        <span>Gold</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- DIAL -->
+            <details>
+                <summary>Dial</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="dial" data-value="blue">
+                        <img src="img/santos/dial/blue.png">
+                        <span>Blue</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="black">
+                        <img src="img/santos/dial/black.png">
+                        <span>Black</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="white-date">
+                        <img src="img/santos/dial/white-date.png">
+                        <span>White-date</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="light-blue">
+                        <img src="img/santos/dial/light-blue.png">
+                        <span>Light-blue</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="green">
+                        <img src="img/santos/dial/green.png">
+                        <span>Green</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="f-95">
+                        <img src="img/santos/dial/f-95.png">
+                        <span>F-95</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="blue-date">
+                        <img src="img/santos/dial/blue-date.png">
+                        <span>Blue-date</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="navy">
+                        <img src="img/santos/dial/navy.png">
+                        <span>Navy</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="brown">
+                        <img src="img/santos/dial/brown.png">
+                        <span>Brown</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="dark-green">
+                        <img src="img/santos/dial/dark-green.png">
+                        <span>Dark-green</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="white">
+                        <img src="img/santos/dial/white.png">
+                        <span>White</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- HANDS -->
+            <details>
+                <summary>Hands</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="hands" data-value="rose">
+                        <img src="img/santos/hands/rose.png">
+                        <span>Rose</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="blue">
+                        <img src="img/santos/hands/blue.png">
+                        <span>Blue</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="black">
+                        <img src="img/santos/hands/black.png">
+                        <span>Black</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="silver">
+                        <img src="img/santos/hands/silver.png">
+                        <span>Silver</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="gold">
+                        <img src="img/santos/hands/gold.png">
+                        <span>Gold</span>
+                    </div>
+                </div>
+            </details>
+
+            <div class="whatsapp-buy-wrapper">
+                <button onclick="buyCurrentProductSantos()" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                </button>
+            </div>
+
+        </aside>
+
+    </main>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                </div>
+            
+            <div class="footer-links">
+                <p>© 2025, ModWatches</p>
+                <div class="footer-menu">
+                    <a href="politica-privacidad.html">Política de privacidad</a>
+                    <a href="politica-reembolso.html">Política de reembolso</a>
+                    <a href="terminos-servicio.html">Términos del servicio</a>
+                    <a href="politica-envio.html">Política de envío</a>
+                    <a href="informacion-contacto.html">Información de contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="script-santos.js"></script>
+</body>
+</html>

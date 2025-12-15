@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="./img/faviconmodwatchs.jpg">
+    <title>Nautilus – Configuración</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header class="header">
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    <div class="container">
+      <span class="promo-text">$15 de descuento si te llevas 3 relojes →</span>
+    </div>
+  </div>
+  <!-- LOGO centrado -->
+  <div class="header-top">
+    <div class="container">
+      <a href="./index.html" class="logo-center">
+        <h1>MOD WATCHES</h1>
+      </a>
+    </div>
+  </div>
+ <!-- NAVBAR centrada -->
+  <nav class="header-bottom">
+    <div class="container">
+      <ul class="nav-list center-nav">
+        <li><a href="./index.html" class="nav-link active">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#catalogo" class="nav-link dropdown-toggle">
+            Catálogo <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="./catalogos/catalog-daytona.html">Daytona</a>
+            <a href="./catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+            <a href="./catalogos/catalog-submariner.html">Submariner</a>
+            <a href="./catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+            <a href="./catalogos/catalog-land-dweller.html">Land-Dweller</a>
+            <a href="./catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+            <a href="./catalogos/catalog-royal-oak.html">Royal Oak</a>
+            <a href="./catalogos/catalog-yacht-master.html">Yacht Master</a>
+            <a href="./catalogos/catalog-santos.html">Santos</a>
+            <a href="./catalogos/catalog-speedmaster.html">SpeedMaster</a>
+            <a href="./catalogos/catalog-prx.html">PRX</a>
+            <a href="./catalogos/catalog-accesorios.html">Accesorios</a>
+            <a href="./catalogos/catalog-all.html">Ver todo</a>
+          </div>
+        </li>
+        <li><a href="./personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a></li>
+        <li><a href="./informacion-contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+      <!-- Botón menú móvil -->
+<button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+</button>
+
+<!-- Navegación móvil -->
+<div class="mobile-nav" id="mobile-nav">
+  <ul class="mobile-nav-list">
+    <li><a href="./index.html" class="mobile-nav-link">Inicio</a></li>
+   <li class="mobile-dropdown">
+<a href="javascript:void(0)" class="mobile-nav-link dropdown-toggle" onclick="toggleMobileDropdown(event)">
+  Catálogo <i class="fas fa-chevron-down"></i>
+</a>
+  </a>
+  <div class="mobile-dropdown-menu">
+    <a href="./catalogos/catalog-daytona.html">Daytona</a>
+    <a href="./catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+    <a href="./catalogos/catalog-submariner.html">Submariner</a>
+    <a href="./catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+    <a href="./catalogos/catalog-land-dweller.html">Land-Dweller</a>
+    <a href="./catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+    <a href="./catalogos/catalog-royal-oak.html">Royal Oak</a>
+    <a href="./catalogos/catalog-yacht-master.html">Yacht Master</a>
+    <a href="./catalogos/catalog-santos.html">Santos</a>
+    <a href="./catalogos/catalog-speedmaster.html">SpeedMaster</a>
+    <a href="./catalogos/catalog-prx.html">PRX</a>
+    <a href="./catalogos/catalog-accesorios.html">Accesorios</a>
+    <a href="./catalogos/catalog-all.html">Ver todo</a>
+  </div>
+</li>
+
+    <li><a href="./personalizar-reloj.html" class="mobile-nav-link">Personalizar mi reloj</a></li>
+    <li><a href="./informacion-contacto.html" class="mobile-nav-link">Contacto</a></li>
+  </ul>
+</div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- CONTENIDO -->
+    <main class="dj-container">
+
+        <!-- PREVIEW IZQUIERDA -->
+<section class="dj-preview nautilus-preview">
+  <div id="dj-watch" class="nautilus-watch">
+    <img id="dj-case" class="dj-layer" src="img/nautilus/case/Rose Gold.png">
+    <img id="dj-dial" class="dj-layer" src="img/nautilus/dial/Blue open Dial.png">
+    <img id="nautilus-hands" class="dj-layer" src="img/nautilus/hands/Silver.png">
+  </div>
+</section>
+        <!-- OPCIONES DERECHA -->
+        <aside class="dj-options">
+
+            <h2>Configurador de Nautilus</h2>
+
+            <!-- CASE -->
+            <details open>
+                <summary>Case</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="case" data-value="Rose Gold">
+                        <img src="img/nautilus/case/Rose Gold.png">
+                        <span>Rose Gold</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="Silver">
+                        <img src="img/nautilus/case/Silver.png">
+                        <span>Silver</span>
+                    </div>
+
+                    <div class="dj-option" data-part="case" data-value="Gold">
+                        <img src="img/nautilus/case/Gold.png">
+                        <span>Gold</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- DIAL -->
+            <details>
+                <summary>Dial</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="dial" data-value="Blue open Dial">
+                        <img src="img/nautilus/dial/Blue open Dial.png">
+                        <span>Blue open Dial</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="Chocolate Open Dial">
+                        <img src="img/nautilus/dial/Chocolate Open Dial.png">
+                        <span>Chocolate Open Dial</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="Tiffany Open Dial">
+                        <img src="img/nautilus/dial/Tiffany Open Dial.png">
+                        <span>Tiffany Open Dial</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="White Open Dial">
+                        <img src="img/nautilus/dial/White Open Dial.png">
+                        <span>White Open Dial</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="Blue">
+                        <img src="img/nautilus/dial/Blue.png">
+                        <span>Blue</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="Pink">
+                        <img src="img/nautilus/dial/Pink.png">
+                        <span>Pink</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="Tiffany">
+                        <img src="img/nautilus/dial/tiffany.png">
+                        <span>Tiffany</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="Black">
+                        <img src="img/nautilus/dial/Black.png">
+                        <span>Black</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="White">
+                        <img src="img/nautilus/dial/White.png">
+                        <span>White</span>
+                    </div>
+
+                    <div class="dj-option" data-part="dial" data-value="Green">
+                        <img src="img/nautilus/dial/Green.png">
+                        <span>Green</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- HANDS -->
+            <details>
+                <summary>Hands</summary>
+                <div class="dj-grid">
+
+                    <div class="dj-option" data-part="hands" data-value="Silver">
+                        <img src="img/nautilus/hands/Silver.png">
+                        <span>Silver</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="Rose Gold">
+                        <img src="img/nautilus/hands/Rose Gold.png">
+                        <span>Rose Gold</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="Gold">
+                        <img src="img/nautilus/hands/Gold.png">
+                        <span>Gold</span>
+                    </div>
+
+                    <div class="dj-option" data-part="hands" data-value="Black">
+                        <img src="img/nautilus/hands/Black.png">
+                        <span>Black</span>
+                    </div>
+
+                </div>
+            </details>
+
+            <div class="whatsapp-buy-wrapper">
+                <button onclick="buyCurrentProductNautilus()" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                </button>
+            </div>
+
+        </aside>
+
+    </main>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                </div>
+            
+            <div class="footer-links">
+                <p>© 2025, ModWatches</p>
+                <div class="footer-menu">
+                    <a href="politica-privacidad.html">Política de privacidad</a>
+                    <a href="politica-reembolso.html">Política de reembolso</a>
+                    <a href="terminos-servicio.html">Términos del servicio</a>
+                    <a href="politica-envio.html">Política de envío</a>
+                    <a href="informacion-contacto.html">Información de contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="script-nautilus.js"></script>
+</body>
+</html>
