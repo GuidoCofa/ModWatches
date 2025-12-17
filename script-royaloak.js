@@ -2,62 +2,95 @@
 // ROYAL OAK CONFIGURADOR
 // ========================================
 
+// PARTES Y DEFAULTS
 const parts = {
-  case: 1,
-  dial: 1,
-  hands: 1,
-  seconds: 1,
-}
+  case: "1",
+  dial: "1",
+  hands: "1",
+  seconds: "1"
+};
 
-// Seleccionar opción
-document.querySelectorAll(".dj-option").forEach((option) => {
-  option.addEventListener("click", () => {
-    const part = option.dataset.part
-    const value = option.dataset.value
+// LABELS EN ESPAÑOL (SOLO TÍTULOS)
+const PART_LABELS_ES = {
+  case: "Caja",
+  dial: "Dial",
+  hands: "Agujas",
+  seconds: "Segundos"
+};
 
-    // Remover clase active de otros elementos de la misma parte
-    document.querySelectorAll(`.dj-option[data-part="${part}"]`).forEach((el) => {
-      el.classList.remove("active")
-    })
-
-    // Agregar clase active a la opción seleccionada
-    option.classList.add("active")
-
-    // Actualizar imagen
-    parts[part] = value
-    updateWatch()
-  })
-})
-
-// Actualizar el preview del reloj
+// ========================================
+// ACTUALIZAR PREVIEW DEL RELOJ
+// ========================================
 function updateWatch() {
-  const caseImg = document.getElementById("royaloak-case")
-  const dialImg = document.getElementById("royaloak-dial")
-  const handsImg = document.getElementById("royaloak-hands")
-  const secondsImg = document.getElementById("royaloak-seconds")
+  const caseImg = document.getElementById("royaloak-case");
+  const dialImg = document.getElementById("royaloak-dial");
+  const handsImg = document.getElementById("royaloak-hands");
+  const secondsImg = document.getElementById("royaloak-seconds");
 
-  if (caseImg) caseImg.src = `img/royaloak/case/${parts.case}.png`
-  if (dialImg) dialImg.src = `img/royaloak/dial/${parts.dial}.png`
-  if (handsImg) handsImg.src = `img/royaloak/hands/${parts.hands}.png`
-  if (secondsImg) secondsImg.src = `img/royaloak/seconds/${parts.seconds}.png`
+  if (caseImg) caseImg.src = `img/royaloak/case/${parts.case}.png`;
+  if (dialImg) dialImg.src = `img/royaloak/dial/${parts.dial}.png`;
+  if (handsImg) handsImg.src = `img/royaloak/hands/${parts.hands}.png`;
+  if (secondsImg) secondsImg.src = `img/royaloak/seconds/${parts.seconds}.png`;
 }
 
-// Función para comprar por WhatsApp
+// ========================================
+// MARCAR OPCIÓN ACTIVA
+// ========================================
+function setActiveOption(part, value) {
+  document
+    .querySelectorAll(`.dj-option[data-part="${part}"]`)
+    .forEach(el => el.classList.remove("active"));
+
+  const option = document.querySelector(
+    `.dj-option[data-part="${part}"][data-value="${value}"]`
+  );
+
+  if (option) option.classList.add("active");
+}
+
+// ========================================
+// CLICK EN OPCIONES
+// ========================================
+document.querySelectorAll(".dj-option").forEach(option => {
+  option.addEventListener("click", () => {
+    const part = option.dataset.part;
+    const value = option.dataset.value;
+
+    parts[part] = value;
+    setActiveOption(part, value);
+    updateWatch();
+  });
+});
+
+// ========================================
+// DEFAULT AL CARGAR
+// ========================================
+document.addEventListener("DOMContentLoaded", () => {
+  // Activar defaults visualmente
+  Object.keys(parts).forEach(part => {
+    setActiveOption(part, parts[part]);
+  });
+
+  // Render inicial del reloj
+  updateWatch();
+});
+
+// ========================================
+// WHATSAPP
+// ========================================
 function buyCurrentProductRoyalOak() {
-  const phoneNumber = "5493513125757"
+  const phoneNumber = "5493513125757";
 
-  const config = `*Configuración elegida:*
-• Case: ${parts.case}
-• Dial: ${parts.dial}
-• Hands: ${parts.hands}
-• Seconds: ${parts.seconds}`
+  let message = `Hola, quiero comprar un Royal Oak personalizado.\n\n`;
+  message += `Configuración elegida:\n`;
+  message += `• ${PART_LABELS_ES.case}: ${parts.case}\n`;
+  message += `• ${PART_LABELS_ES.dial}: ${parts.dial}\n`;
+  message += `• ${PART_LABELS_ES.hands}: ${parts.hands}\n`;
+  message += `• ${PART_LABELS_ES.seconds}: ${parts.seconds}`;
 
-  const message = `Hola, quiero comprar un Royal Oak personalizado.
-
-${config}`
-
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
-  window.open(whatsappUrl, "_blank")
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  window.open(whatsappUrl, "_blank");
 }
 
 // ------------------------------------------------------------------

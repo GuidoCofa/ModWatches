@@ -3318,3 +3318,34 @@ summary {
   }
 }
 
+.nautilus-watch #dj-dial {
+  transform: translate(-50%, -50%) scale(0.99);
+}
+
+.nautilus-watch #nautilus-hands {
+  transform: translate(-45%, -43%) scale(0.62);
+}
+
+/* BAJAR LA CAJA (CASE) */
+.nautilus-watch #dj-case {
+  transform: translate(-49%, -46%);
+}
+
+/* =========================
+   NAUTILUS – AJUSTE MOBILE
+   ========================= */
+@media (max-width: 500px) {
+
+  .nautilus-watch #dj-dial {
+    transform: translate(-50%, -54%) scale(0.67);
+  }
+
+  .nautilus-watch #nautilus-hands {
+    transform: translate(-45%, -50%) scale(0.45);
+  }
+
+  .nautilus-watch #dj-case {
+    transform: translate(-50%, -48%);
+  }
+
+}

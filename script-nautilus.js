@@ -8,6 +8,13 @@ const BASE_NAUTILUS = "img/nautilus/";
 // PARTES DISPONIBLES
 const PARTS = ["case", "dial", "hands"];
 
+// LABELS EN ESPAÑOL (SOLO TÍTULOS)
+const PART_LABELS_ES = {
+  case: "Caja",
+  dial: "Dial",
+  hands: "Agujas"
+};
+
 // ESTADO INICIAL
 const config = {
   case: "Rose Gold",
@@ -38,7 +45,7 @@ function updateLayerNautilus(part, value) {
 // ACTIVAR OPCIONES INICIALES
 // ================================
 function activateInitialOptionsNautilus() {
-  PARTS.forEach((part) => {
+  PARTS.forEach(part => {
     const option = document.querySelector(
       `.dj-option[data-part="${part}"][data-value="${config[part]}"]`
     );
@@ -49,7 +56,7 @@ function activateInitialOptionsNautilus() {
 // ================================
 // CLICK HANDLER GLOBAL
 // ================================
-document.addEventListener("click", (e) => {
+document.addEventListener("click", e => {
   const option = e.target.closest(".dj-option");
   if (!option) return;
 
@@ -57,10 +64,9 @@ document.addEventListener("click", (e) => {
   const value = option.dataset.value;
   if (!PARTS.includes(part)) return;
 
-  // desactivar otras opciones del mismo grupo
   document
     .querySelectorAll(`.dj-option[data-part="${part}"]`)
-    .forEach((o) => o.classList.remove("active"));
+    .forEach(o => o.classList.remove("active"));
 
   option.classList.add("active");
   updateLayerNautilus(part, value);
@@ -72,13 +78,14 @@ document.addEventListener("click", (e) => {
 function buyCurrentProductNautilus() {
   const phoneNumber = "5491131667740";
 
-  let message = `Hola, quiero comprar un Nautilus personalizado.%0A%0A`;
-  message += `*Configuración elegida:*%0A`;
-  message += `• Case: ${config.case}%0A`;
-  message += `• Dial: ${config.dial}%0A`;
-  message += `• Hands: ${config.hands}%0A`;
+  let message = `Hola, quiero comprar un Nautilus personalizado.\n\n`;
+  message += `Configuración elegida:\n`;
+  message += `• ${PART_LABELS_ES.case}: ${config.case}\n`;
+  message += `• ${PART_LABELS_ES.dial}: ${config.dial}\n`;
+  message += `• ${PART_LABELS_ES.hands}: ${config.hands}`;
 
-  const url = `https://wa.me/${phoneNumber}?text=${message}`;
+  const encodedMessage = encodeURIComponent(message);
+  const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   window.open(url, "_blank");
 }
 
@@ -86,7 +93,7 @@ function buyCurrentProductNautilus() {
 // INIT
 // ================================
 window.addEventListener("DOMContentLoaded", () => {
-  PARTS.forEach((part) => {
+  PARTS.forEach(part => {
     updateLayerNautilus(part, config[part]);
   });
 
@@ -115,7 +122,7 @@ function toggleMobileDropdown(event) {
   const dropdownMenu = dropdown.querySelector(".mobile-dropdown-menu");
   if (!dropdown || !dropdownMenu) return;
 
-  document.querySelectorAll(".mobile-dropdown-menu").forEach((menu) => {
+  document.querySelectorAll(".mobile-dropdown-menu").forEach(menu => {
     if (menu !== dropdownMenu) menu.classList.remove("active");
   });
 
@@ -124,8 +131,8 @@ function toggleMobileDropdown(event) {
 
 // Cerrar menú móvil al clickear links normales
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".mobile-nav-link").forEach((link) => {
-    link.addEventListener("click", (e) => {
+  document.querySelectorAll(".mobile-nav-link").forEach(link => {
+    link.addEventListener("click", e => {
       if (link.classList.contains("dropdown-toggle")) {
         e.preventDefault();
         return;

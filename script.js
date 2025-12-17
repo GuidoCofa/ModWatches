@@ -2356,22 +2356,28 @@ function activateInitialOptions() {
 // ==========================================
 
 function updateLayer(part, value) {
+
+    // SIZE → solo guardar valor
+    if (part === "size") {
+        selected.size = value;
+        return;
+    }
+
     const img = document.getElementById(`dj-${part}`);
 
+    // DATE → lógica especial
     if (part === "date") {
         if (value === "no-date") {
-            // No mostrar nada en la preview
             img.style.display = "none";
         } else {
-            // Mostrar la ventana de fecha normal
             img.style.display = "block";
-            img.src = ASSETS.date[value];   // date.png
+            img.src = ASSETS.date[value];
         }
         selected[part] = value;
         return;
     }
 
-    // Para las demás partes
+    // RESTO DE PARTES
     img.src = ASSETS[part][value];
     selected[part] = value;
 }
@@ -2404,12 +2410,12 @@ function buyCurrentProduct() {
 
     // Configuración elegida
     message += `*Configuración elegida:*%0A`;
-    message += `• Case: ${formatValue(selected.case)}%0A`;
-    message += `• Size: ${selected.size}%0A`;
-    message += `• Bracelet: ${formatValue(selected.bracelet)}%0A`;
+    message += `• Caja: ${formatValue(selected.case)}%0A`;
+    message += `• Tamaño: ${selected.size}%0A`;
+    message += `• Brazalete: ${formatValue(selected.bracelet)}%0A`;
     message += `• Dial: ${selected.dial}%0A`;
-    message += `• Hands: ${selected.hands}%0A`;
-    message += `• Date: ${selected.date === "date" ? "Con Date" : "Sin Date"}%0A`;
+    message += `• Agujas: ${selected.hands}%0A`;
+    message += `• Fecha: ${selected.date === "date" ? "Con Date" : "Sin Date"}%0A`;
 
     // URL final de WhatsApp
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;

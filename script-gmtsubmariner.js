@@ -1,11 +1,11 @@
 // =====================================
-// GMT SUBMARINER CONFIGURADOR — DESDE CERO
+// GMT SUBMARINER CONFIGURADOR — FIX FINAL
 // =====================================
 
 // BASE
 const BASE_GMTSUB = "img/gmtsubmariner/";
 
-// PARTES QUE TIENE GMT SUBMARINER
+// PARTES DEL MODELO
 const PARTS = [
   "case",
   "bracelet",
@@ -16,7 +16,18 @@ const PARTS = [
   "gmthand"
 ];
 
-// ESTADO ACTUAL
+// LABELS EN ESPAÑOL (SOLO TÍTULOS)
+const PART_LABELS_ES = {
+  case: "Caja",
+  bracelet: "Brazalete",
+  bezel: "Bisel",
+  dial: "Dial",
+  hands: "Agujas",
+  secondhands: "Agujas secundarias",
+  gmthand: "Aguja GMT"
+};
+
+// ESTADO ACTUAL (DATA-VALUE, NO TEXTO HUMANO)
 const selectedGMTSub = {
   case: "1",
   bracelet: "1",
@@ -27,7 +38,7 @@ const selectedGMTSub = {
   gmthand: "1"
 };
 
-// MAPEO PART → IMG ID (COINCIDE CON TU HTML)
+// MAPEO PART → IMG ID
 const IMAGE_IDS = {
   case: "dj-case",
   bracelet: "dj-bracelet",
@@ -84,27 +95,35 @@ document.addEventListener("click", (e) => {
 });
 
 // ================================
+// OBTENER TEXTO HUMANO DESDE HTML
+// ================================
+function getOptionLabel(part, value) {
+  const el = document.querySelector(
+    `.dj-option[data-part="${part}"][data-value="${value}"] span`
+  );
+
+  return el ? el.textContent.trim() : value;
+}
+
+// ================================
 // WHATSAPP
 // ================================
 function buyCurrentProductGMTSubmariner() {
   const phoneNumber = "5491137003736";
 
-  let message = `Hola, quiero comprar un Submariner GMT personalizado.%0A%0A`;
-  message += `*Configuración elegida:*%0A`;
+  let message = `Hola, quiero comprar un Submariner & GMT personalizado.\n\n`;
+  message += `Configuración elegida:\n`;
 
   PARTS.forEach(part => {
-    message += `• ${capitalize(part)}: ${selectedGMTSub[part]}%0A`;
+    const label = PART_LABELS_ES[part] || part;
+    const value = getOptionLabel(part, selectedGMTSub[part]);
+
+    message += `• ${label}: ${value}\n`;
   });
 
-  const url = `https://wa.me/${phoneNumber}?text=${message}`;
+  const encodedMessage = encodeURIComponent(message);
+  const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   window.open(url, "_blank");
-}
-
-// ================================
-// UTIL
-// ================================
-function capitalize(text) {
-  return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
 // ================================
@@ -114,13 +133,13 @@ window.addEventListener("DOMContentLoaded", () => {
   PARTS.forEach(part => {
     updateLayerGMTSub(part, selectedGMTSub[part]);
   });
+
   activateInitialOptionsGMTSub();
 });
 
-// ------------------------------------------------------------------
-// MENÚ MÓVIL Y DROPDOWNS (IGUAL AL DE DAYTONA)
-
-// Abre/cierra menú hamburguesa
+// ================================
+// MENÚ MÓVIL
+// ================================
 function toggleMobileMenu() {
   const mobileNav = document.getElementById("mobile-nav");
   const mobileToggle = document.querySelector(".mobile-menu-toggle");
@@ -131,7 +150,6 @@ function toggleMobileMenu() {
   mobileToggle.classList.toggle("active");
 }
 
-// Dropdown Catálogo móvil
 function toggleMobileDropdown(event) {
   event.preventDefault();
   event.stopPropagation();
@@ -142,15 +160,13 @@ function toggleMobileDropdown(event) {
   if (!dropdown || !dropdownMenu) return;
 
   document.querySelectorAll(".mobile-dropdown-menu").forEach(menu => {
-    if (menu !== dropdownMenu) {
-      menu.classList.remove("active");
-    }
+    if (menu !== dropdownMenu) menu.classList.remove("active");
   });
 
   dropdownMenu.classList.toggle("active");
 }
 
-// Cerrar menú móvil al clickear links normales
+// Cerrar menú móvil al navegar
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".mobile-nav-link").forEach(link => {
     link.addEventListener("click", (e) => {

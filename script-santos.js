@@ -66,20 +66,21 @@ document.addEventListener("DOMContentLoaded", () => {
 // FUNCIÓN DE COMPRA (WhatsApp)
 // ==========================
 function buyCurrentProductSantos() {
-  const message = `Hola, quiero comprar un Santos personalizado.
+  const phoneNumber = "5491141412344";
 
-*Configuración elegida:*
-• Bracelet: ${santosConfig.bracelet}
-• Case: ${santosConfig.case}
-• Dial: ${santosConfig.dial}
-• Hands: ${santosConfig.hands}`
+  let message = `Hola, quiero comprar un Santos personalizado.\n\n`;
+  message += `Configuración elegida:\n`;
+  message += `• Brazalete: ${santosConfig.bracelet}\n`;
+  message += `• Caja: ${santosConfig.case}\n`;
+  message += `• Dial: ${santosConfig.dial}\n`;
+  message += `• Agujas: ${santosConfig.hands}`;
 
-  const phoneNumber = "5491141412344"
-  const encodedMessage = encodeURIComponent(message)
-  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-  window.open(whatsappURL, "_blank")
+  window.open(whatsappURL, "_blank");
 }
+
 
 // ------------------------------------------------------------------
 // MENÚ MÓVIL Y DROPDOWNS (IGUAL AL DE DAYTONA)

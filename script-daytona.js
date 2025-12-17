@@ -1,11 +1,11 @@
 // ================================
-// DAYTONA CONFIGURADOR — DESDE CERO
+// DAYTONA CONFIGURADOR — FIX ESPAÑOL
 // ================================
 
 // BASE
 const BASE_DAYTONA = "img/daytona/";
 
-// PARTES QUE TIENE DAYTONA
+// PARTES DEL MODELO
 const PARTS = [
   "case",
   "bezel",
@@ -15,6 +15,17 @@ const PARTS = [
   "seconds",
   "chrono"
 ];
+
+// LABELS EN ESPAÑOL (USUARIO / WHATSAPP)
+const PART_LABELS_ES = {
+  case: "Caja",
+  bezel: "Bisel",
+  bracelet: "Brazalete",
+  dial: "Dial",
+  hands: "Agujas",
+  seconds: "Segundos",
+  chrono: "Cronógrafo"
+};
 
 // ESTADO ACTUAL
 const selectedDaytona = {
@@ -78,7 +89,6 @@ document.addEventListener("click", (e) => {
 
   if (!PARTS.includes(part)) return;
 
-  // Desactivar activos del mismo grupo
   document
     .querySelectorAll(`.dj-option[data-part="${part}"]`)
     .forEach(o => o.classList.remove("active"));
@@ -89,29 +99,36 @@ document.addEventListener("click", (e) => {
 });
 
 // ================================
+// OBTENER TEXTO DESDE HTML
+// ================================
+
+function getOptionLabel(part, value) {
+  const el = document.querySelector(
+    `.dj-option[data-part="${part}"][data-value="${value}"] span`
+  );
+
+  return el ? el.textContent.trim() : value;
+}
+
+// ================================
 // WHATSAPP
 // ================================
 
 function buyCurrentProductDaytona() {
-  const phoneNumber = "5491137003736"; // tu número
+  const phoneNumber = "5491137003736";
 
   let message = `Hola, quiero comprar un Daytona personalizado.%0A%0A`;
   message += `*Configuración elegida:*%0A`;
 
   PARTS.forEach(part => {
-    message += `• ${capitalize(part)}: ${selectedDaytona[part]}%0A`;
+    const label = PART_LABELS_ES[part];
+    const value = getOptionLabel(part, selectedDaytona[part]);
+
+    message += `• ${label}: ${value}%0A`;
   });
 
   const url = `https://wa.me/${phoneNumber}?text=${message}`;
   window.open(url, "_blank");
-}
-
-// ================================
-// UTIL
-// ================================
-
-function capitalize(text) {
-  return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
 // ================================
@@ -126,65 +143,52 @@ window.addEventListener("DOMContentLoaded", () => {
   activateInitialOptionsDaytona();
 });
 
-// ------------------------------------------------------------------
-// FUNCIONES PARA MENÚ MÓVIL Y DROPDOWNS
+// ================================
+// MENÚ MÓVIL
+// ================================
 
-// Abre/cierra el menú hamburguesa
 function toggleMobileMenu() {
-  const mobileNav = document.getElementById("mobile-nav")
-  const mobileToggle = document.querySelector(".mobile-menu-toggle")
+  const mobileNav = document.getElementById("mobile-nav");
+  const mobileToggle = document.querySelector(".mobile-menu-toggle");
 
-  if (!mobileNav || !mobileToggle) {
-    console.log("[v0] Mobile menu elements not found")
-    return
-  }
+  if (!mobileNav || !mobileToggle) return;
 
-  mobileNav.classList.toggle("active")
-  mobileToggle.classList.toggle("active")
+  mobileNav.classList.toggle("active");
+  mobileToggle.classList.toggle("active");
 }
 
-// Abre/cierra el dropdown “Catálogo” dentro del menú móvil
 function toggleMobileDropdown(event) {
-  event.preventDefault()
-  event.stopPropagation()
+  event.preventDefault();
+  event.stopPropagation();
 
-  const dropdown = event.currentTarget.closest(".mobile-dropdown")
-  const dropdownMenu = dropdown.querySelector(".mobile-dropdown-menu")
+  const dropdown = event.currentTarget.closest(".mobile-dropdown");
+  const dropdownMenu = dropdown.querySelector(".mobile-dropdown-menu");
 
-  if (!dropdown || !dropdownMenu) {
-    console.log("[v1] Mobile dropdown elements not found")
-    return
-  }
+  if (!dropdown || !dropdownMenu) return;
 
-  // Cierra otros dropdowns abiertos
-  document.querySelectorAll(".mobile-dropdown-menu").forEach((menu) => {
-    if (menu !== dropdownMenu) {
-      menu.classList.remove("active")
-    }
-  })
+  document.querySelectorAll(".mobile-dropdown-menu").forEach(menu => {
+    if (menu !== dropdownMenu) menu.classList.remove("active");
+  });
 
-  // Alterna este dropdown
-  dropdownMenu.classList.toggle("active")
+  dropdownMenu.classList.toggle("active");
 }
 
-// ------------------------------------------------------------------
-// CERRAR EL MENÚ MÓVIL AL HACER CLIC EN LINKS NORMALES
-// (pero NO cerrar cuando se pulsa el toggle de Catálogo)
+// Cerrar menú móvil al navegar
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+  document.querySelectorAll(".mobile-nav-link").forEach(link => {
     link.addEventListener("click", (e) => {
-      // Si es el toggle del Catálogo NO cerrar el menú hamburguesa
       if (link.classList.contains("dropdown-toggle")) {
-        e.preventDefault()
-        return // salir sin cerrar menú
+        e.preventDefault();
+        return;
       }
-      // Para cualquier otro link normal, sí cerramos el menú hamburguesa
-      const mobileNav = document.getElementById("mobile-nav")
-      const mobileToggle = document.querySelector(".mobile-menu-toggle")
+
+      const mobileNav = document.getElementById("mobile-nav");
+      const mobileToggle = document.querySelector(".mobile-menu-toggle");
+
       if (mobileNav && mobileToggle) {
-        mobileNav.classList.remove("active")
-        mobileToggle.classList.remove("active")
+        mobileNav.classList.remove("active");
+        mobileToggle.classList.remove("active");
       }
-    })
-  })
-})
+    });
+  });
+});
