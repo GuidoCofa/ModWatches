@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // WHATSAPP
 // ========================================
 function buyCurrentProductRoyalOak() {
-  const phoneNumber = "5493513125757";
+  const phoneNumber = "5491137003736";
 
   let message = `Hola, quiero comprar un Royal Oak personalizado.\n\n`;
   message += `Configuración elegida:\n`;
@@ -145,3 +145,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+

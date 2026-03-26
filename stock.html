@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Disponible - ModWatches</title>
+  <link rel="icon" type="image/x-icon" href="./img/faviconmodwatchs.jpg">
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    <div class="container">
+      <span class="promo-text">$15 de descuento si te llevás 3 relojes →</span>
+    </div>
+  </div>
+
+  <!-- LOGO centrado -->
+  <div class="header-top">
+    <div class="container">
+      <a href="./index.html" class="logo-center">
+        <h1>MOD WATCHES</h1>
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVBAR centrada -->
+  <nav class="header-bottom">
+    <div class="container">
+      <ul class="nav-list center-nav">
+        <li><a href="./index.html" class="nav-link">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#catalogo" class="nav-link dropdown-toggle">
+            Catálogo <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="./catalogos/catalog-daytona.html">Daytona</a>
+            <a href="./catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+            <a href="./catalogos/catalog-submariner.html">Submariner</a>
+            <a href="./catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+            <a href="./catalogos/catalog-land-dweller.html">Land-Dweller</a>
+            <a href="./catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+            <a href="./catalogos/catalog-royal-oak.html">Royal Oak</a>
+            <a href="./catalogos/catalog-yacht-master.html">Yacht Master</a>
+            <a href="./catalogos/catalog-santos.html">Santos</a>
+            <a href="./catalogos/catalog-speedmaster.html">SpeedMaster</a>
+            <a href="./catalogos/catalog-prx.html">PRX</a>
+            <a href="./catalogos/catalog-accesorios.html">Accesorios</a>
+            <a href="./catalogos/catalog-all.html">Ver todo</a>
+          </div>
+        </li>
+        <li><a href="./personalizar-reloj.html" class="nav-link">Personalizar mi reloj</a></li>
+        <li><a href="./informacion-contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <!-- Botón menú móvil -->
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Navegación móvil -->
+      <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="./index.html" class="mobile-nav-link">Inicio</a></li>
+          <li class="mobile-dropdown">
+            <a href="javascript:void(0)" class="mobile-nav-link dropdown-toggle" onclick="toggleMobileDropdown(event)">
+              Catálogo <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="mobile-dropdown-menu">
+              <a href="./catalogos/catalog-daytona.html">Daytona</a>
+              <a href="./catalogos/catalog-gmt-master-2.html">GMT Master II</a>
+              <a href="./catalogos/catalog-submariner.html">Submariner</a>
+              <a href="./catalogos/catalog-datejust-daydate.html">Datejust y Day-Date</a>
+              <a href="./catalogos/catalog-land-dweller.html">Land-Dweller</a>
+              <a href="./catalogos/catalog-nautilus-aquanaut.html">Nautilus y Aquanaut</a>
+              <a href="./catalogos/catalog-royal-oak.html">Royal Oak</a>
+              <a href="./catalogos/catalog-yacht-master.html">Yacht Master</a>
+              <a href="./catalogos/catalog-santos.html">Santos</a>
+              <a href="./catalogos/catalog-speedmaster.html">SpeedMaster</a>
+              <a href="./catalogos/catalog-prx.html">PRX</a>
+              <a href="./catalogos/catalog-accesorios.html">Accesorios</a>
+              <a href="./catalogos/catalog-all.html">Ver todo</a>
+            </div>
+          </li>
+          <li><a href="./personalizar-reloj.html" class="mobile-nav-link">Personalizar mi reloj</a></li>
+          <li><a href="./informacion-contacto.html" class="mobile-nav-link">Contacto</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<main class="policy-page">
+  <div class="container">
+    <h1 style="text-align:center; margin:50px 0;">Stock Disponible</h1>
+    <div class="products-grid">
+
+      <div class="product-card" onclick="showProductModal(7)">
+        <div class="offer-badge">Oferta</div>
+        <img src="./img/daytonareloj3.png" alt="Daytona Modelo 3">
+        <div class="product-info">
+          <h3 class="product-name">Seiko Mod Daytona "Plata y azul marino"</h3>
+          <div class="product-price">
+            <span class="current-price">$199</span>
+            <span class="original-price">$280</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" onclick="showProductModal(5)">
+        <div class="offer-badge">Oferta</div>
+        <img src="./img/daytonareloj1.png" alt="Daytona Modelo 1">
+        <div class="product-info">
+          <h3 class="product-name">Seiko Mod Daytona "Ice Blue"</h3>
+          <div class="product-price">
+            <span class="current-price">$199</span>
+            <span class="original-price">$280</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section"></div>
+    </div>
+    <div class="footer-links">
+      <p>© 2025, ModWatches</p>
+      <div class="footer-menu">
+        <a href="./politica-privacidad.html">Política de privacidad</a>
+        <a href="./politica-reembolso.html">Política de reembolso</a>
+        <a href="./terminos-servicio.html">Términos del servicio</a>
+        <a href="./politica-envio.html">Política de envío</a>
+        <a href="./informacion-contacto.html">Información de contacto</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+  // ─── Productos hardcodeados con rutas corregidas para la raíz ───
+  const stockProducts = [
+    {
+      id: 5,
+      name: 'Seiko Mod Daytona "Ice Blue"',
+      price: "$199",
+      originalPrice: "$280",
+      image: "./img/daytonareloj1.png",   // <-- ./img/ en lugar de ../img/
+      description: "Cronógrafo Daytona con esfera azul hielo, inspirado en el mundo de las carreras. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
+      features: [
+        "Movimiento VK63 cronógrafo",
+        "Caja de acero 40mm",
+        "Función cronógrafo",
+        "Taquímetro",
+        "Brazalete Oyster",
+      ],
+    },
+    {
+      id: 7,
+      name: 'Seiko Mod Daytona "Plata y azul marino"',
+      price: "$199",
+      originalPrice: "$280",
+      image: "./img/daytonareloj3.png",   // <-- ./img/ en lugar de ../img/
+      description: "Cronógrafo Daytona con elegante combinación de plata y azul marino. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
+      features: [
+        "Movimiento VK63 cronógrafo",
+        "Caja de acero 40mm",
+        "Función cronógrafo",
+        "Taquímetro",
+        "Brazalete Oyster",
+      ],
+    },
+  ];
+
+  function showProductModal(productId) {
+    const product = stockProducts.find((p) => p.id === productId);
+    if (!product) return;
+
+    const modal = document.getElementById("product-modal");
+    const modalBody = document.getElementById("modal-body");
+    if (!modal || !modalBody) return;
+
+    window.currentProduct = product;
+
+    modalBody.innerHTML = `
+      <div style="padding: 30px; background: #022141; color: white; border-radius: 12px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
+          <div>
+            <img src="${product.image}" alt="${product.name}" style="width: 100%; border-radius: 8px;">
+          </div>
+          <div>
+            <h2 style="color: white; margin-bottom: 10px; font-size: 1.5rem; line-height: 1.2;">${product.name}</h2>
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+              <span style="font-size: 2rem; font-weight: bold; color: white;">${product.price}</span>
+              <span style="text-decoration: line-through; color: #9ca3af; font-size: 1.1rem;">${product.originalPrice}</span>
+            </div>
+            <p style="margin-bottom: 25px; line-height: 1.6; color: #e5e5e5;">${product.description}</p>
+            <div style="display: flex; gap: 15px;">
+              <button onclick="buyCurrentProduct()" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    modal.style.display = "block";
+    setTimeout(() => { modal.classList.add("show"); }, 10);
+  }
+
+  function buyCurrentProduct() {
+    const product = window.currentProduct;
+    if (!product) return;
+    const phoneNumber = "5491137003736";
+    const message = `Hola quiero comprar este producto "${product.name}"`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("product-modal");
+    modal.classList.remove("show");
+    setTimeout(() => { modal.style.display = "none"; }, 300);
+  }
+
+  window.onclick = (event) => {
+    const modal = document.getElementById("product-modal");
+    if (event.target == modal) closeModal();
+  };
+
+  // ─── Menú móvil (igual que el resto de la web) ───
+  function toggleMobileMenu() {
+    const nav = document.getElementById("mobile-nav");
+    nav.classList.toggle("active");
+  }
+
+  function toggleMobileDropdown(event) {
+    event.preventDefault();
+    const parent = event.target.closest(".mobile-dropdown");
+    parent.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

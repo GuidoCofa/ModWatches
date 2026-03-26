@@ -1,25 +1,25 @@
 // ================================
-// NAUTILUS CONFIGURADOR
+// NAUTILUS CONFIGURADOR (FIXED)
 // ================================
 
-// BASE PATH
-const BASE_NAUTILUS = "img/nautilus/";
+// BASE PATH (ABSOLUTO = MÁS SEGURO)
+const BASE_NAUTILUS = "/img/nautilus/";
 
 // PARTES DISPONIBLES
 const PARTS = ["case", "dial", "hands"];
 
-// LABELS EN ESPAÑOL (SOLO TÍTULOS)
+// LABELS EN ESPAÑOL
 const PART_LABELS_ES = {
   case: "Caja",
   dial: "Dial",
   hands: "Agujas"
 };
 
-// ESTADO INICIAL
+// ESTADO INICIAL (DEFAULT REAL)
 const config = {
-  case: "Rose Gold",
-  dial: "Blue open Dial",
-  hands: "Silver"
+  case: "rose_gold",
+  dial: "blue_open_dial",
+  hands: "silver"
 };
 
 // MAPEO PART → IMG ID
@@ -30,14 +30,31 @@ const IMAGE_IDS = {
 };
 
 // ================================
+// NORMALIZAR VALORES (CLAVE)
+// ================================
+function normalizeValue(value) {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "_");
+}
+
+// ================================
 // ACTUALIZAR PREVIEW
 // ================================
-function updateLayerNautilus(part, value) {
+function updateLayerNautilus(part, rawValue) {
   const imgId = IMAGE_IDS[part];
   const img = document.getElementById(imgId);
   if (!img) return;
 
-  img.src = `${BASE_NAUTILUS}${part}/${value}.png`;
+  const value = normalizeValue(rawValue);
+  const src = `${BASE_NAUTILUS}${part}/${value}.png`;
+
+  img.onerror = () => {
+    console.error(`Imagen no encontrada: ${src}`);
+  };
+
+  img.src = src;
   config[part] = value;
 }
 
@@ -53,6 +70,7 @@ function activateInitialOptionsNautilus() {
   });
 }
 
+
 // ================================
 // CLICK HANDLER GLOBAL
 // ================================
@@ -61,8 +79,9 @@ document.addEventListener("click", e => {
   if (!option) return;
 
   const part = option.dataset.part;
-  const value = option.dataset.value;
   if (!PARTS.includes(part)) return;
+
+  const value = option.dataset.value || config[part];
 
   document
     .querySelectorAll(`.dj-option[data-part="${part}"]`)
@@ -76,7 +95,7 @@ document.addEventListener("click", e => {
 // WHATSAPP
 // ================================
 function buyCurrentProductNautilus() {
-  const phoneNumber = "5491131667740";
+  const phoneNumber = "5491137003736";
 
   let message = `Hola, quiero comprar un Nautilus personalizado.\n\n`;
   message += `Configuración elegida:\n`;
@@ -85,12 +104,11 @@ function buyCurrentProductNautilus() {
   message += `• ${PART_LABELS_ES.hands}: ${config.hands}`;
 
   const encodedMessage = encodeURIComponent(message);
-  const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-  window.open(url, "_blank");
+  window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
 }
 
 // ================================
-// INIT
+// INIT (DEFAULT GARANTIZADO)
 // ================================
 window.addEventListener("DOMContentLoaded", () => {
   PARTS.forEach(part => {
@@ -100,50 +118,4 @@ window.addEventListener("DOMContentLoaded", () => {
   activateInitialOptionsNautilus();
 });
 
-// ------------------------------------------------------------------
-// MENÚ MÓVIL Y DROPDOWNS (IGUAL A DAYTONA)
 
-// Abre/cierra menú hamburguesa
-function toggleMobileMenu() {
-  const mobileNav = document.getElementById("mobile-nav");
-  const mobileToggle = document.querySelector(".mobile-menu-toggle");
-  if (!mobileNav || !mobileToggle) return;
-
-  mobileNav.classList.toggle("active");
-  mobileToggle.classList.toggle("active");
-}
-
-// Dropdown Catálogo móvil
-function toggleMobileDropdown(event) {
-  event.preventDefault();
-  event.stopPropagation();
-
-  const dropdown = event.currentTarget.closest(".mobile-dropdown");
-  const dropdownMenu = dropdown.querySelector(".mobile-dropdown-menu");
-  if (!dropdown || !dropdownMenu) return;
-
-  document.querySelectorAll(".mobile-dropdown-menu").forEach(menu => {
-    if (menu !== dropdownMenu) menu.classList.remove("active");
-  });
-
-  dropdownMenu.classList.toggle("active");
-}
-
-// Cerrar menú móvil al clickear links normales
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".mobile-nav-link").forEach(link => {
-    link.addEventListener("click", e => {
-      if (link.classList.contains("dropdown-toggle")) {
-        e.preventDefault();
-        return;
-      }
-
-      const mobileNav = document.getElementById("mobile-nav");
-      const mobileToggle = document.querySelector(".mobile-menu-toggle");
-      if (mobileNav && mobileToggle) {
-        mobileNav.classList.remove("active");
-        mobileToggle.classList.remove("active");
-      }
-    });
-  });
-});

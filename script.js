@@ -2439,3 +2439,16 @@ document.querySelectorAll("details").forEach(d => {
         }
     });
 });
+
+function buyOnWhatsApp(productName, productId) {
+  const phoneNumber = "5491137003736";
+  const message = `Hola quiero comprar este producto "${productName}"`;
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(whatsappUrl, "_blank");
+}
+
+function buyCurrentProduct() {
+  if (window.currentProduct) {
+    buyOnWhatsApp(window.currentProduct.name, window.currentProduct.id);
+  }
+}

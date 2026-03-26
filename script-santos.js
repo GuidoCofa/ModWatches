@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // FUNCIÓN DE COMPRA (WhatsApp)
 // ==========================
 function buyCurrentProductSantos() {
-  const phoneNumber = "5491141412344";
+  const phoneNumber = "5491137003736";
 
   let message = `Hola, quiero comprar un Santos personalizado.\n\n`;
   message += `Configuración elegida:\n`;
@@ -134,3 +134,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
