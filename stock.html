@@ -125,6 +125,18 @@
         </div>
       </div>
 
+      <div class="product-card" onclick="showProductModal(19)">
+        <div class="offer-badge">Oferta</div>
+        <img src="./img/relojgmtmaster6.png" alt="GMT Master 2 Modelo 6">
+        <div class="product-info">
+          <h3 class="product-name">Seiko Mod GMT Master II "Coca-Cola"</h3>
+          <div class="product-price">
+            <span class="current-price">$199</span>
+            <span class="original-price">$280</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </main>
@@ -187,6 +199,21 @@
         "Función cronógrafo",
         "Taquímetro",
         "Brazalete Oyster",
+      ],
+    },
+    {
+      id: 19,
+      name: 'Seiko Mod GMT Master II "Coca-Cola"',
+      price: "$199",
+      originalPrice: "$280",
+      image: "./img/relojgmtmaster6.png",
+      description: "GMT Master II con el icónico bisel rojo y negro 'Coca-Cola'. Elegante diseño inspirado en el clásico reloj de viajeros. Producto con gran rendimiento y excelente relación precio-calidad. Stock inmediato.",
+      features: [
+        "Movimiento automático NH34",
+        "Caja de acero 40mm",
+        "Bisel giratorio GMT rojo/negro",
+        "Función doble huso horario",
+        "Brazalete Jubilee",
       ],
     },
   ];
@@ -256,8 +283,24 @@
 
   function toggleMobileDropdown(event) {
     event.preventDefault();
-    const parent = event.target.closest(".mobile-dropdown");
-    parent.classList.toggle("active");
+    event.stopPropagation();
+
+    const dropdown = event.currentTarget.closest(".mobile-dropdown");
+    const dropdownMenu = dropdown.querySelector(".mobile-dropdown-menu");
+
+    if (!dropdown || !dropdownMenu) {
+      return;
+    }
+
+    // Cierra otros dropdowns abiertos
+    document.querySelectorAll(".mobile-dropdown-menu").forEach((menu) => {
+      if (menu !== dropdownMenu) {
+        menu.classList.remove("active");
+      }
+    });
+
+    // Alterna este dropdown
+    dropdownMenu.classList.toggle("active");
   }
 </script>
 
